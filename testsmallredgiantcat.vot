@@ -1,0 +1,3985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 3.0.5
+     http://www.astropy.org/ -->
+<VOTABLE version="1.3" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ivoa.net/xml/VOTable/v1.3">
+ <RESOURCE type="results">
+  <TABLE ID="J_A_A_588_A87_table2" name="J/A+A/588/A87/table2">
+   <DESCRIPTION>
+    Seismic global parameters and their error bars
+   </DESCRIPTION>
+   <FIELD ID="KEPMAG_YU" datatype="double" name="KEPMAG_YU"/>
+   <FIELD ID="LENGTH_QUARTERS_YU" datatype="long" name="LENGTH_QUARTERS_YU"/>
+   <FIELD ID="LENGTH_DAYS_YU" datatype="double" name="LENGTH_DAYS_YU"/>
+   <FIELD ID="NUMAX_SYD_YU" datatype="double" name="NUMAX_SYD_YU"/>
+   <FIELD ID="ERROR_NUMAX_SYD_YU" datatype="double" name="ERROR_NUMAX_SYD_YU"/>
+   <FIELD ID="DNU_SYD_YU" datatype="double" name="DNU_SYD_YU"/>
+   <FIELD ID="ERROR_DNU_SYD_YU" datatype="double" name="ERROR_DNU_SYD_YU"/>
+   <FIELD ID="AMPLITUDE_SYD_YU" arraysize="5" datatype="unicodeChar" name="AMPLITUDE_SYD_YU"/>
+   <FIELD ID="ERROR_AMPLITUDE_SYD_YU" arraysize="5" datatype="unicodeChar" name="ERROR_AMPLITUDE_SYD_YU"/>
+   <FIELD ID="FWHM_SYD_YU" arraysize="5" datatype="unicodeChar" name="FWHM_SYD_YU"/>
+   <FIELD ID="ERROR_FWHM_SYD_YU" arraysize="4" datatype="unicodeChar" name="ERROR_FWHM_SYD_YU"/>
+   <FIELD ID="MAXBG_YU" arraysize="9" datatype="unicodeChar" name="MAXBG_YU"/>
+   <FIELD ID="ERROR_MAXBG_YU" arraysize="8" datatype="unicodeChar" name="ERROR_MAXBG_YU"/>
+   <FIELD ID="TEFF_YU" datatype="long" name="TEFF_YU"/>
+   <FIELD ID="ERROR_TEFF_YU" datatype="long" name="ERROR_TEFF_YU"/>
+   <FIELD ID="LOGG_YU" datatype="double" name="LOGG_YU"/>
+   <FIELD ID="ERROR_LOGG_YU" datatype="double" name="ERROR_LOGG_YU"/>
+   <FIELD ID="FE_H_YU" datatype="double" name="FE_H_YU"/>
+   <FIELD ID="ERROR_FE_H_YU" datatype="double" name="ERROR_FE_H_YU"/>
+   <FIELD ID="M_NOCORRECTION_YU" datatype="double" name="M_NOCORRECTION_YU"/>
+   <FIELD ID="ERROR_M_NOCORRECTION_YU" datatype="double" name="ERROR_M_NOCORRECTION_YU"/>
+   <FIELD ID="R_NOCORRECTION_YU" datatype="double" name="R_NOCORRECTION_YU"/>
+   <FIELD ID="ERROR_R_NOCORRECTION_YU" datatype="double" name="ERROR_R_NOCORRECTION_YU"/>
+   <FIELD ID="M_RGB_YU" datatype="double" name="M_RGB_YU"/>
+   <FIELD ID="ERROR_M_RGB_YU" datatype="double" name="ERROR_M_RGB_YU"/>
+   <FIELD ID="R_RGB_YU" datatype="double" name="R_RGB_YU"/>
+   <FIELD ID="ERROR_R_RGB_YU" datatype="double" name="ERROR_R_RGB_YU"/>
+   <FIELD ID="M_CLUMP_YU" datatype="double" name="M_CLUMP_YU"/>
+   <FIELD ID="ERROR_M_CLUMP_YU" datatype="double" name="ERROR_M_CLUMP_YU"/>
+   <FIELD ID="R_CLUMP_YU" datatype="double" name="R_CLUMP_YU"/>
+   <FIELD ID="ERROR_R_CLUMP_YU" datatype="double" name="ERROR_R_CLUMP_YU"/>
+   <FIELD ID="EVOPHASE_YU" datatype="long" name="EVOPHASE_YU"/>
+   <FIELD ID="RA_J2000_MAST" datatype="double" name="RA_J2000_MAST"/>
+   <FIELD ID="DEC_J2000_MAST" datatype="double" name="DEC_J2000_MAST"/>
+   <FIELD ID="RMAG_MAST" datatype="double" name="RMAG_MAST"/>
+   <FIELD ID="JMAG_MAST" datatype="double" name="JMAG_MAST"/>
+   <FIELD ID="KEPLERMAG_MAST" datatype="double" name="KEPLERMAG_MAST"/>
+   <FIELD ID="TMASS_ID" arraysize="18" datatype="unicodeChar" name="TMASS_ID" ucd="meta.id.cross">
+    <DESCRIPTION>
+     Original External Catalogue source identifier
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TMASS_CONFLICT_FLAG" datatype="long" name="TMASS_CONFLICT_FLAG"/>
+   <FIELD ID="TEFF_MAST" datatype="long" name="TEFF_MAST"/>
+   <FIELD ID="LOGG_MAST" datatype="double" name="LOGG_MAST"/>
+   <FIELD ID="FE_H_MAST" datatype="double" name="FE_H_MAST"/>
+   <FIELD ID="EBV_MAST" datatype="double" name="EBV_MAST"/>
+   <FIELD ID="RADIUS_MAST" datatype="double" name="RADIUS_MAST"/>
+   <FIELD ID="TOTALPM_MAST" datatype="double" name="TOTALPM_MAST"/>
+   <FIELD ID="GR_MAST" datatype="double" name="GR_MAST"/>
+   <FIELD ID="CONDITIONFLAG_MAST" arraysize="48" datatype="unicodeChar" name="CONDITIONFLAG_MAST"/>
+   <FIELD ID="F_KIC_SAGA" arraysize="1" datatype="char" name="F_KIC_SAGA" ucd="meta.code">
+    <DESCRIPTION>
+     [*] Presence of a second signal (1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NUMAX_SAGA" datatype="double" name="NUMAX_SAGA" ucd="em.freq" unit="uHz">
+    <DESCRIPTION>
+     [0/2003] Frequency of maximum oscillations power
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_NUMAX_SAGA" datatype="double" name="ERROR_NUMAX_SAGA" ucd="stat.error" unit="uHz">
+    <DESCRIPTION>
+     [0/600] Uncertainty in numax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DNU_SAGA" datatype="double" name="DNU_SAGA" ucd="em.freq;src.var" unit="uHz">
+    <DESCRIPTION>
+     [0.3/111] Large frequency separation
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_DNU_SAGA" datatype="double" name="ERROR_DNU_SAGA" ucd="stat.error" unit="uHz">
+    <DESCRIPTION>
+     [0.01/4.1] Uncertainty in dnu
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FE_H_SAGA" datatype="double" name="FE_H_SAGA" ucd="phys.abund.Z" unit="[Sun]">
+    <DESCRIPTION>
+     [-2.5/1] Stroemgren metallicity (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_FE_H_SAGA" datatype="double" name="ERROR_FE_H_SAGA" ucd="stat.error;phys.abund.Fe" unit="[Sun]">
+    <DESCRIPTION>
+     [0.1/0.3] Uncertainty in Stroemgren metallicity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_SAGA" datatype="short" name="TEFF_SAGA" ucd="phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     [3948/6684] Effective temperature from the infrared flux method
+     (IRFM)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_TEFF_SAGA" datatype="short" name="ERROR_TEFF_SAGA" ucd="stat.error;phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     [57/507] Error in Teff
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RAD_SAGA" datatype="double" name="RAD_SAGA" ucd="phys.size.radius" unit="Rsun">
+    <DESCRIPTION>
+     [1/69.7] Radius from seismology
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_RAD_SAGA" datatype="double" name="UPPER_ERROR_RAD_SAGA" ucd="stat.error;stat.max" unit="Rsun">
+    <DESCRIPTION>
+     [0.01/22.1] Upper error in Rad
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_RAD_SAGA" datatype="double" name="LOWER_ERROR_RAD_SAGA" ucd="stat.error" unit="Rsun">
+    <DESCRIPTION>
+     [0.01/14.3] Lower error in Rad
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MASS_SAGA" datatype="double" name="MASS_SAGA" ucd="phys.mass" unit="Msun">
+    <DESCRIPTION>
+     [0.7/3.6] Mass from seismology
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_MASS_SAGA" datatype="double" name="UPPER_ERROR_MASS_SAGA" ucd="stat.error;stat.max" unit="Msun">
+    <DESCRIPTION>
+     [0.02/1.8] Upper error in Mass
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_MASS_SAGA" datatype="double" name="LOWER_ERROR_MASS_SAGA" ucd="stat.error;phys.mass" unit="Msun">
+    <DESCRIPTION>
+     [0.02/1.5] Lower error in Mass
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOGG_SAGA" datatype="double" name="LOGG_SAGA" ucd="phys.gravity" unit="[cm/s2]">
+    <DESCRIPTION>
+     [0.9/4.3] Log surface gravity from seismology
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_LOGG_SAGA" datatype="double" name="UPPER_ERROR_LOGG_SAGA" ucd="stat.error;stat.max" unit="[cm/s2]">
+    <DESCRIPTION>
+     [0.001/0.04] Upper error in log(g)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_LOGG_SAGA" datatype="double" name="LOWER_ERROR_LOGG_SAGA" ucd="stat.error" unit="[cm/s2]">
+    <DESCRIPTION>
+     [0.001/0.05] Lower error in log(g)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEN_SAGA" datatype="double" name="DEN_SAGA" ucd="phys.density" unit="Sun">
+    <DESCRIPTION>
+     [0/0.7] Stellar density in units of solar density (1.4084g/cm^3^)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_DEN_SAGA" datatype="double" name="UPPER_ERROR_DEN_SAGA" ucd="stat.error;stat.max" unit="Sun">
+    <DESCRIPTION>
+     [0/0.07] Upper error in Den
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_DEN_SAGA" datatype="double" name="LOWER_ERROR_DEN_SAGA" ucd="stat.error" unit="Sun">
+    <DESCRIPTION>
+     [0/0.06] Lower error in Den
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DIST_SAGA" datatype="short" name="DIST_SAGA" ucd="pos.distance;pos.heliocentric" unit="pc">
+    <DESCRIPTION>
+     [184/6015] Distance from the Sun
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_DIST_SAGA" datatype="short" name="UPPER_ERROR_DIST_SAGA" ucd="stat.error;stat.max" unit="pc">
+    <DESCRIPTION>
+     [4/3164] Upper error in Dist
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_DIST_SAGA" datatype="short" name="LOWER_ERROR_DIST_SAGA" ucd="stat.error" unit="pc">
+    <DESCRIPTION>
+     [4/1173] Lower error in Dist
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CLASS_SAGA" arraysize="3" datatype="unicodeChar" name="CLASS_SAGA" ucd="src.class">
+    <DESCRIPTION>
+     Asteroseismic classification (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FM_SAGA" datatype="short" name="FM_SAGA" ucd="meta.code">
+    <DESCRIPTION>
+     [0/1] Metallicity flag (4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FP_SAGA" datatype="short" name="FP_SAGA" ucd="meta.code">
+    <DESCRIPTION>
+     [0/1] Stroemgren photometry flag (4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BY_SAGA" datatype="double" name="BY_SAGA" ucd="phot.color" unit="mag">
+    <DESCRIPTION>
+     [0.2/0.99] Stroemgren b-y index
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="M1_SAGA" datatype="double" name="M1_SAGA" ucd="phot.color" unit="mag">
+    <DESCRIPTION>
+     [0.01/0.94] Stroemgren m1 index
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C1_SAGA" datatype="double" name="C1_SAGA" ucd="phot.color" unit="mag">
+    <DESCRIPTION>
+     [0.02/0.6] Stroemgren c1 index
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_J2000_SAGA" datatype="double" name="RA_J2000_SAGA" ucd="pos.eq.ra;meta.main" unit="deg">
+    <DESCRIPTION>
+     Position from KIC catalog (V/133) (right ascension part)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_J2000_SAGA" datatype="double" name="DEC_J2000_SAGA" ucd="pos.eq.dec;meta.main" unit="deg">
+    <DESCRIPTION>
+     Position from KIC catalog (V/133) (declination part)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DNU_VRARD" datatype="float" name="DNU_VRARD" precision="2" ucd="em.freq;src.var" unit="muHz" width="5">
+    <DESCRIPTION>
+     Large separation
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DPI1_VRARD" datatype="float" name="DPI1_VRARD" precision="1" ucd="time.period" unit="s" width="5">
+    <DESCRIPTION>
+     Period spacing
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_DPI1_VRARD" datatype="float" name="ERROR_DPI1_VRARD" precision="2" ucd="stat.error" unit="s" width="5">
+    <DESCRIPTION>
+     Uncertainty in DPi1
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="Q_VRARD" datatype="float" name="Q_VRARD" precision="2" ucd="meta.code" width="5">
+    <DESCRIPTION>
+     Coupling parameter
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MASS_VRARD" datatype="float" name="MASS_VRARD" precision="2" ucd="phys.mass" unit="Msun" width="5">
+    <DESCRIPTION>
+     Mass
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_MASS_VRARD" datatype="float" name="ERROR_MASS_VRARD" precision="2" ucd="stat.error" unit="Msun" width="5">
+    <DESCRIPTION>
+     ? Uncertainty in mass
+    </DESCRIPTION>
+    <VALUES null="nan"/>
+   </FIELD>
+   <FIELD ID="ALIAS_VRARD" datatype="unsignedByte" name="ALIAS_VRARD" ucd="meta.code" width="1">
+    <DESCRIPTION>
+     [0/1] Presence of an alias (1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MEASURE_VRARD" datatype="unsignedByte" name="MEASURE_VRARD" ucd="meta.number" width="1">
+    <DESCRIPTION>
+     [0/2] Indicate how many codes converged towards this value
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EVOLUTIONARY_STATUS_VRARD" datatype="unsignedByte" name="EVOLUTIONARY_STATUS_VRARD" ucd="meta.code" width="1">
+    <DESCRIPTION>
+     [0/2]? Evolutionary status (2) [NULL integer written as an empty
+     string]
+    </DESCRIPTION>
+    <VALUES null="255"/>
+   </FIELD>
+   <FIELD ID="RA_J2000_VRARD" datatype="double" name="RA_J2000_VRARD" precision="6" ucd="pos.eq.ra;meta.main" unit="deg" width="10">
+    <DESCRIPTION>
+     Positions from Kepler Input Catalog (V/133) (right ascension
+     part)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_J2000_VRARD" datatype="double" name="DEC_J2000_VRARD" precision="6" ucd="pos.eq.dec;meta.main" unit="deg" width="10">
+    <DESCRIPTION>
+     Positions from Kepler Input Catalog (V/133) (declination part)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MASS_LAMOST" datatype="double" name="MASS_LAMOST"/>
+   <FIELD ID="UPPER_ERROR_MASSPLUS_LAMOST" datatype="double" name="UPPER_ERROR_MASSPLUS_LAMOST"/>
+   <FIELD ID="LOWER_ERROR_MASSMINUS_LAMOST" datatype="double" name="LOWER_ERROR_MASSMINUS_LAMOST"/>
+   <FIELD ID="RADIUS_LAMOST" datatype="double" name="RADIUS_LAMOST"/>
+   <FIELD ID="UPPER_ERROR_RADIUSPLUS_LAMOST" datatype="double" name="UPPER_ERROR_RADIUSPLUS_LAMOST"/>
+   <FIELD ID="LOWER_ERROR_RADIUSMINUS_LAMOST" datatype="double" name="LOWER_ERROR_RADIUSMINUS_LAMOST"/>
+   <FIELD ID="RHO_LAMOST" datatype="double" name="RHO_LAMOST"/>
+   <FIELD ID="UPPER_ERROR_RHOPLUS_LAMOST" datatype="double" name="UPPER_ERROR_RHOPLUS_LAMOST"/>
+   <FIELD ID="LOWER_ERROR_RHOMINUS_LAMOST" datatype="double" name="LOWER_ERROR_RHOMINUS_LAMOST"/>
+   <FIELD ID="TEFF_LAMOST" datatype="double" name="TEFF_LAMOST"/>
+   <FIELD ID="LOGG_LAMOST" datatype="double" name="LOGG_LAMOST"/>
+   <FIELD ID="FE_H_LAMOST" datatype="double" name="FE_H_LAMOST"/>
+   <FIELD ID="AGE_LAMOST" datatype="double" name="AGE_LAMOST"/>
+   <FIELD ID="ERROR_TEFF_LAMOST" datatype="double" name="ERROR_TEFF_LAMOST"/>
+   <FIELD ID="ERROR_LOGG_LAMOST" datatype="double" name="ERROR_LOGG_LAMOST"/>
+   <FIELD ID="ERROR_FE_H_LAMOST" datatype="double" name="ERROR_FE_H_LAMOST"/>
+   <FIELD ID="TEFF_KIC_LAMOST" datatype="double" name="TEFF_KIC_LAMOST"/>
+   <FIELD ID="LOGG_KIC_LAMOST" datatype="double" name="LOGG_KIC_LAMOST"/>
+   <FIELD ID="FE_H_KIC_LAMOST" datatype="double" name="FE_H_KIC_LAMOST"/>
+   <FIELD ID="RADIUS_KIC_LAMOST" datatype="double" name="RADIUS_KIC_LAMOST"/>
+   <FIELD ID="DETEC_K2C1" arraysize="1" datatype="unicodeChar" name="DETEC_K2C1"/>
+   <FIELD ID="VISUAL_NUMAX_K2C1" datatype="double" name="VISUAL_NUMAX_K2C1"/>
+   <FIELD ID="CAN_DNU_K2C1" datatype="double" name="CAN_DNU_K2C1"/>
+   <FIELD ID="ERROR_CAN_DNU_K2C1" datatype="double" name="ERROR_CAN_DNU_K2C1"/>
+   <FIELD ID="CAN_NUMAX_K2C1" datatype="double" name="CAN_NUMAX_K2C1"/>
+   <FIELD ID="ERROR_CAN_NUMAX_K2C1" datatype="double" name="ERROR_CAN_NUMAX_K2C1"/>
+   <FIELD ID="COR_DNU_K2C1" datatype="double" name="COR_DNU_K2C1"/>
+   <FIELD ID="ERROR_COR_DNU_K2C1" datatype="double" name="ERROR_COR_DNU_K2C1"/>
+   <FIELD ID="COR_NUMAX_K2C1" datatype="double" name="COR_NUMAX_K2C1"/>
+   <FIELD ID="ERROR_COR_NUMAX_K2C1" datatype="double" name="ERROR_COR_NUMAX_K2C1"/>
+   <FIELD ID="BHM_DNU_K2C1" datatype="double" name="BHM_DNU_K2C1"/>
+   <FIELD ID="ERROR_BHM_DNU_K2C1" datatype="double" name="ERROR_BHM_DNU_K2C1"/>
+   <FIELD ID="BHM_NUMAX_K2C1" datatype="double" name="BHM_NUMAX_K2C1"/>
+   <FIELD ID="ERROR_BHM_NUMAX_K2C1" datatype="double" name="ERROR_BHM_NUMAX_K2C1"/>
+   <FIELD ID="A2Z_DNU_K2C1" datatype="double" name="A2Z_DNU_K2C1"/>
+   <FIELD ID="ERROR_A2Z_DNU_K2C1" datatype="double" name="ERROR_A2Z_DNU_K2C1"/>
+   <FIELD ID="A2Z_NUMAX_K2C1" datatype="double" name="A2Z_NUMAX_K2C1"/>
+   <FIELD ID="ERROR_A2Z_NUMAX_K2C1" datatype="double" name="ERROR_A2Z_NUMAX_K2C1"/>
+   <FIELD ID="SYD_DNU_K2C1" datatype="double" name="SYD_DNU_K2C1"/>
+   <FIELD ID="ERROR_SYD_DNU_K2C1" datatype="double" name="ERROR_SYD_DNU_K2C1"/>
+   <FIELD ID="SYD_NUMAX_K2C1" datatype="double" name="SYD_NUMAX_K2C1"/>
+   <FIELD ID="ERROR_SYD_NUMAX_K2C1" datatype="double" name="ERROR_SYD_NUMAX_K2C1"/>
+   <FIELD ID="BAM_DNU_K2C1" datatype="double" name="BAM_DNU_K2C1"/>
+   <FIELD ID="ERROR_BAM_DNU_K2C1" datatype="double" name="ERROR_BAM_DNU_K2C1"/>
+   <FIELD ID="BAM_NUMAX_K2C1" datatype="double" name="BAM_NUMAX_K2C1"/>
+   <FIELD ID="ERROR_BAM_NUMAX_K2C1" datatype="double" name="ERROR_BAM_NUMAX_K2C1"/>
+   <FIELD ID="RA_J2000_EPIC" datatype="double" name="RA_J2000_EPIC" ucd="pos.eq.ra;meta.main" unit="deg">
+    <DESCRIPTION>
+     Right Ascension (J2000) (k2_ra)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_J2000_EPIC" datatype="double" name="DEC_J2000_EPIC" ucd="pos.eq.dec;meta.main" unit="deg">
+    <DESCRIPTION>
+     Declination (J2000) (k2_dec)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UCAC4_ID" arraysize="10" datatype="unicodeChar" name="UCAC4_ID" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ? UCAC4 identifier (ucac)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SDSS_ID" arraysize="20" datatype="unicodeChar" name="SDSS_ID" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ? SDSS-ID DR9 identifier (run, rerun (301), camcol (1-6), field
+     (11-1001) and object (1-16000))
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="OTYPE_EPIC" arraysize="8" datatype="char" name="OTYPE_EPIC" ucd="src.class">
+    <DESCRIPTION>
+     ? Object type (&amp;quot;STAR&amp;quot; (57,481,182 occurrences) or
+     &amp;quot;EXTENDED&amp;quot; (1,953,153 occurrences)) (objtype)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KPFLAG_EPIC" arraysize="3" datatype="char" name="KPFLAG_EPIC" ucd="meta.code">
+    <DESCRIPTION>
+     ? Kepler magnitude flag (kepflag) (1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SFLAG_EPIC" arraysize="4" datatype="char" name="SFLAG_EPIC" ucd="meta.code">
+    <DESCRIPTION>
+     ? Stellar properties flag [not used] (stpropflag) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMRA_EPIC" datatype="double" name="PMRA_EPIC" ucd="pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     [-3842/2482]? Proper motion in RA
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMRA_EPIC" datatype="float" name="ERROR_PMRA_EPIC" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     [0/998]? Uncertainty in proper motion in RA
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMDEC_EPIC" datatype="double" name="PMDEC_EPIC" ucd="pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     [-3544/2318]? Proper motion in DEC
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMDEC_EPIC" datatype="float" name="ERROR_PMDEC_EPIC" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     [0/1000]? Uncertainty in proper motion in DEC
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PLX_HIP_EPIC" datatype="float" name="PLX_HIP_EPIC" ucd="pos.parallax" unit="mas">
+    <DESCRIPTION>
+     [-100/337]? Hipparcos parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PLX_HIP_EPIC" datatype="float" name="ERROR_PLX_HIP_EPIC" ucd="stat.error;pos.parallax" unit="mas">
+    <DESCRIPTION>
+     [0.1/72]? Uncertainty in parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BMAG_EPIC" datatype="float" name="BMAG_EPIC" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     [0.8/19]? Johnson B magnitude (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_BMAG_EPIC" datatype="float" name="ERROR_BMAG_EPIC" ucd="stat.error;phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     [0.01/2]? Uncertainty in Johnson B magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="VMAG_EPIC" datatype="float" name="VMAG_EPIC" ucd="phot.mag;em.opt.V" unit="mag">
+    <DESCRIPTION>
+     [1/19]? Johnson V magnitude (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_VMAG_EPIC" datatype="float" name="ERROR_VMAG_EPIC" ucd="stat.error;phot.mag;em.opt.V" unit="mag">
+    <DESCRIPTION>
+     [0.009/1.2]? Uncertainty in Johnson V magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UMAG_EPIC" datatype="float" name="UMAG_EPIC" ucd="phot.mag;em.opt.U" unit="mag">
+    <DESCRIPTION>
+     [11/33]? SDSS u magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_UMAG_EPIC" datatype="float" name="ERROR_UMAG_EPIC" ucd="stat.error;phot.mag;em.opt.U" unit="mag">
+    <DESCRIPTION>
+     [0.001/10]? Uncertainty in Sloan u magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GMAG_EPIC" datatype="float" name="GMAG_EPIC" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     [7.9/34]? SDSS g magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_GMAG_EPIC" datatype="float" name="ERROR_GMAG_EPIC" ucd="stat.error;phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     [0.001/0.9]? Uncertainty in Sloan g magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RMAG_EPIC" datatype="float" name="RMAG_EPIC" ucd="phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     [6.9/20]? SDSS r magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_RMAG_EPIC" datatype="float" name="ERROR_RMAG_EPIC" ucd="stat.error;phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     [0.001/0.9]? Uncertainty in Sloan r magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="IMAG_EPIC" datatype="float" name="IMAG_EPIC" ucd="phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     [5.7/35.2]? SDSS i magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_IMAG_EPIC" datatype="float" name="ERROR_IMAG_EPIC" ucd="stat.error;phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     [0.001/0.9]? Uncertainty in Sloan i magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ZMAG_EPIC" datatype="float" name="ZMAG_EPIC" ucd="phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     [10.4/36.7]? SDSS z magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_ZMAG_EPIC" datatype="float" name="ERROR_ZMAG_EPIC" ucd="stat.error;phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     [0.001/10]? Uncertainty in Sloan z magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="JMAG_EPIC" datatype="float" name="JMAG_EPIC" ucd="phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     [3.5/17.6]? 2MASS J magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_JMAG_EPIC" datatype="float" name="ERROR_JMAG_EPIC" ucd="stat.error;phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     [0.01/0.3]? Uncertainty in 2MASS J magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HMAG_EPIC" datatype="float" name="HMAG_EPIC" ucd="phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     [2.4/17]? 2MASS H magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_HMAG_EPIC" datatype="float" name="ERROR_HMAG_EPIC" ucd="stat.error;phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     [0.01/0.3]? Uncertainty in 2MASS H magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KSMAG_EPIC" datatype="float" name="KSMAG_EPIC" ucd="phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     [1.9/16.1]? 2MASS Ks Magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_KSMAG_EPIC" datatype="float" name="ERROR_KSMAG_EPIC" ucd="stat.error;phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     [0.01/0.3]? Uncertainty in 2MASS Ks magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KPMAG_EPIC" datatype="float" name="KPMAG_EPIC" ucd="phot.mag;em.opt" unit="mag">
+    <DESCRIPTION>
+     [0.7/33.3] Kepler magnitude (kp)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_EPIC" datatype="int" name="TEFF_EPIC" ucd="phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     [1708/33037]? Effective temperature
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_TEFF_EPIC" datatype="int" name="UPPER_ERROR_TEFF_EPIC" ucd="stat.error;stat.max" unit="K">
+    <DESCRIPTION>
+     [17/28181]? Upper uncertainty in Teff
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_TEFF_EPIC" datatype="int" name="LOWER_ERROR_TEFF_EPIC" ucd="stat.error;phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     [17/28181]? Lower uncertainty in Teff
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOGG_EPIC" datatype="float" name="LOGG_EPIC" ucd="phys.gravity" unit="[cm/s2]">
+    <DESCRIPTION>
+     [-0.9/5.4]? log surface gravity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_LOGG_EPIC" datatype="float" name="UPPER_ERROR_LOGG_EPIC" ucd="stat.error;stat.max" unit="[cm/s2]">
+    <DESCRIPTION>
+     [0.02/5]? Upper uncertainty in logg
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_LOGG_EPIC" datatype="float" name="LOWER_ERROR_LOGG_EPIC" ucd="stat.error" unit="[cm/s2]">
+    <DESCRIPTION>
+     [0.02/5.3]? Lower uncertainty in logg
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FE_H_EPIC" datatype="float" name="FE_H_EPIC" ucd="phys.abund.Z" unit="[-]">
+    <DESCRIPTION>
+     [-3.5/1]? Metallicity (feh)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_FE_H_EPIC" datatype="float" name="UPPER_ERROR_FE_H_EPIC" ucd="stat.error;stat.max" unit="[-]">
+    <DESCRIPTION>
+     [0.05/3]? Upper uncertainty in metallicity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_FE_H_EPIC" datatype="float" name="LOWER_FE_H_EPIC" ucd="stat.error;phys.abund.Fe" unit="[-]">
+    <DESCRIPTION>
+     [0.05/3]? Lower uncertainty in metallicity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RAD_EPIC" datatype="float" name="RAD_EPIC" ucd="phys.size.radius" unit="Rsun">
+    <DESCRIPTION>
+     [0.08/542]? Stellar radius
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_RAD_EPIC" datatype="float" name="UPPER_ERROR_RAD_EPIC" ucd="stat.error;stat.max" unit="Rsun">
+    <DESCRIPTION>
+     [0.002/317]? Upper uncertainty in stellar radius
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_RAD_EPIC" datatype="float" name="LOWER_ERROR_RAD_EPIC" ucd="stat.error" unit="Rsun">
+    <DESCRIPTION>
+     [0.002/400]? Lower uncertainty in stellar radius
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MASS_EPIC" datatype="float" name="MASS_EPIC" ucd="phys.mass" unit="Msun">
+    <DESCRIPTION>
+     [0.07/40]? Stellar mass
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_MASS_EPIC" datatype="float" name="UPPER_ERROR_MASS_EPIC" ucd="stat.error;stat.max" unit="Msun">
+    <DESCRIPTION>
+     [0.001/28]? Upper uncertainty in stellar mass
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_MASS_EPIC" datatype="float" name="LOWER_ERROR_MASS_EPIC" ucd="stat.error;phys.mass" unit="Msun">
+    <DESCRIPTION>
+     [0.001/21]? Lower uncertainty in stellar mass
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RHO_EPIC" datatype="float" name="RHO_EPIC" ucd="phys.density" unit="Sun">
+    <DESCRIPTION>
+     [0/103]? Stellar density (solar units)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_RHO_EPIC" datatype="float" name="UPPER_ERROR_RHO_EPIC" ucd="stat.error;stat.max" unit="Sun">
+    <DESCRIPTION>
+     [0/76]? Upper uncertainty in stellar density
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_RHO_EPIC" datatype="float" name="LOWER_ERROR_RHO_EPIC" ucd="stat.error" unit="Sun">
+    <DESCRIPTION>
+     [0/114]? Lower uncertainty in stellar density
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DIST_EPIC" datatype="double" name="DIST_EPIC" ucd="pos.distance;pos.heliocentric" unit="pc">
+    <DESCRIPTION>
+     [3/1716000]? Stellar distance (d)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_DIST_EPIC" datatype="double" name="UPPER_ERROR_DIST_EPIC" ucd="stat.error;stat.max" unit="pc">
+    <DESCRIPTION>
+     [0.1/]? Upper uncertainty in stellar distance
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_DIST_EPIC" datatype="double" name="LOWER_ERROR_DIST_EPIC" ucd="stat.error" unit="pc">
+    <DESCRIPTION>
+     [0.1/]? Lower uncertainty in stellar distance
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EBV_EPIC" datatype="float" name="EBV_EPIC" ucd="phot.color.excess" unit="mag">
+    <DESCRIPTION>
+     [0/14]? Extinction (ebv)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UPPER_ERROR_EBV_EPIC" datatype="float" name="UPPER_ERROR_EBV_EPIC" ucd="stat.error;stat.max" unit="mag">
+    <DESCRIPTION>
+     [0/3.7]? Upper uncertainty in extinction
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOWER_ERROR_EBV_EPIC" datatype="float" name="LOWER_ERROR_EBV_EPIC" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     [0/4.4]? Lower uncertainty in extinction
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NOMAD1_EPIC" arraysize="12" datatype="char" name="NOMAD1_EPIC" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ? NOMAD1 identifier (for sources with supplemented NOMAD1 proper
+     motions)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="F_2MASS_EPIC" arraysize="19" datatype="char" name="F_2MASS_EPIC" ucd="meta.code">
+    <DESCRIPTION>
+     ? 2MASS flags (Qflg-Rflg-Bflg-Cflg-Xflg-Aflg; see II/246) (mflg)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PROX_EPIC" datatype="float" name="PROX_EPIC" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     [0.1/258]? 2MASS nearest neighbor distance
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KFLAG_EPIC" datatype="short" name="KFLAG_EPIC" ucd="meta.code">
+    <DESCRIPTION>
+     [0/1] 1=target was observed, 0=target not observed
+     (k2_avail_flag)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BAM_NUMAX_K2C4" datatype="double" name="BAM_NUMAX_K2C4"/>
+   <FIELD ID="ERROR_BAM_NUMAX_K2C4" datatype="double" name="ERROR_BAM_NUMAX_K2C4"/>
+   <FIELD ID="BAM_MAXAMP_K2C4" datatype="double" name="BAM_MAXAMP_K2C4"/>
+   <FIELD ID="ERROR_BAM_MAXAMP_K2C4" datatype="double" name="ERROR_BAM_MAXAMP_K2C4"/>
+   <FIELD ID="BAM_DNU_K2C4" datatype="double" name="BAM_DNU_K2C4"/>
+   <FIELD ID="ERROR_BAM_DNU_K2C4" datatype="double" name="ERROR_BAM_DNU_K2C4"/>
+   <FIELD ID="BAM_NUMAX_K2C6" datatype="double" name="BAM_NUMAX_K2C6"/>
+   <FIELD ID="ERROR_BAM_NUMAX_K2C6" datatype="double" name="ERROR_BAM_NUMAX_K2C6"/>
+   <FIELD ID="BAM_MAXAMP_K2C6" datatype="double" name="BAM_MAXAMP_K2C6"/>
+   <FIELD ID="ERROR_BAM_MAXAMP_K2C6" datatype="double" name="ERROR_BAM_MAXAMP_K2C6"/>
+   <FIELD ID="BAM_NUMAX_K2C3" datatype="double" name="BAM_NUMAX_K2C3"/>
+   <FIELD ID="ERROR_BAM_NUMAX_K2C3" datatype="double" name="ERROR_BAM_NUMAX_K2C3"/>
+   <FIELD ID="BAM_MAXAMP_K2C3" datatype="double" name="BAM_MAXAMP_K2C3"/>
+   <FIELD ID="ERROR_BAM_MAXAMP_K2C3" datatype="double" name="ERROR_BAM_MAXAMP_K2C3"/>
+   <FIELD ID="BAM_DNU_K2C3" datatype="double" name="BAM_DNU_K2C3"/>
+   <FIELD ID="ERROR_BAM_DNU_K2C3" datatype="double" name="ERROR_BAM_DNU_K2C3"/>
+   <FIELD ID="BAM_NUMAX_K2C7" datatype="double" name="BAM_NUMAX_K2C7"/>
+   <FIELD ID="ERROR_BAM_NUMAX_K2C7" datatype="double" name="ERROR_BAM_NUMAX_K2C7"/>
+   <FIELD ID="BAM_MAXAMP_K2C7" datatype="double" name="BAM_MAXAMP_K2C7"/>
+   <FIELD ID="ERROR_BAM_MAXAMP_K2C7" datatype="double" name="ERROR_BAM_MAXAMP_K2C7"/>
+   <FIELD ID="BAM_NUMAX_K2C2" datatype="double" name="BAM_NUMAX_K2C2"/>
+   <FIELD ID="ERROR_BAM_NUMAX_K2C2" datatype="double" name="ERROR_BAM_NUMAX_K2C2"/>
+   <FIELD ID="BAM_MAXAMP_K2C2" datatype="double" name="BAM_MAXAMP_K2C2"/>
+   <FIELD ID="ERROR_BAM_MAXAMP_K2C2" datatype="double" name="ERROR_BAM_MAXAMP_K2C2"/>
+   <FIELD ID="BAM_DNU_K2C2" datatype="double" name="BAM_DNU_K2C2"/>
+   <FIELD ID="ERROR_BAM_DNU_K2C2" datatype="double" name="ERROR_BAM_DNU_K2C2"/>
+   <FIELD ID="BAM_DNU_K2C6" datatype="double" name="BAM_DNU_K2C6"/>
+   <FIELD ID="ERROR_BAM_DNU_K2C6" datatype="double" name="ERROR_BAM_DNU_K2C6"/>
+   <FIELD ID="BAM_DNU_K2C7" datatype="double" name="BAM_DNU_K2C7"/>
+   <FIELD ID="ERROR_BAM_DNU_K2C7" datatype="double" name="ERROR_BAM_DNU_K2C7"/>
+   <FIELD ID="FILE_K2C11" arraysize="66" datatype="unicodeChar" name="FILE_K2C11"/>
+   <FIELD ID="SYD_NUMAX_K2C11" datatype="double" name="SYD_NUMAX_K2C11"/>
+   <FIELD ID="ERROR_SYD_NUMAX_K2C11" datatype="double" name="ERROR_SYD_NUMAX_K2C11"/>
+   <FIELD ID="SYD_DNU_K2C11" datatype="double" name="SYD_DNU_K2C11"/>
+   <FIELD ID="ERROR_SYD_DNU_K2C11" datatype="double" name="ERROR_SYD_DNU_K2C11"/>
+   <FIELD ID="SYD_MAXAM_K2C11" datatype="double" name="SYD_MAXAM_K2C11"/>
+   <FIELD ID="ERROR_SYD_MAXAMP_K2C11" datatype="double" name="ERROR_SYD_MAXAMP_K2C11"/>
+   <FIELD ID="SYD_GAUSNMAX_K2C11" datatype="double" name="SYD_GAUSNMAX_K2C11"/>
+   <FIELD ID="ERROR_SYD_GAUSNMAX_K2C11" datatype="double" name="ERROR_SYD_GAUSNMAX_K2C11"/>
+   <FIELD ID="SYD_GAUSMAXAMP_K2C11" datatype="double" name="SYD_GAUSMAXAMP_K2C11"/>
+   <FIELD ID="ERROR_SYD_GAUSMAXAMP_K2C11" datatype="double" name="ERROR_SYD_GAUSMAXAMP_K2C11"/>
+   <FIELD ID="SYD_GAUSFWHM_K2C11" datatype="double" name="SYD_GAUSFWHM_K2C11"/>
+   <FIELD ID="ERROR_GAUSFWHM_K2C11" datatype="double" name="ERROR_GAUSFWHM_K2C11"/>
+   <FIELD ID="SYD_MAXBG_K2C11" datatype="double" name="SYD_MAXBG_K2C11"/>
+   <FIELD ID="ERROR_SYD_MAXBG_K2C11" datatype="double" name="ERROR_SYD_MAXBG_K2C11"/>
+   <FIELD ID="SYD_SBR_K2C11" datatype="double" name="SYD_SBR_K2C11"/>
+   <FIELD ID="RA_J2000_TMASS" datatype="double" name="RA_J2000_TMASS" ucd="pos.eq.ra;meta.main" unit="deg">
+    <DESCRIPTION>
+     (ra) Right ascension (J2000)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_J2000_TMASS" datatype="double" name="DEC_J2000_TMASS" ucd="pos.eq.dec;meta.main" unit="deg">
+    <DESCRIPTION>
+     (dec) Declination (J2000) (dec)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_MAJ_TMASS" datatype="float" name="ERROR_MAJ_TMASS" ucd="stat.error" unit="arcs">
+    <DESCRIPTION>
+     (err_maj) Semi-major axis of position error ellipse
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_MIN_TMASS" datatype="float" name="ERROR_MIN_TMASS" ucd="stat.error" unit="arcs">
+    <DESCRIPTION>
+     (err_min) Semi-minor axis of position error ellipse
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PA_TMASS" datatype="short" name="ERROR_PA_TMASS" ucd="stat.error" unit="deg">
+    <DESCRIPTION>
+     [0,180] (err_ang) Position angle of error ellipse major axis (E
+     of N)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="JMAG_TMASS" datatype="float" name="JMAG_TMASS" ucd="phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ?(j_m) J selected default magnitude (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="J_CMSIG_TMASS" datatype="float" name="J_CMSIG_TMASS" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ?(j_cmsig) J default magnitude uncertainty (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_JMAG_TMASS" datatype="float" name="ERROR_JMAG_TMASS" ucd="stat.error;phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ?(j_msigcom) J total magnitude uncertainty (4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="J_SNR_TMASS" datatype="double" name="J_SNR_TMASS" ucd="stat.snr">
+    <DESCRIPTION>
+     ?(j_snr) J Signal-to-noise ratio
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HMAG_TMASS" datatype="float" name="HMAG_TMASS" ucd="phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     ?(h_m) H selected default magnitude (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="H_CMSIG_TMASS" datatype="float" name="H_CMSIG_TMASS" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ?(h_cmsig) H default magnitude uncertainty (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_HMAG_TMASS" datatype="float" name="ERROR_HMAG_TMASS" ucd="stat.error;phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     ?(h_msigcom) H total magnitude uncertainty (4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HSNR_TMASS" datatype="double" name="HSNR_TMASS" ucd="stat.snr">
+    <DESCRIPTION>
+     ?(h_snr) H Signal-to-noise ratio
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KMAG_TMASS" datatype="float" name="KMAG_TMASS" ucd="phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ?(k_m) K selected default magnitude (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KCMSIG_TMASS" datatype="float" name="KCMSIG_TMASS" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ?(k_cmsig) K default magnitude uncertainty (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_KMAG_TMASS" datatype="float" name="ERROR_KMAG_TMASS" ucd="stat.error;phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ?(k_msigcom) K total magnitude uncertainty (4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="K_SNR_TMASS" datatype="double" name="K_SNR_TMASS" ucd="stat.snr">
+    <DESCRIPTION>
+     ?(k_snr) K Signal-to-noise ratio
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="QFLG_TMASS" arraysize="3" datatype="char" name="QFLG_TMASS" ucd="meta.code.qual;phot">
+    <DESCRIPTION>
+     (ph_qual) JHK Photometric quality flag (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RFLG_TMASS" arraysize="3" datatype="char" name="RFLG_TMASS" ucd="meta.ref">
+    <DESCRIPTION>
+     (rd_flg) Source of JHK default mag (6)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BFLG_TMASS" arraysize="3" datatype="char" name="BFLG_TMASS" ucd="meta.code">
+    <DESCRIPTION>
+     (bl_flg) JHK components fit to source (7)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CFLG_TMASS" arraysize="3" datatype="char" name="CFLG_TMASS" ucd="meta.code">
+    <DESCRIPTION>
+     (cc_flg) Artifact contamination, confusion (8)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NDET_TMASS" arraysize="6" datatype="char" name="NDET_TMASS" ucd="meta.number">
+    <DESCRIPTION>
+     [0-9] (ndet) Number of aperture measurements (jjhhkk) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PROX_TMASS" datatype="float" name="PROX_TMASS" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     Distance between source and nearest neighbour
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PXPA_TMASS" datatype="short" name="PXPA_TMASS" ucd="pos.posAng" unit="deg">
+    <DESCRIPTION>
+     ? (pxpa) Position angle of vector from source to nearest
+     neighbour (E of N)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PXCNTR_TMASS" datatype="long" name="PXCNTR_TMASS" ucd="meta.number">
+    <DESCRIPTION>
+     (pxcntr) Sequence number of nearest neighbour
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XFLG_TMASS" datatype="short" name="XFLG_TMASS" ucd="meta.code">
+    <DESCRIPTION>
+     [0,2] (gal_contam) Extended source contamination (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="AFLG_TMASS" datatype="short" name="AFLG_TMASS" ucd="meta.code">
+    <DESCRIPTION>
+     [0,1] (mp_flg) Association with asteroid or comet (11)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CNTR_TMASS" datatype="long" name="CNTR_TMASS" ucd="meta.id;meta.table">
+    <DESCRIPTION>
+     (pts_key) Unique source identifier in catalogue
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HEMIS_TMASS" arraysize="1" datatype="char" name="HEMIS_TMASS" ucd="obs.param;obs">
+    <DESCRIPTION>
+     [ns] (hemis) Hemisphere of observation
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DATE_TMASS" arraysize="10" datatype="char" name="DATE_TMASS" ucd="time.epoch;obs">
+    <DESCRIPTION>
+     (date) Observation date
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SCAN_TMASS" datatype="short" name="SCAN_TMASS" ucd="obs.field">
+    <DESCRIPTION>
+     (scan) Scan number (within date)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GLON_TMASS" datatype="float" name="GLON_TMASS" ucd="pos.galactic.lon" unit="deg">
+    <DESCRIPTION>
+     (glon) Galactic longitude (12)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GLAT_TMASS" datatype="float" name="GLAT_TMASS" ucd="pos.galactic.lat" unit="deg">
+    <DESCRIPTION>
+     (glat) Galactic latitude (12)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XSCAN_TMASS" datatype="float" name="XSCAN_TMASS" ucd="pos.cartesian;instr.det" unit="arcs">
+    <DESCRIPTION>
+     (x_scan) Distance of source from focal plane centerline
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="JD_TMASS" datatype="double" name="JD_TMASS" ucd="time.epoch" unit="d">
+    <DESCRIPTION>
+     (jdate) Julian date of source measurement (13)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="J_PSFCHI_TMASS" datatype="float" name="J_PSFCHI_TMASS" ucd="stat.fit.chi2;stat.value">
+    <DESCRIPTION>
+     ?(j_psfchi) J band reduced chi2 value of fit
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="H_PSFCHI_TMASS" datatype="float" name="H_PSFCHI_TMASS" ucd="stat.fit.chi2;stat.value">
+    <DESCRIPTION>
+     ?(h_psfchi) H band reduced chi2 value of fit
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="K_PSFCHI_TMASS" datatype="float" name="K_PSFCHI_TMASS" ucd="stat.fit.chi2;stat.value">
+    <DESCRIPTION>
+     ?(k_psfchi) K band reduced chi2 value of fit
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="J_STDAP_TMASS" datatype="float" name="J_STDAP_TMASS" ucd="phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ?(j_m_stdap) J standard aperture magnitude (18)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_J_STDAP_TMASS" datatype="float" name="ERROR_J_STDAP_TMASS" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ?(j_msig_stdap) error on Jstdap
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="H_STDAP_TMASS" datatype="float" name="H_STDAP_TMASS" ucd="phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     ?(h_m_stdap) H standard aperture magnitude (18)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_H_STDAP_TMASS" datatype="float" name="ERROR_H_STDAP_TMASS" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ?(h_msig_stdap) error on Hstdap
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="K_STDAP_TMASS" datatype="float" name="K_STDAP_TMASS" ucd="phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ?(k_m_stdap) K standard aperture magnitude (18)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_K_STDAP_TMASS" datatype="float" name="ERROR_K_STDAP_TMASS" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ?(k_msig_stdap) error on Kstdap
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EDGENS_TMASS" datatype="int" name="EDGENS_TMASS" ucd="pos;arith.diff" unit="arcs">
+    <DESCRIPTION>
+     (dist_edge_ns) Distance from the source to the nearest North or
+     South scan edge
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EDGEEW_TMASS" datatype="short" name="EDGEEW_TMASS" ucd="pos;arith.diff" unit="arcs">
+    <DESCRIPTION>
+     (dist_edge_ew) Distance from the source to the nearest East or
+     West scan edge
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EDGE_TMASS" arraysize="2" datatype="char" name="EDGE_TMASS" ucd="pos.cartesian;instr.det">
+    <DESCRIPTION>
+     [nsew] (dist_edge_flg) flag indicating to which edges the edgeNS
+     and edgeEW values refer
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DUP_TMASS" datatype="short" name="DUP_TMASS" ucd="meta.code">
+    <DESCRIPTION>
+     (dup_src) Flag indicating duplicate source (14)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="USE_TMASS" datatype="short" name="USE_TMASS" ucd="meta.code">
+    <DESCRIPTION>
+     (use_src) Use source flag (15)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="OPT_TMASS" arraysize="1" datatype="char" name="OPT_TMASS" ucd="meta.id;meta.dataset">
+    <DESCRIPTION>
+     [0UT] (a) Associated optical source (16)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DOPT_TMASS" datatype="float" name="DOPT_TMASS" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ?(dist_opt) Distance to associated optical source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PAOPT_TMASS" datatype="short" name="PAOPT_TMASS" ucd="pos.posAng" unit="deg">
+    <DESCRIPTION>
+     [0,360]? (phi_opt) position angle from optical source to the
+     2MASS source position
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BMAG_TMASS" datatype="float" name="BMAG_TMASS" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     ?(b_m_opt) Blue magnitude of associated optical source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RMAG_TMASS" datatype="float" name="RMAG_TMASS" ucd="phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     ?(vr_m_opt) Visual or red mag of associated optical source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NOPT_TMASS" datatype="short" name="NOPT_TMASS" ucd="meta.number">
+    <DESCRIPTION>
+     (nopt_mchs) Number of optical sources within 5arcsec (17)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EXTKEY_TMASS" datatype="int" name="EXTKEY_TMASS" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ?(ext_key) Record Identifier in XSC
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SCANKEY_TMASS" datatype="int" name="SCANKEY_TMASS" ucd="meta.id">
+    <DESCRIPTION>
+     (scan_key) Record Identifier in the Scan Information Table
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="COADDKEY_TMASS" datatype="int" name="COADDKEY_TMASS" ucd="meta.id;meta.dataset">
+    <DESCRIPTION>
+     (coadd_key) Record Identifier in the Atlas Image Data Table
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="COADD_TMASS" datatype="short" name="COADD_TMASS" ucd="meta.number">
+    <DESCRIPTION>
+     (coadd) Sequence number of the Atlas Image
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LABEL" arraysize="7" datatype="unicodeChar" name="LABEL"/>
+   <FIELD ID="RECNO_RAVE" datatype="int" name="RECNO_RAVE" ucd="meta.record">
+    <DESCRIPTION>
+     Record number assigned by the VizieR team. Should Not be used for
+     identification.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RAVE_OBSNAME_ID" arraysize="21" datatype="char" name="RAVE_OBSNAME_ID" ucd="meta.id;meta.main">
+    <DESCRIPTION>
+     ! Target designation (RAVE_OBS_ID)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HEALPIX_RAVE" datatype="int" name="HEALPIX_RAVE" ucd="meta.id">
+    <DESCRIPTION>
+     Hierarchical Equal-Area iso-Latitude Pixelisation value
+     (N_side=4096) (HEALPix) (1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HRV_RAVE" datatype="double" name="HRV_RAVE" ucd="spect.dopplerVeloc;pos.heliocentric" unit="km / s">
+    <DESCRIPTION>
+     Heliocentric radial velocity (HRV)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_HRV_RAVE" datatype="double" name="ERROR_HRV_RAVE" ucd="stat.error" unit="km / s">
+    <DESCRIPTION>
+     Error on HRV (eHRV)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="STD_HRV_RAVE" datatype="double" name="STD_HRV_RAVE" ucd="stat.stdev" unit="km / s">
+    <DESCRIPTION>
+     ? Standard deviation in HRV from 10 resampled spectra
+     (StdDev_HRV)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MEDIAN_ABSOLUTE_DEVIATION_HRV_RAVE" datatype="double" name="MEDIAN_ABSOLUTE_DEVIATION_HRV_RAVE" ucd="stat.stdev" unit="km / s">
+    <DESCRIPTION>
+     ? Median absolute deviation in HRV from 10 resampled spectra
+     (MAD_HRV)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SNR_S_RAVE" datatype="double" name="SNR_S_RAVE" ucd="stat.snr">
+    <DESCRIPTION>
+     Signal/Noise Ratio of SPARV pipeline (STN_SPARV) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SNR_K_RAVE" datatype="short" name="SNR_K_RAVE" ucd="stat.snr">
+    <DESCRIPTION>
+     ? Signal/Noise Ratio of Kordopatis pipeline (SNR_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_K_RAVE" datatype="double" name="TEFF_K_RAVE" ucd="phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     ? Effective temperature (Teff_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CALIBRATED_TEFF_K_RAVE" datatype="double" name="CALIBRATED_TEFF_K_RAVE" ucd="phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     ? Calibrated effective temperature (Teff_N_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_TEFF_K_RAVE" datatype="short" name="ERROR_TEFF_K_RAVE" ucd="stat.error" unit="K">
+    <DESCRIPTION>
+     ? Effective Temperature error (eTeff_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MEDIAN_ABSOLUTE_DEVIATION_TEFF_K_RAVE" datatype="double" name="MEDIAN_ABSOLUTE_DEVIATION_TEFF_K_RAVE" ucd="stat.stdev" unit="K">
+    <DESCRIPTION>
+     ? Median absolute deviation in TeffK from 10 resampled spectra
+     (MAD_Teff_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="STD_TEFFK_RAVE" datatype="double" name="STD_TEFFK_RAVE" ucd="stat.stdev" unit="K">
+    <DESCRIPTION>
+     ? Standard deviation in Teff_K from 10 resampled spectra
+     (StdDev_Teff_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOGG_K_RAVE" datatype="double" name="LOGG_K_RAVE" ucd="phys.gravity" unit="[cm/s2]">
+    <DESCRIPTION>
+     ? Log gravity (logg_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CALIBRATED_LOGG_K_RAVE" datatype="double" name="CALIBRATED_LOGG_K_RAVE" ucd="phys.gravity" unit="[cm/s2]">
+    <DESCRIPTION>
+     ? Calibrated log gravity (logg_N_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_LOGG_K_RAVE" datatype="double" name="ERROR_LOGG_K_RAVE" ucd="stat.error" unit="[cm/s2]">
+    <DESCRIPTION>
+     ? Error Log gravity (elogg_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="STD_LOGG_K_RAVE" datatype="double" name="STD_LOGG_K_RAVE" ucd="stat.stdev" unit="[cm/s2]">
+    <DESCRIPTION>
+     ? Standard deviation in loggK from 10 resampled spectra
+     (MAD_logg_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MEDIAN_ABSOLUTE_DEVIATION_LOGG_K_RAVE" datatype="double" name="MEDIAN_ABSOLUTE_DEVIATION_LOGG_K_RAVE" ucd="stat.stdev" unit="[cm/s2]">
+    <DESCRIPTION>
+     ? Median absolute deviation in loggK from 10 resampled spectra
+     (StdDev_logg_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ME_H_K_RAVE" datatype="double" name="ME_H_K_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Metallicity [m/H] (Met_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CALIBRATED_ME_H_K_RAVE" datatype="double" name="CALIBRATED_ME_H_K_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Calibrated metallicity (Met_N_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_ME_H_K_RAVE" datatype="double" name="ERROR_ME_H_K_RAVE" ucd="stat.error;phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Error on metallicity (eMet_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="STD_ME_H_K_RAVE" datatype="double" name="STD_ME_H_K_RAVE" ucd="stat.stdev" unit="[-]">
+    <DESCRIPTION>
+     ? Standard deviation in [M/H]K from 10 resampled spectra
+     (MAD_Met_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MEDIAN_ABSOLUTE_DEVIATION_M_H_K_RAVE" datatype="double" name="MEDIAN_ABSOLUTE_DEVIATION_M_H_K_RAVE" ucd="stat.stdev" unit="[-]">
+    <DESCRIPTION>
+     ? Median absolute deviation in [M/H]K from 10 resampled spectra
+     (StdDev_Met_K)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CHISQ_K_RAVE" datatype="double" name="CHISQ_K_RAVE" ucd="stat.param">
+    <DESCRIPTION>
+     ? Chi-square from the stellar parameter pipeline (CHISQ_K) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="QUALITY_FLAG_K_RAVE" datatype="short" name="QUALITY_FLAG_K_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     [0/4]? Quality flag for stellar parameter pipeline (Algo_Conv_K)
+     (2) (3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_IRFM_RAVE" datatype="short" name="TEFF_IRFM_RAVE" ucd="phys.temperature" unit="K">
+    <DESCRIPTION>
+     Temperature from infrared flux method (Teff_IR)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_TEFF_IRFM_RAVE" datatype="short" name="ERROR_TEFF_IRFM_RAVE" ucd="stat.error" unit="K">
+    <DESCRIPTION>
+     ? Internal error on TeffIR (eTeff_IR)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="IRFMFLAG_RAVE" arraysize="4" datatype="char" name="IRFMFLAG_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     Infrared flux method flag (IR_direct) (4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MG_H_C_RAVE" datatype="double" name="MG_H_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Abundance of Mg (Mg) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NO_LINES_MG_H_C_RAVE" datatype="short" name="NO_LINES_MG_H_C_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     [0/6]? Number of used spectral lines for calculation (Mg_N) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="AL_H_C_RAVE" datatype="double" name="AL_H_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Abundance of Al (Al) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NO_LINES_AL_H_C_RAVE" datatype="short" name="NO_LINES_AL_H_C_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     ? Number of used spectral lines for calculation (Al_N) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SI_H_C_RAVE" datatype="double" name="SI_H_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Abundance of Si (Si) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NO_LINES_SI_H_C_RAVE" datatype="short" name="NO_LINES_SI_H_C_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     ? Number of used spectral lines for calculation (Si_N) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TI_H_C_RAVE" datatype="double" name="TI_H_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Abundance of Ti (Ti) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NO_LINES_TI_H_C_RAVE" datatype="short" name="NO_LINES_TI_H_C_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     ? Number of used spectral lines for calculation (Ti_N) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FE_H_C_RAVE" datatype="double" name="FE_H_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Abundance of Fe (Fe) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NO_LINES_FE_H_C_RAVE" datatype="short" name="NO_LINES_FE_H_C_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     ? Number of used spectral lines for calculation (Fe_N) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NI_H_C_RAVE" datatype="double" name="NI_H_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Abundance of Ni (Ni) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NO_LINES_NI_H_C_RAVE" datatype="short" name="NO_LINES_NI_H_C_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     ? Number of used spectral lines for calculation (Ni_N) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="A_FE_C_RAVE" datatype="double" name="A_FE_C_RAVE" ucd="phys.abund" unit="[-]">
+    <DESCRIPTION>
+     ? Alpha-enhancement from chemi cal pipeline (Alpha_c) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CHISQ_C_RAVE" datatype="double" name="CHISQ_C_RAVE" ucd="meta.note">
+    <DESCRIPTION>
+     ? Chi-square of chemi cal pipeline (CHISQ_c) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FRACC_RAVE" datatype="double" name="FRACC_RAVE" ucd="stat.fit.param">
+    <DESCRIPTION>
+     ? Fraction of spectrum used for calculation of abundances
+     (frac_c) (2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="AV_SCHL_RAVE" datatype="double" name="AV_SCHL_RAVE" ucd="phys.absorption;em.opt.V" unit="mag">
+    <DESCRIPTION>
+     ? Total extinction in V-band from Schlegel et al.
+     (1998ApJ...500..525S) (AV_Schlegel)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DIST_RAVE" datatype="double" name="DIST_RAVE" ucd="pos.angDistance" unit="pc">
+    <DESCRIPTION>
+     ? Spectrophotometric distance (distance) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_DIST_RAVE" datatype="double" name="ERROR_DIST_RAVE" ucd="stat.error" unit="pc">
+    <DESCRIPTION>
+     ? Error on distance (edistance) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LOG_AV_RAVE" datatype="double" name="LOG_AV_RAVE" ucd="phys.absorption">
+    <DESCRIPTION>
+     ? Log Av extinction (log_Av) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_LOG_AV_RAVE" datatype="double" name="ERROR_LOG_AV_RAVE" ucd="stat.error">
+    <DESCRIPTION>
+     ? Error on LogAv (elog_Av) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PARALLAX_RAVE" datatype="double" name="PARALLAX_RAVE" ucd="pos.parallax.spect" unit="mas">
+    <DESCRIPTION>
+     ? Spectrophotometric parallax (parallax) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PARALLAX_RAVE" datatype="double" name="ERROR_PARALLAX_RAVE" ucd="stat.error;pos.parallax" unit="mas">
+    <DESCRIPTION>
+     ? Error on plx (eparallax) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DM_RAVE" datatype="double" name="DM_RAVE" ucd="phot.mag.distMod" unit="mag">
+    <DESCRIPTION>
+     ? Distance modulus (DistanceModulus_Binne) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_DM_RAVE" datatype="double" name="ERROR_DM_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error on DM (eDistanceModulus_Binne) (10)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FF_BINNEY_RAVE" datatype="short" name="FF_BINNEY_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     ? Fit flag see sec.3 of Binney et al. (2014MNRAS.437..351B)
+     (Fit_Flag_Binney)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FQ_BINNEY_RAVE" datatype="double" name="FQ_BINNEY_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     ? Fit quality &amp;quot;F&amp;quot; given by Eq. 15 of Binney et al.
+     (2014MNRAS.437..351B) (FitQuality_Binney)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NGAUSS_RAVE" datatype="short" name="NGAUSS_RAVE" ucd="meta.number">
+    <DESCRIPTION>
+     ? Number of components required for multi-Gaussian distance
+     modulus fit (N_Gauss_fit)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GM1_RAVE" datatype="double" name="GM1_RAVE" ucd="src.sample;stat.mean">
+    <DESCRIPTION>
+     ? Mean of 1st Gaussian (Gauss_mean_1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GS1_RAVE" datatype="double" name="GS1_RAVE" ucd="stat.error">
+    <DESCRIPTION>
+     ? Sigma of 1st Gaussian (Gauss_sigma_1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GF1_RAVE" datatype="double" name="GF1_RAVE" ucd="meta.note">
+    <DESCRIPTION>
+     ? Normalisation of 1st Gaussian (Gauss_frac_1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GM2_RAVE" datatype="double" name="GM2_RAVE" ucd="src.sample;stat.mean">
+    <DESCRIPTION>
+     ? Mean of 2nd Gaussian (Gauss_mean_2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GS2_RAVE" datatype="double" name="GS2_RAVE" ucd="stat.error">
+    <DESCRIPTION>
+     ? Sigma of 2nd Gaussian (Gauss_sigma_2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GF2_RAVE" datatype="double" name="GF2_RAVE" ucd="meta.note">
+    <DESCRIPTION>
+     ? Normalisation of 2nd Gaussian (Gauss_frac_2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GM3_RAVE" datatype="double" name="GM3_RAVE" ucd="src.sample;stat.mean">
+    <DESCRIPTION>
+     ? Mean of 3rd Gaussian (Gauss_mean_3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GS3_RAVE" datatype="double" name="GS3_RAVE" ucd="stat.error">
+    <DESCRIPTION>
+     ? Sigma of 3rd Gaussian (Gauss_sigma_3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GF3_RAVE" datatype="double" name="GF3_RAVE" ucd="meta.note">
+    <DESCRIPTION>
+     ? Normalisation of 3rd Gaussian (Gauss_frac_3)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C1_RAVE" arraysize="1" datatype="char" name="C1_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     1st minimum distance (c1) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C2_RAVE" arraysize="1" datatype="char" name="C2_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     2nd minimum distance (c2) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C3_RAVE" arraysize="1" datatype="char" name="C3_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     3rd minimum distance (c3) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C4_RAVE" arraysize="1" datatype="char" name="C4_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     4th minimum distance (c4) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C5_RAVE" arraysize="1" datatype="char" name="C5_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     5th minimum distance (c5) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C6_RAVE" arraysize="1" datatype="char" name="C6_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     6th minimum distance (c6) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C7_RAVE" arraysize="1" datatype="char" name="C7_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     7th minimum distance (c7) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C8_RAVE" arraysize="1" datatype="char" name="C8_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     8th minimum distance (c8) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C9_RAVE" arraysize="1" datatype="char" name="C9_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     9th minimum distance (c9) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C10_RAVE" arraysize="1" datatype="char" name="C10_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     10th minimum distance (c10) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C11_RAVE" arraysize="1" datatype="char" name="C11_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     11th minimum distance (c11) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C12_RAVE" arraysize="1" datatype="char" name="C12_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     12th minimum distance (c12) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C13_RAVE" arraysize="1" datatype="char" name="C13_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     13th minimum distance (c13) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C14_RAVE" arraysize="1" datatype="char" name="C14_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     14th minimum distance (c14) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C15_RAVE" arraysize="1" datatype="char" name="C15_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     15th minimum distance (c15) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C16_RAVE" arraysize="1" datatype="char" name="C16_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     16th minimum distance (c16) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C17_RAVE" arraysize="1" datatype="char" name="C17_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     17th minimum distance (c17) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C18_RAVE" arraysize="1" datatype="char" name="C18_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     18th minimum distance (c18) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C19_RAVE" arraysize="1" datatype="char" name="C19_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     19th minimum distance (c19) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="C20_RAVE" arraysize="1" datatype="char" name="C20_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     20th minimum distance (c20) (5)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="REPETITIONFLAG_RAVE" datatype="short" name="REPETITIONFLAG_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     [1]? Repetition flag (Rep_Flag) (6)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CLUSTERSTARFLAG_RAVE" datatype="short" name="CLUSTERSTARFLAG_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     [1]? Cluster star flag (CluStar_Flag) (7)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FOOTPRINTFLAG_RAVE" datatype="short" name="FOOTPRINTFLAG_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     [1]? Footprint flag FootPrint_Flag) (8)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TGAS_ID_RAVE" datatype="long" name="TGAS_ID_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ? TGAS target designation (ID_TGAS_source)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_TGAS_RAVE" datatype="double" name="RA_TGAS_RAVE" ucd="pos.eq.ra" unit="deg">
+    <DESCRIPTION>
+     ? TGAS right ascension (Ep=2015.0) (RA_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_TGAS_RAVE" datatype="double" name="DEC_TGAS_RAVE" ucd="pos.eq.dec" unit="deg">
+    <DESCRIPTION>
+     ? TGAS declination (Ep=2015.0) (DE_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PM_RA_TGAS_RAVE" datatype="double" name="PM_RA_TGAS_RAVE" ucd="pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion RA from TGAS (pmRA_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PM_RA_TGAS_RAVE" datatype="double" name="ERROR_PM_RA_TGAS_RAVE" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion RA from TGAS (pmRA_error_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PM_DEC_TGAS_RAVE" datatype="double" name="PM_DEC_TGAS_RAVE" ucd="pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion DE from TGAS (pmDE_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PM_DEC_TGAS_RAVE" datatype="double" name="ERROR_PM_DEC_TGAS_RAVE" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion DE from TGAS (pmDE_error_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PARALLAX_TGAS_RAVE" datatype="double" name="PARALLAX_TGAS_RAVE" ucd="pos.parallax.trig" unit="mas">
+    <DESCRIPTION>
+     ? Parallax from TGAS (parallax_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PARALLAX_TGAS_RAVE" datatype="double" name="ERROR_PARALLAX_TGAS_RAVE" ucd="stat.error" unit="mas">
+    <DESCRIPTION>
+     ? Error on parallax from TGAS (parallax_error_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GMAG_TGAS_RAVE" datatype="double" name="GMAG_TGAS_RAVE" ucd="phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     ? TGAS G magnitude (phot_g_mean_mag_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GFLUX_TGAS_RAVE" datatype="double" name="GFLUX_TGAS_RAVE" ucd="phot.flux.density;em.opt.R" unit="e-/s">
+    <DESCRIPTION>
+     ? TGAS flux in G band (phot_g_mean_flux_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_GFLUX_TGAS_RAVE" datatype="double" name="ERROR_GFLUX_TGAS_RAVE" ucd="stat.error" unit="e-/s">
+    <DESCRIPTION>
+     ? Error on G band flux from TGAS (phot_g_mean_flux_error_TGAS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HIPPARCOS_ID_RAVE" datatype="short" name="HIPPARCOS_ID_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ? Hipparcos target designation (ID_Hipparcos)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TYCHO2_ID_RAVE" arraysize="12" datatype="char" name="TYCHO2_ID_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     Tycho-2 target designation (ID_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTT2_RAVE" datatype="double" name="DISTT2_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to Tycho-2 source (Dist_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XT2_RAVE" arraysize="4" datatype="char" name="XT2_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag Tycho-2 (MatchFlag_TYCHO2) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BTMAGT2_RAVE" datatype="double" name="BTMAGT2_RAVE" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     ? Tycho-2 BT magnitude (BTmag_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_BTMAGT2_RAVE" datatype="double" name="ERROR_BTMAGT2_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error on Tycho-2 BT magnitude (eBTmag_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="VTMAGT2_RAVE" datatype="double" name="VTMAGT2_RAVE" ucd="phot.mag;em.opt.V" unit="mag">
+    <DESCRIPTION>
+     ? Tycho-2 VT magnitude (VTmag_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_VTMAGT2_RAVE" datatype="double" name="ERROR_VTMAGT2_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error on Tycho-2 VT magnitude (eVTmag_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMRAT2_RAVE" datatype="double" name="PMRAT2_RAVE" ucd="pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion RA from Tycho-2 (pmRA_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMRAT2_RAVE" datatype="double" name="ERROR_PMRAT2_RAVE" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion RA from Tycho-2 (epmRA_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMDET2_RAVE" datatype="double" name="PMDET2_RAVE" ucd="pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion De from Tycho-2 (pmDE_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMDET2_RAVE" datatype="double" name="ERROR_PMDET2_RAVE" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion DE from Tycho-2 (epmDE_TYCHO2)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UCAC4_ID_RAVE" arraysize="10" datatype="char" name="UCAC4_ID_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     UCAC4 target designation (ID_UCAC4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTU4_RAVE" datatype="double" name="DISTU4_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to UCAC4 source (Dist_UCAC4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XU4_RAVE" arraysize="4" datatype="char" name="XU4_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag UCAC4 (MatchFlag_UCAC4) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PM_RAU4_RAVE" datatype="double" name="PM_RAU4_RAVE" ucd="pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion RA from UCAC4 (pmRA_UCAC4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PM_RAU4_RAVE" datatype="double" name="ERROR_PM_RAU4_RAVE" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion RA from UCAC4 (epmRA_UCAC4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PM_DEU4_RAVE" datatype="double" name="PM_DEU4_RAVE" ucd="pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion DE from UCAC4 (pmDE_UCAC4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PM_DEU4_RAVE" datatype="double" name="ERROR_PM_DEU4_RAVE" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion DE from UCAC4 (epmDE_UCAC4)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PPMXL_ID_RAVE" datatype="long" name="PPMXL_ID_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ? PPMXL target designation (ID_PPMXL)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTP_RAVE" datatype="double" name="DISTP_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to PPMXL source (Dist_PPMXL)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XP_RAVE" arraysize="4" datatype="char" name="XP_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag PPMXL (MatchFlag_PPMXL) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PM_RAP_RAVE" datatype="double" name="PM_RAP_RAVE" ucd="pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion RA from PPMXL (pmRA_PPMXL)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMRAP_RAVE" datatype="double" name="ERROR_PMRAP_RAVE" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion RA from PPMXL (epmRA_PPMXL)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PM_DEP_RAVE" datatype="double" name="PM_DEP_RAVE" ucd="pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion DE from PPMXL (pmDE_PPMXL)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMDEP_RAVE" datatype="double" name="ERROR_PMDEP_RAVE" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion DE from PPMXL (epmDE_PPMXL)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DIST2_RAVE" datatype="double" name="DIST2_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to 2MASS source (Dist_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="X2_RAVE" arraysize="4" datatype="char" name="X2_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag 2MASS (MatchFlag_2MASS) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="JMAG2_RAVE" datatype="double" name="JMAG2_RAVE" ucd="phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ? 2MASS J magnitude (Jmag_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_JMAG2_RAVE" datatype="double" name="ERROR_JMAG2_RAVE" ucd="stat.error;phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ? Error on 2MASS J magnitude (eJmag_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="HMAG2_RAVE" datatype="double" name="HMAG2_RAVE" ucd="phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     ? 2MASS H magnitude (Hmag_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_HMAG2_RAVE" datatype="double" name="ERROR_HMAG2_RAVE" ucd="stat.error;phot.mag;em.IR.H" unit="mag">
+    <DESCRIPTION>
+     ? Error on 2MASS H magnitude (eHmag_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KMAG2_RAVE" datatype="double" name="KMAG2_RAVE" ucd="phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ? 2MASS K magnitude (Kmag_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_KMAG2_RAVE" datatype="double" name="ERROR_KMAG2_RAVE" ucd="stat.error;phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ? Error on 2MASS K magnitude (eKmag_2MASS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ALLWISE_RAVE" arraysize="19" datatype="char" name="ALLWISE_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     ALLWISE target designation (ID_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTW_RAVE" datatype="double" name="DISTW_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to ALLWISE source (Dist_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XW_RAVE" arraysize="4" datatype="char" name="XW_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag ALLWISE (MatchFlag_ALLWISE) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="W1MAGW_RAVE" datatype="double" name="W1MAGW_RAVE" ucd="phot.mag;em.IR.3-4um" unit="mag">
+    <DESCRIPTION>
+     ? ALLWISE W1 magnitude (W1mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_W1MAGW_RAVE" datatype="double" name="ERROR_W1MAGW_RAVE" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ? Error on ALLWISE W1 magnitude (eW1mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="W2MAGW_RAVE" datatype="double" name="W2MAGW_RAVE" ucd="phot.mag;em.IR.4-8um" unit="mag">
+    <DESCRIPTION>
+     ? ALLWISE W2 magnitude (W2mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_W2MAGW_RAVE" datatype="double" name="ERROR_W2MAGW_RAVE" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ? Error on ALLWISE W2 magnitude (eW2mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="W3MAGW_RAVE" datatype="double" name="W3MAGW_RAVE" ucd="phot.flux.density;em.IR.8-15um" unit="mag">
+    <DESCRIPTION>
+     ? ALLWISE W3 magnitude (W3mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_W3MAGW_RAVE" datatype="double" name="ERROR_W3MAGW_RAVE" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ? Error on ALLWISE W3 magnitude (eW3mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="W4MAGW_RAVE" datatype="double" name="W4MAGW_RAVE" ucd="phot.flux.density;em.IR.15-30um" unit="mag">
+    <DESCRIPTION>
+     ? ALLWISE W4 magnitude (W4mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_W4MAGW_RAVE" datatype="double" name="ERROR_W4MAGW_RAVE" ucd="stat.error;phot.mag" unit="mag">
+    <DESCRIPTION>
+     ? Error on ALLWISE W4 magnitude (eW4mag_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="CCFLAGSW_RAVE" arraysize="4" datatype="char" name="CCFLAGSW_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     Prioritized artifacts affecting the source in each band
+     (cc_flags_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="EXTFLGW_RAVE" datatype="short" name="EXTFLGW_RAVE" ucd="meta.code">
+    <DESCRIPTION>
+     ? Probability source morphology is not consistent with single PSF
+     (ext_flg_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="VARFLGW_RAVE" arraysize="4" datatype="char" name="VARFLGW_RAVE" ucd="meta.code;src.var">
+    <DESCRIPTION>
+     Probability that flux varied in any band greater than amount
+     expected (var_flg_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHQUALW_RAVE" arraysize="4" datatype="char" name="PHQUALW_RAVE" ucd="meta.code.qual" unit="mag">
+    <DESCRIPTION>
+     Photometric quality of each band A=highest, U=upper limit
+     (ph_qual_ALLWISE)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTADR9_RAVE" datatype="double" name="DISTADR9_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to APASS DR9 source (Dist_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XADR9_RAVE" arraysize="4" datatype="char" name="XADR9_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag APASSDR9 (MatchFlag_APASSDR9) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BMAGADR9_RAVE" datatype="double" name="BMAGADR9_RAVE" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     ? APASS DR9 B magnitude (Bmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_BMAGADR9_RAVE" datatype="double" name="ERROR_BMAGADR9_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error APASS DR9 B magnitude (eBmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="VMAGADR9_RAVE" datatype="double" name="VMAGADR9_RAVE" ucd="phot.mag;em.opt.V" unit="mag">
+    <DESCRIPTION>
+     ? APASS DR9 V magnitude (Vmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_VMAGADR9_RAVE" datatype="double" name="ERROR_VMAGADR9_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error APASS DR9 V magnitude (eVmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GPMAGADR9_RAVE" datatype="double" name="GPMAGADR9_RAVE" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     ? APASS DR9 g' magnitude (gpmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_GPMAGADR9_RAVE" datatype="double" name="ERROR_GPMAGADR9_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error APASS DR9 g' magnitude (egpmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RPMAGADR9_RAVE" datatype="double" name="RPMAGADR9_RAVE" ucd="phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     ? APASS DR9 r' magnitude (rpmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_RPMAGADR9_RAVE" datatype="double" name="ERROR_RPMAGADR9_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error APASS DR9 r' magnitude (erpmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="IPMAGADR9_RAVE" datatype="double" name="IPMAGADR9_RAVE" ucd="phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     ? APASS DR9 i' magnitude (ipmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_IPMAGADR9_RAVE" datatype="double" name="ERROR_IPMAGADR9_RAVE" ucd="stat.error" unit="mag">
+    <DESCRIPTION>
+     ? Error APASS DR9 i' magnitude (eipmag_APASSDR9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DENIS_RAVE" arraysize="16" datatype="char" name="DENIS_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     DENIS target designation (ID_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTD_RAVE" datatype="double" name="DISTD_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to DENIS source (Dist_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XD_RAVE" arraysize="4" datatype="char" name="XD_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag DENIS (MatchFlag_DENIS) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="IMAGD_RAVE" datatype="double" name="IMAGD_RAVE" ucd="phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     ? DENIS I magnitude (Imag_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_IMAGD_RAVE" datatype="double" name="ERROR_IMAGD_RAVE" ucd="stat.error;phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     ? Error DENIS I magnitude (eImag_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="JMAGD_RAVE" datatype="double" name="JMAGD_RAVE" ucd="phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ? DENIS J magnitude (Jmag_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_JMAGD_RAVE" datatype="double" name="ERROR_JMAGD_RAVE" ucd="stat.error;phot.mag;em.IR.J" unit="mag">
+    <DESCRIPTION>
+     ? Error DENIS J magnitude (eJmag_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="KMAGD_RAVE" datatype="double" name="KMAGD_RAVE" ucd="phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ? DENIS K magnitude (Kmag_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_KMAGD_RAVE" datatype="double" name="ERROR_KMAGD_RAVE" ucd="stat.error;phot.mag;em.IR.K" unit="mag">
+    <DESCRIPTION>
+     ? Error DENIS K magnitude (eKmag_DENIS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="USNOB1_RAVE" arraysize="13" datatype="char" name="USNOB1_RAVE" ucd="meta.id.cross">
+    <DESCRIPTION>
+     USNO-B1 target designation (ID_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DISTUB1_RAVE" datatype="double" name="DISTUB1_RAVE" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     ? Distance to USNO-B1 source (Dist_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="XUB1_RAVE" arraysize="4" datatype="char" name="XUB1_RAVE" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Cross-match quality flag USNO-B1 (MatchFlag_USNOB1) (9)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="B1MAGUB1_RAVE" datatype="double" name="B1MAGUB1_RAVE" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     ? USNO-B1 B1 magnitude (B1mag_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="R1MAGUB1_RAVE" datatype="double" name="R1MAGUB1_RAVE" ucd="phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     ? USNO-B1 R1 magnitude (R1mag_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="B2MAGUB1_RAVE" datatype="double" name="B2MAGUB1_RAVE" ucd="phot.mag;em.opt.B" unit="mag">
+    <DESCRIPTION>
+     ? USNO-B1 B2 magnitude (B2mag_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="R2MAGUB1_RAVE" datatype="double" name="R2MAGUB1_RAVE" ucd="phot.mag;em.opt.R" unit="mag">
+    <DESCRIPTION>
+     ? USNO-B1 R2 magnitude (R2mag_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="IMAGUB1_RAVE" datatype="double" name="IMAGUB1_RAVE" ucd="phot.mag;em.opt.I" unit="mag">
+    <DESCRIPTION>
+     ? USNO-B1 I magnitude (Imag_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMRAUB1_RAVE" datatype="int" name="PMRAUB1_RAVE" ucd="pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion RA from USNO-B1 (pmRA_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMRAUB1_RAVE" datatype="short" name="ERROR_PMRAUB1_RAVE" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion RA from USNO-B1
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMDEUB1_RAVE" datatype="int" name="PMDEUB1_RAVE" ucd="pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Proper motion DE from USNO-B1 (pmDE_USNOB1)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMDEUB1_RAVE" datatype="short" name="ERROR_PMDEUB1_RAVE" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas / yr">
+    <DESCRIPTION>
+     ? Error on proper motion DE from USNO-B1
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="OBSDATE_RAVE" datatype="double" name="OBSDATE_RAVE" ucd="time.epoch;obs" unit="&amp;quot;Y:M:D&amp;quot;">
+    <DESCRIPTION>
+     ! Observation date (Obsdate)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FIELDNAME_RAVE" arraysize="8" datatype="char" name="FIELDNAME_RAVE" ucd="obs.field">
+    <DESCRIPTION>
+     ! Name of RAVE field (FieldName)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FIBERNB_RAVE" datatype="short" name="FIBERNB_RAVE" ucd="meta.note">
+    <DESCRIPTION>
+     [1/150] Fiber number (FiberNumber)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PLATENB_RAVE" datatype="short" name="PLATENB_RAVE" ucd="obs.field">
+    <DESCRIPTION>
+     [1/3] Plate number (PlateNumber)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MJDOBS_RAVE" datatype="double" name="MJDOBS_RAVE" ucd="time.epoch" unit="d">
+    <DESCRIPTION>
+     Modified Julian date of observation (MJD_OBS)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LSTSTART_RAVE" datatype="double" name="LSTSTART_RAVE" ucd="time.start;obs.exposure" unit="deg">
+    <DESCRIPTION>
+     Exposure start in Local sideral time (LST_start)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LSTEND_RAVE" datatype="double" name="LSTEND_RAVE" ucd="time.end;obs.exposure" unit="deg">
+    <DESCRIPTION>
+     Exposure end in local sideral time (LST_end)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UTCSTART_RAVE" datatype="double" name="UTCSTART_RAVE" ucd="time.start;obs.exposure" unit="deg">
+    <DESCRIPTION>
+     Exposure start in UTC (UTC_start)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="UTCEND_RAVE" datatype="double" name="UTCEND_RAVE" ucd="time.end;obs.exposure" unit="deg">
+    <DESCRIPTION>
+     Exposure end in UTC (UTC_end)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_J2000_RAVE" datatype="double" name="RA_J2000_RAVE" ucd="pos.eq.ra;meta.main" unit="deg">
+    <DESCRIPTION>
+     Right ascension (J2000.0, Ep=J2000) (RAdeg)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_J2000_RAVE" datatype="double" name="DEC_J2000_RAVE" ucd="pos.eq.dec;meta.main" unit="deg">
+    <DESCRIPTION>
+     Declination (J2000.0, Ep=J2000) (DEdeg)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="APSTAR_ID_APOGEE" arraysize="45" datatype="char" name="APSTAR_ID_APOGEE"/>
+   <FIELD ID="TARGET_ID_APOGEE" arraysize="34" datatype="char" name="TARGET_ID_APOGEE"/>
+   <FIELD ID="ASPCAP_ID_APOGEE" arraysize="46" datatype="char" name="ASPCAP_ID_APOGEE"/>
+   <FIELD ID="FILE_APOGEE" arraysize="38" datatype="char" name="FILE_APOGEE"/>
+   <FIELD ID="TELESCOPE_APOGEE" arraysize="8" datatype="char" name="TELESCOPE_APOGEE"/>
+   <FIELD ID="LOCATION_ID_APOGEE" datatype="short" name="LOCATION_ID_APOGEE"/>
+   <FIELD ID="FIELD_APOGEE" arraysize="16" datatype="char" name="FIELD_APOGEE"/>
+   <FIELD ID="J_APOGEE" datatype="float" name="J_APOGEE"/>
+   <FIELD ID="ERROR_J_APOGEE" datatype="float" name="ERROR_J_APOGEE"/>
+   <FIELD ID="H_APOGEE" datatype="float" name="H_APOGEE"/>
+   <FIELD ID="ERROR_H_APOGEE" datatype="float" name="ERROR_H_APOGEE"/>
+   <FIELD ID="K_APOGEE" datatype="float" name="K_APOGEE"/>
+   <FIELD ID="ERROR_K_APOGEE" datatype="float" name="ERROR_K_APOGEE"/>
+   <FIELD ID="RA_APOGEE" datatype="double" name="RA_APOGEE"/>
+   <FIELD ID="DEC_APOGEE" datatype="double" name="DEC_APOGEE"/>
+   <FIELD ID="GLON_APOGEE" datatype="double" name="GLON_APOGEE"/>
+   <FIELD ID="GLAT_APOGEE" datatype="double" name="GLAT_APOGEE"/>
+   <FIELD ID="APOGEE_TARGET1_APOGEE" datatype="int" name="APOGEE_TARGET1_APOGEE"/>
+   <FIELD ID="APOGEE_TARGET2_APOGEE" datatype="int" name="APOGEE_TARGET2_APOGEE"/>
+   <FIELD ID="APOGEE_TARGET3_APOGEE" datatype="int" name="APOGEE_TARGET3_APOGEE"/>
+   <FIELD ID="TARGFLAGS_APOGEE" arraysize="140" datatype="char" name="TARGFLAGS_APOGEE"/>
+   <FIELD ID="SURVEY_APOGEE" arraysize="14" datatype="char" name="SURVEY_APOGEE"/>
+   <FIELD ID="NINST_APOGEE" arraysize="3" datatype="int" name="NINST_APOGEE"/>
+   <FIELD ID="NVISITS_APOGEE" datatype="int" name="NVISITS_APOGEE"/>
+   <FIELD ID="COMBTYPE_APOGEE" datatype="int" name="COMBTYPE_APOGEE"/>
+   <FIELD ID="COMMISS_APOGEE" datatype="short" name="COMMISS_APOGEE"/>
+   <FIELD ID="SNR_APOGEE" datatype="float" name="SNR_APOGEE"/>
+   <FIELD ID="STARFLAG_APOGEE" datatype="int" name="STARFLAG_APOGEE"/>
+   <FIELD ID="STARFLAGS_APOGEE" arraysize="165" datatype="char" name="STARFLAGS_APOGEE"/>
+   <FIELD ID="ANDFLAG_APOGEE" datatype="int" name="ANDFLAG_APOGEE"/>
+   <FIELD ID="ANDFLAGS_APOGEE" arraysize="74" datatype="char" name="ANDFLAGS_APOGEE"/>
+   <FIELD ID="RADIAL_VELOCITY_AVG_APOGEE" datatype="float" name="RADIAL_VELOCITY_AVG_APOGEE"/>
+   <FIELD ID="VSCATTER_APOGEE" datatype="float" name="VSCATTER_APOGEE"/>
+   <FIELD ID="ERROR_RADIAL_VELOCITY_AVG_APOGEE" datatype="float" name="ERROR_RADIAL_VELOCITY_AVG_APOGEE"/>
+   <FIELD ID="MED_ERROR_RADIAL_VELOCITY_APOGEE" datatype="float" name="MED_ERROR_RADIAL_VELOCITY_APOGEE"/>
+   <FIELD ID="OBSVHELIO_AVG_APOGEE" datatype="float" name="OBSVHELIO_AVG_APOGEE"/>
+   <FIELD ID="OBSVSCATTER_APOGEE" datatype="float" name="OBSVSCATTER_APOGEE"/>
+   <FIELD ID="ERROR_OBSVHELIO_APOGEE" datatype="float" name="ERROR_OBSVHELIO_APOGEE"/>
+   <FIELD ID="MED_ERROR_OBSVHELIO_APOGEE" datatype="float" name="MED_ERROR_OBSVHELIO_APOGEE"/>
+   <FIELD ID="SYNTHVHELIO_AVG_APOGEE" datatype="float" name="SYNTHVHELIO_AVG_APOGEE"/>
+   <FIELD ID="SYNTHVSCATTER_APOGEE" datatype="float" name="SYNTHVSCATTER_APOGEE"/>
+   <FIELD ID="ERROR_SYNTHVHELIO_APOGEE" datatype="float" name="ERROR_SYNTHVHELIO_APOGEE"/>
+   <FIELD ID="MED_ERROR_SYNTHVHELIO_APOGEE" datatype="float" name="MED_ERROR_SYNTHVHELIO_APOGEE"/>
+   <FIELD ID="RV_TEFF_APOGEE" datatype="float" name="RV_TEFF_APOGEE"/>
+   <FIELD ID="RV_LOGG_APOGEE" datatype="float" name="RV_LOGG_APOGEE"/>
+   <FIELD ID="RV_FE_H_APOGEE" datatype="float" name="RV_FE_H_APOGEE"/>
+   <FIELD ID="RV_ALPHA_APOGEE" datatype="float" name="RV_ALPHA_APOGEE"/>
+   <FIELD ID="RV_CARB_APOGEE" datatype="float" name="RV_CARB_APOGEE"/>
+   <FIELD ID="RV_CCFWHM_APOGEE" datatype="float" name="RV_CCFWHM_APOGEE"/>
+   <FIELD ID="RV_AUTOFWHM_APOGEE" datatype="float" name="RV_AUTOFWHM_APOGEE"/>
+   <FIELD ID="SYNTHSCATTER_APOGEE" datatype="float" name="SYNTHSCATTER_APOGEE"/>
+   <FIELD ID="STABLERV_CHI2_APOGEE" arraysize="2" datatype="float" name="STABLERV_CHI2_APOGEE"/>
+   <FIELD ID="STABLERV_RCHI2_APOGEE" arraysize="2" datatype="float" name="STABLERV_RCHI2_APOGEE"/>
+   <FIELD ID="CHI2_THRESHOLD_APOGEE" arraysize="2" datatype="float" name="CHI2_THRESHOLD_APOGEE"/>
+   <FIELD ID="STABLERV_CHI2_PROB_APOGEE" arraysize="2" datatype="float" name="STABLERV_CHI2_PROB_APOGEE"/>
+   <FIELD ID="APOGEE2_TARGET1_APOGEE" datatype="int" name="APOGEE2_TARGET1_APOGEE"/>
+   <FIELD ID="APOGEE2_TARGET2_APOGEE" datatype="int" name="APOGEE2_TARGET2_APOGEE"/>
+   <FIELD ID="APOGEE2_TARGET3_APOGEE" datatype="int" name="APOGEE2_TARGET3_APOGEE"/>
+   <FIELD ID="MEANFIB_APOGEE" datatype="float" name="MEANFIB_APOGEE"/>
+   <FIELD ID="SIGFIB_APOGEE" datatype="float" name="SIGFIB_APOGEE"/>
+   <FIELD ID="SNREV_APOGEE" datatype="float" name="SNREV_APOGEE"/>
+   <FIELD ID="APSTAR_VERSION_APOGEE" arraysize="5" datatype="char" name="APSTAR_VERSION_APOGEE"/>
+   <FIELD ID="ASPCAP_VERSION_APOGEE" arraysize="4" datatype="char" name="ASPCAP_VERSION_APOGEE"/>
+   <FIELD ID="RESULTS_VERSION_APOGEE" arraysize="6" datatype="char" name="RESULTS_VERSION_APOGEE"/>
+   <FIELD ID="EXTRATARG_APOGEE" datatype="short" name="EXTRATARG_APOGEE"/>
+   <FIELD ID="MIN_H_APOGEE" datatype="float" name="MIN_H_APOGEE"/>
+   <FIELD ID="MAX_H_APOGEE" datatype="float" name="MAX_H_APOGEE"/>
+   <FIELD ID="MIN_JK_APOGEE" datatype="float" name="MIN_JK_APOGEE"/>
+   <FIELD ID="MAX_JK_APOGEE" datatype="float" name="MAX_JK_APOGEE"/>
+   <FIELD ID="PARAM_APOGEE" arraysize="9" datatype="float" name="PARAM_APOGEE"/>
+   <FIELD ID="FPARAM_APOGEE" arraysize="9" datatype="float" name="FPARAM_APOGEE"/>
+   <FIELD ID="PARAM_COV_APOGEE" arraysize="9x9" datatype="float" name="PARAM_COV_APOGEE"/>
+   <FIELD ID="FPARAM_COV_APOGEE" arraysize="9x9" datatype="float" name="FPARAM_COV_APOGEE"/>
+   <FIELD ID="TEFF_APOGEE" datatype="float" name="TEFF_APOGEE"/>
+   <FIELD ID="ERROR_TEFF_APOGEE" datatype="float" name="ERROR_TEFF_APOGEE"/>
+   <FIELD ID="LOGG_APOGEE" datatype="float" name="LOGG_APOGEE"/>
+   <FIELD ID="ERROR_LOGG_APOGEE" datatype="float" name="ERROR_LOGG_APOGEE"/>
+   <FIELD ID="VMICRO_APOGEE" datatype="float" name="VMICRO_APOGEE"/>
+   <FIELD ID="VMACRO_APOGEE" datatype="float" name="VMACRO_APOGEE"/>
+   <FIELD ID="VSINI_APOGEE" datatype="float" name="VSINI_APOGEE"/>
+   <FIELD ID="M_H_APOGEE" datatype="float" name="M_H_APOGEE"/>
+   <FIELD ID="ERROR_M_H_APOGEE" datatype="float" name="ERROR_M_H_APOGEE"/>
+   <FIELD ID="ALPHA_M_APOGEE" datatype="float" name="ALPHA_M_APOGEE"/>
+   <FIELD ID="ERROR_ALPHA_M_APOGEE" datatype="float" name="ERROR_ALPHA_M_APOGEE"/>
+   <FIELD ID="ASPCAP_CHI2_APOGEE" datatype="float" name="ASPCAP_CHI2_APOGEE"/>
+   <FIELD ID="ASPCAP_CLASS_APOGEE" arraysize="5" datatype="char" name="ASPCAP_CLASS_APOGEE"/>
+   <FIELD ID="ASPCAPFLAG_APOGEE" datatype="int" name="ASPCAPFLAG_APOGEE"/>
+   <FIELD ID="ASPCAPFLAGS_APOGEE" arraysize="183" datatype="char" name="ASPCAPFLAGS_APOGEE"/>
+   <FIELD ID="PARAMFLAG_APOGEE" arraysize="9" datatype="int" name="PARAMFLAG_APOGEE"/>
+   <FIELD ID="FELEM_APOGEE" arraysize="26" datatype="float" name="FELEM_APOGEE"/>
+   <FIELD ID="ERROR_FELEM_APOGEE" arraysize="26" datatype="float" name="ERROR_FELEM_APOGEE"/>
+   <FIELD ID="X_H_APOGEE" arraysize="26" datatype="float" name="X_H_APOGEE"/>
+   <FIELD ID="ERROR_X_H_APOGEE" arraysize="26" datatype="float" name="ERROR_X_H_APOGEE"/>
+   <FIELD ID="X_M_APOGEE" arraysize="26" datatype="float" name="X_M_APOGEE"/>
+   <FIELD ID="ERROR_X_M_APOGEE" arraysize="26" datatype="float" name="ERROR_X_M_APOGEE"/>
+   <FIELD ID="C_FE_APOGEE" datatype="float" name="C_FE_APOGEE"/>
+   <FIELD ID="CI_FE_APOGEE" datatype="float" name="CI_FE_APOGEE"/>
+   <FIELD ID="N_FE_APOGEE" datatype="float" name="N_FE_APOGEE"/>
+   <FIELD ID="O_FE_APOGEE" datatype="float" name="O_FE_APOGEE"/>
+   <FIELD ID="NA_FE_APOGEE" datatype="float" name="NA_FE_APOGEE"/>
+   <FIELD ID="MG_FE_APOGEE" datatype="float" name="MG_FE_APOGEE"/>
+   <FIELD ID="AL_FE_APOGEE" datatype="float" name="AL_FE_APOGEE"/>
+   <FIELD ID="SI_FE_APOGEE" datatype="float" name="SI_FE_APOGEE"/>
+   <FIELD ID="P_FE_APOGEE" datatype="float" name="P_FE_APOGEE"/>
+   <FIELD ID="S_FE_APOGEE" datatype="float" name="S_FE_APOGEE"/>
+   <FIELD ID="K_FE_APOGEE" datatype="float" name="K_FE_APOGEE"/>
+   <FIELD ID="CA_FE_APOGEE" datatype="float" name="CA_FE_APOGEE"/>
+   <FIELD ID="TI_FE_APOGEE" datatype="float" name="TI_FE_APOGEE"/>
+   <FIELD ID="TIII_FE_APOGEE" datatype="float" name="TIII_FE_APOGEE"/>
+   <FIELD ID="V_FE_APOGEE" datatype="float" name="V_FE_APOGEE"/>
+   <FIELD ID="CR_FE_APOGEE" datatype="float" name="CR_FE_APOGEE"/>
+   <FIELD ID="MN_FE_APOGEE" datatype="float" name="MN_FE_APOGEE"/>
+   <FIELD ID="FE_H_APOGEE" datatype="float" name="FE_H_APOGEE"/>
+   <FIELD ID="CO_FE_APOGEE" datatype="float" name="CO_FE_APOGEE"/>
+   <FIELD ID="NI_FE_APOGEE" datatype="float" name="NI_FE_APOGEE"/>
+   <FIELD ID="CU_FE_APOGEE" datatype="float" name="CU_FE_APOGEE"/>
+   <FIELD ID="GE_FE_APOGEE" datatype="float" name="GE_FE_APOGEE"/>
+   <FIELD ID="RB_FE_APOGEE" datatype="float" name="RB_FE_APOGEE"/>
+   <FIELD ID="Y_FE_APOGEE" datatype="float" name="Y_FE_APOGEE"/>
+   <FIELD ID="ND_FE_APOGEE" datatype="float" name="ND_FE_APOGEE"/>
+   <FIELD ID="ERROR_C_FE_APOGEE" datatype="float" name="ERROR_C_FE_APOGEE"/>
+   <FIELD ID="ERROR_CI_FE_APOGEE" datatype="float" name="ERROR_CI_FE_APOGEE"/>
+   <FIELD ID="ERROR_N_FE_APOGEE" datatype="float" name="ERROR_N_FE_APOGEE"/>
+   <FIELD ID="ERROR_O_FE_APOGEE" datatype="float" name="ERROR_O_FE_APOGEE"/>
+   <FIELD ID="ERROR_NA_FE_APOGEE" datatype="float" name="ERROR_NA_FE_APOGEE"/>
+   <FIELD ID="ERROR_MG_FE_APOGEE" datatype="float" name="ERROR_MG_FE_APOGEE"/>
+   <FIELD ID="ERROR_AL_FE_APOGEE" datatype="float" name="ERROR_AL_FE_APOGEE"/>
+   <FIELD ID="ERROR_SI_FE_APOGEE" datatype="float" name="ERROR_SI_FE_APOGEE"/>
+   <FIELD ID="ERROR_P_FE_APOGEE" datatype="float" name="ERROR_P_FE_APOGEE"/>
+   <FIELD ID="ERROR_S_FE_APOGEE" datatype="float" name="ERROR_S_FE_APOGEE"/>
+   <FIELD ID="ERROR_K_FE_APOGEE" datatype="float" name="ERROR_K_FE_APOGEE"/>
+   <FIELD ID="ERROR_CA_FE_APOGEE" datatype="float" name="ERROR_CA_FE_APOGEE"/>
+   <FIELD ID="ERROR_TI_FE_APOGEE" datatype="float" name="ERROR_TI_FE_APOGEE"/>
+   <FIELD ID="ERROR_TIII_FE_APOGEE" datatype="float" name="ERROR_TIII_FE_APOGEE"/>
+   <FIELD ID="ERROR_V_FE_APOGEE" datatype="float" name="ERROR_V_FE_APOGEE"/>
+   <FIELD ID="ERROR_CR_FE_APOGEE" datatype="float" name="ERROR_CR_FE_APOGEE"/>
+   <FIELD ID="ERROR_MN_FE_APOGEE" datatype="float" name="ERROR_MN_FE_APOGEE"/>
+   <FIELD ID="ERROR_FE_H_APOGEE" datatype="float" name="ERROR_FE_H_APOGEE"/>
+   <FIELD ID="ERROR_CO_FE_APOGEE" datatype="float" name="ERROR_CO_FE_APOGEE"/>
+   <FIELD ID="ERROR_NI_FE_APOGEE" datatype="float" name="ERROR_NI_FE_APOGEE"/>
+   <FIELD ID="ERROR_CU_FE_APOGEE" datatype="float" name="ERROR_CU_FE_APOGEE"/>
+   <FIELD ID="ERROR_GE_FE_APOGEE" datatype="float" name="ERROR_GE_FE_APOGEE"/>
+   <FIELD ID="ERROR_RB_FE_APOGEE" datatype="float" name="ERROR_RB_FE_APOGEE"/>
+   <FIELD ID="ERROR_Y_FE_APOGEE" datatype="float" name="ERROR_Y_FE_APOGEE"/>
+   <FIELD ID="ERROR_ND_FE_APOGEE" datatype="float" name="ERROR_ND_FE_APOGEE"/>
+   <FIELD ID="C_FE_FLAG_APOGEE" datatype="int" name="C_FE_FLAG_APOGEE"/>
+   <FIELD ID="CI_FE_FLAG_APOGEE" datatype="int" name="CI_FE_FLAG_APOGEE"/>
+   <FIELD ID="N_FE_FLAG_APOGEE" datatype="int" name="N_FE_FLAG_APOGEE"/>
+   <FIELD ID="O_FE_FLAG_APOGEE" datatype="int" name="O_FE_FLAG_APOGEE"/>
+   <FIELD ID="NA_FE_FLAG_APOGEE" datatype="int" name="NA_FE_FLAG_APOGEE"/>
+   <FIELD ID="MG_FE_FLAG_APOGEE" datatype="int" name="MG_FE_FLAG_APOGEE"/>
+   <FIELD ID="AL_FE_FLAG_APOGEE" datatype="int" name="AL_FE_FLAG_APOGEE"/>
+   <FIELD ID="SI_FE_FLAG_APOGEE" datatype="int" name="SI_FE_FLAG_APOGEE"/>
+   <FIELD ID="P_FE_FLAG_APOGEE" datatype="int" name="P_FE_FLAG_APOGEE"/>
+   <FIELD ID="S_FE_FLAG_APOGEE" datatype="int" name="S_FE_FLAG_APOGEE"/>
+   <FIELD ID="K_FE_FLAG_APOGEE" datatype="int" name="K_FE_FLAG_APOGEE"/>
+   <FIELD ID="CA_FE_FLAG_APOGEE" datatype="int" name="CA_FE_FLAG_APOGEE"/>
+   <FIELD ID="TI_FE_FLAG_APOGEE" datatype="int" name="TI_FE_FLAG_APOGEE"/>
+   <FIELD ID="TIII_FE_FLAG_APOGEE" datatype="int" name="TIII_FE_FLAG_APOGEE"/>
+   <FIELD ID="V_FE_FLAG_APOGEE" datatype="int" name="V_FE_FLAG_APOGEE"/>
+   <FIELD ID="CR_FE_FLAG_APOGEE" datatype="int" name="CR_FE_FLAG_APOGEE"/>
+   <FIELD ID="MN_FE_FLAG_APOGEE" datatype="int" name="MN_FE_FLAG_APOGEE"/>
+   <FIELD ID="FE_H_FLAG_APOGEE" datatype="int" name="FE_H_FLAG_APOGEE"/>
+   <FIELD ID="CO_FE_FLAG_APOGEE" datatype="int" name="CO_FE_FLAG_APOGEE"/>
+   <FIELD ID="NI_FE_FLAG_APOGEE" datatype="int" name="NI_FE_FLAG_APOGEE"/>
+   <FIELD ID="CU_FE_FLAG_APOGEE" datatype="int" name="CU_FE_FLAG_APOGEE"/>
+   <FIELD ID="GE_FE_FLAG_APOGEE" datatype="int" name="GE_FE_FLAG_APOGEE"/>
+   <FIELD ID="RB_FE_FLAG_APOGEE" datatype="int" name="RB_FE_FLAG_APOGEE"/>
+   <FIELD ID="Y_FE_FLAG_APOGEE" datatype="int" name="Y_FE_FLAG_APOGEE"/>
+   <FIELD ID="ND_FE_FLAG_APOGEE" datatype="int" name="ND_FE_FLAG_APOGEE"/>
+   <FIELD ID="ELEM_CHI2_APOGEE" arraysize="26" datatype="float" name="ELEM_CHI2_APOGEE"/>
+   <FIELD ID="ELEMFLAG_APOGEE" arraysize="26" datatype="int" name="ELEMFLAG_APOGEE"/>
+   <FIELD ID="REDUCTION_ID_APOGEE" arraysize="23" datatype="char" name="REDUCTION_ID_APOGEE"/>
+   <FIELD ID="SRC_H_APOGEE" arraysize="12" datatype="char" name="SRC_H_APOGEE"/>
+   <FIELD ID="WASH_M_APOGEE" datatype="float" name="WASH_M_APOGEE"/>
+   <FIELD ID="ERROR_WASH_M_APOGEE" datatype="float" name="ERROR_WASH_M_APOGEE"/>
+   <FIELD ID="WASH_T2_APOGEE" datatype="float" name="WASH_T2_APOGEE"/>
+   <FIELD ID="ERROR_WASH_T2_APOGEE" datatype="float" name="ERROR_WASH_T2_APOGEE"/>
+   <FIELD ID="DDO51_APOGEE" datatype="float" name="DDO51_APOGEE"/>
+   <FIELD ID="ERROR_DDO51_APOGEE" datatype="float" name="ERROR_DDO51_APOGEE"/>
+   <FIELD ID="IRAC_3_6_APOGEE" datatype="float" name="IRAC_3_6_APOGEE"/>
+   <FIELD ID="ERROR_IRAC_3_6_APOGEE" datatype="float" name="ERROR_IRAC_3_6_APOGEE"/>
+   <FIELD ID="IRAC_4_5_APOGEE" datatype="float" name="IRAC_4_5_APOGEE"/>
+   <FIELD ID="ERROR_IRAC_4_5_APOGEE" datatype="float" name="ERROR_IRAC_4_5_APOGEE"/>
+   <FIELD ID="IRAC_5_8_APOGEE" datatype="float" name="IRAC_5_8_APOGEE"/>
+   <FIELD ID="ERROR_IRAC_5_8_APOGEE" datatype="float" name="ERROR_IRAC_5_8_APOGEE"/>
+   <FIELD ID="IRAC_8_0_APOGEE" datatype="float" name="IRAC_8_0_APOGEE"/>
+   <FIELD ID="ERROR_IRAC_8_0_APOGEE" datatype="float" name="ERROR_IRAC_8_0_APOGEE"/>
+   <FIELD ID="WISE_4_5_APOGEE" datatype="float" name="WISE_4_5_APOGEE"/>
+   <FIELD ID="ERROR_WISE_4_5_APOGEE" datatype="float" name="ERROR_WISE_4_5_APOGEE"/>
+   <FIELD ID="TARG_4_5_APOGEE" datatype="float" name="TARG_4_5_APOGEE"/>
+   <FIELD ID="ERROR_TARG_4_5_APOGEE" datatype="float" name="ERROR_TARG_4_5_APOGEE"/>
+   <FIELD ID="AK_TARG_APOGEE" datatype="float" name="AK_TARG_APOGEE"/>
+   <FIELD ID="AK_TARG_METHOD_APOGEE" arraysize="17" datatype="char" name="AK_TARG_METHOD_APOGEE"/>
+   <FIELD ID="AK_WISE_APOGEE" datatype="float" name="AK_WISE_APOGEE"/>
+   <FIELD ID="SFD_EBV_APOGEE" datatype="float" name="SFD_EBV_APOGEE"/>
+   <FIELD ID="WASH_DDO51_GIANT_FLAG_APOGEE" datatype="short" name="WASH_DDO51_GIANT_FLAG_APOGEE"/>
+   <FIELD ID="WASH_DDO51_STAR_FLAG_APOGEE" datatype="short" name="WASH_DDO51_STAR_FLAG_APOGEE"/>
+   <FIELD ID="PMRA_APOGEE" datatype="float" name="PMRA_APOGEE"/>
+   <FIELD ID="PMDEC_APOGEE" datatype="float" name="PMDEC_APOGEE"/>
+   <FIELD ID="PM_SRC_APOGEE" arraysize="20" datatype="char" name="PM_SRC_APOGEE"/>
+   <FIELD ID="ALL_VISITS_APOGEE" arraysize="845" datatype="char" name="ALL_VISITS_APOGEE"/>
+   <FIELD ID="VISITS_APOGEE" arraysize="804" datatype="char" name="VISITS_APOGEE"/>
+   <FIELD ID="ALL_VISIT_PK_APOGEE" arraysize="50" datatype="int" name="ALL_VISIT_PK_APOGEE"/>
+   <FIELD ID="VISIT_PK_APOGEE" arraysize="50" datatype="int" name="VISIT_PK_APOGEE"/>
+   <FIELD ID="FPARAM_CLASS_APOGEE" arraysize="23x9" datatype="float" name="FPARAM_CLASS_APOGEE"/>
+   <FIELD ID="CHI2_CLASS_APOGEE" arraysize="23" datatype="float" name="CHI2_CLASS_APOGEE"/>
+   <FIELD ID="MEH_RV_YI" datatype="float" name="MEH_RV_YI"/>
+   <FIELD ID="MEH_APOGEE_YI" datatype="float" name="MEH_APOGEE_YI"/>
+   <FIELD ID="SALARIS_ALPHA_APOGEE" datatype="float" name="SALARIS_ALPHA_APOGEE"/>
+   <FIELD ID="ANGDIST_TYCHO2" datatype="double" name="ANGDIST_TYCHO2"/>
+   <FIELD ID="RA_J2000_TYCHO2" datatype="double" name="RA_J2000_TYCHO2"/>
+   <FIELD ID="DEC_J2000_TYCHO2" datatype="double" name="DEC_J2000_TYCHO2"/>
+   <FIELD ID="ERROR_HALFMAJ_TYCHO2" datatype="double" name="ERROR_HALFMAJ_TYCHO2"/>
+   <FIELD ID="ERROR_HALFMIN_TYCHO2" datatype="double" name="ERROR_HALFMIN_TYCHO2"/>
+   <FIELD ID="ERROR_POSANG_TYCHO2" datatype="long" name="ERROR_POSANG_TYCHO2"/>
+   <FIELD ID="TYC1_TYCHO2" datatype="long" name="TYC1_TYCHO2"/>
+   <FIELD ID="TYC2_TYCHO2" datatype="long" name="TYC2_TYCHO2"/>
+   <FIELD ID="TYC3_TYCHO2" datatype="long" name="TYC3_TYCHO2"/>
+   <FIELD ID="PFLAG_TYCHO2" arraysize="1" datatype="unicodeChar" name="PFLAG_TYCHO2"/>
+   <FIELD ID="RAMDEG_TYCHO2" datatype="double" name="RAMDEG_TYCHO2"/>
+   <FIELD ID="DEMDEG_TYCHO2" datatype="double" name="DEMDEG_TYCHO2"/>
+   <FIELD ID="PMRA_TYCHO2" datatype="double" name="PMRA_TYCHO2"/>
+   <FIELD ID="PMDE_TYCHO2" datatype="double" name="PMDE_TYCHO2"/>
+   <FIELD ID="ERROR_RAMDEG_TYCHO2" datatype="long" name="ERROR_RAMDEG_TYCHO2"/>
+   <FIELD ID="ERROR_DEMDEG_TYCHO2" datatype="long" name="ERROR_DEMDEG_TYCHO2"/>
+   <FIELD ID="ERROR_PMRA_TYCHO2" datatype="double" name="ERROR_PMRA_TYCHO2"/>
+   <FIELD ID="ERROR_PMDE_TYCHO2" datatype="double" name="ERROR_PMDE_TYCHO2"/>
+   <FIELD ID="EPRAM_TYCHO2" datatype="double" name="EPRAM_TYCHO2"/>
+   <FIELD ID="EPDEM_TYCHO2" datatype="double" name="EPDEM_TYCHO2"/>
+   <FIELD ID="NUM_TYCHO2" datatype="long" name="NUM_TYCHO2"/>
+   <FIELD ID="Q_RAMDEG_TYCHO2" datatype="double" name="Q_RAMDEG_TYCHO2"/>
+   <FIELD ID="Q_DEMDEG_TYCHO2" datatype="double" name="Q_DEMDEG_TYCHO2"/>
+   <FIELD ID="Q_PMRA_TYCHO2" datatype="double" name="Q_PMRA_TYCHO2"/>
+   <FIELD ID="Q_PMDE_TYCHO2" datatype="double" name="Q_PMDE_TYCHO2"/>
+   <FIELD ID="BTMAG_TYCHO2" datatype="double" name="BTMAG_TYCHO2"/>
+   <FIELD ID="ERROR_BTMAG_TYCHO2" datatype="double" name="ERROR_BTMAG_TYCHO2"/>
+   <FIELD ID="VTMAG_TYCHO2" datatype="double" name="VTMAG_TYCHO2"/>
+   <FIELD ID="ERROR_VTMAG_TYCHO2" datatype="double" name="ERROR_VTMAG_TYCHO2"/>
+   <FIELD ID="PROX_TYCHO2" datatype="long" name="PROX_TYCHO2"/>
+   <FIELD ID="CCDM_TYCHO2" arraysize="21" datatype="unicodeChar" name="CCDM_TYCHO2"/>
+   <FIELD ID="RA_ICRS_TYCHO2" datatype="double" name="RA_ICRS_TYCHO2"/>
+   <FIELD ID="DEC_ICRS_TYCHO2" datatype="double" name="DEC_ICRS_TYCHO2"/>
+   <FIELD ID="EPRA_1990_TYCHO2" datatype="double" name="EPRA_1990_TYCHO2"/>
+   <FIELD ID="EPDE_1990_TYCHO2" datatype="double" name="EPDE_1990_TYCHO2"/>
+   <FIELD ID="ERROR_RADEG_TYCHO2" datatype="double" name="ERROR_RADEG_TYCHO2"/>
+   <FIELD ID="ERROR_DEDEG_TYCHO2" datatype="double" name="ERROR_DEDEG_TYCHO2"/>
+   <FIELD ID="POSFLG_TYCHO2" arraysize="21" datatype="unicodeChar" name="POSFLG_TYCHO2"/>
+   <FIELD ID="CORR_TYCHO2" datatype="double" name="CORR_TYCHO2"/>
+   <FIELD ID="HIP_ID" arraysize="7" datatype="unicodeChar" name="HIP_ID"/>
+   <FIELD ID="ANGDIST_UCAC5" datatype="double" name="ANGDIST_UCAC5"/>
+   <FIELD ID="RA_E2000_UCAC5" datatype="double" name="RA_E2000_UCAC5"/>
+   <FIELD ID="DEC_E2000_UCAC5" datatype="double" name="DEC_E2000_UCAC5"/>
+   <FIELD ID="ERROR_HALFMAJ_UCAC5" datatype="double" name="ERROR_HALFMAJ_UCAC5"/>
+   <FIELD ID="ERROR_HALFMIN_UCAC5" datatype="double" name="ERROR_HALFMIN_UCAC5"/>
+   <FIELD ID="ERROR_POSANG_UCAC5" datatype="long" name="ERROR_POSANG_UCAC5"/>
+   <FIELD ID="SRCID_GAIA_UCAC5" datatype="long" name="SRCID_GAIA_UCAC5"/>
+   <FIELD ID="RA_GAIA_UCAC5" datatype="double" name="RA_GAIA_UCAC5"/>
+   <FIELD ID="DEC_GAIA_UCAC5" datatype="double" name="DEC_GAIA_UCAC5"/>
+   <FIELD ID="ERROR_RA_GAIA_UCAC5" datatype="double" name="ERROR_RA_GAIA_UCAC5"/>
+   <FIELD ID="ERROR_DEC_GAIA_UCAC5" datatype="double" name="ERROR_DEC_GAIA_UCAC5"/>
+   <FIELD ID="ORG_UCAC5" datatype="long" name="ORG_UCAC5"/>
+   <FIELD ID="NU_UCAC5" datatype="long" name="NU_UCAC5"/>
+   <FIELD ID="EP_UCAC5" datatype="double" name="EP_UCAC5"/>
+   <FIELD ID="RA_UCAC5" datatype="double" name="RA_UCAC5"/>
+   <FIELD ID="DE_UCAC5" datatype="double" name="DE_UCAC5"/>
+   <FIELD ID="PMRAUG_UCAC5" datatype="double" name="PMRAUG_UCAC5"/>
+   <FIELD ID="PMDEUG_UCAC5" datatype="double" name="PMDEUG_UCAC5"/>
+   <FIELD ID="ERROR_PMRAUG_UCAC5" datatype="double" name="ERROR_PMRAUG_UCAC5"/>
+   <FIELD ID="ERROR_PMDEUG_UCAC5" datatype="double" name="ERROR_PMDEUG_UCAC5"/>
+   <FIELD ID="GMAG_UCAC5" datatype="double" name="GMAG_UCAC5"/>
+   <FIELD ID="F_MAG_UCAC5" datatype="double" name="F_MAG_UCAC5"/>
+   <FIELD ID="RMAG_UCAC5" datatype="double" name="RMAG_UCAC5"/>
+   <FIELD ID="JMAG_UCAC5" datatype="double" name="JMAG_UCAC5"/>
+   <FIELD ID="HMAG_UCAC5" datatype="double" name="HMAG_UCAC5"/>
+   <FIELD ID="KMAG_UCAC5" datatype="double" name="KMAG_UCAC5"/>
+   <FIELD ID="KIC_ID" arraysize="8" datatype="unicodeChar" name="KIC_ID"/>
+   <FIELD ID="EPIC_ID" arraysize="9" datatype="unicodeChar" name="EPIC_ID"/>
+   <FIELD ID="lnK_per_1" datatype="double" name="lnK_per_1"/>
+   <FIELD ID="SOURCE_ID_GAIA" datatype="long" name="SOURCE_ID_GAIA" ucd="meta.id;meta.main">
+    <DESCRIPTION>
+     Gaia source identifier, identical to the Gaia-DR2 source_id.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ANGULAR_DISTANCE_GAIA" datatype="double" name="ANGULAR_DISTANCE_GAIA" ucd="pos.angDistance" unit="arcs">
+    <DESCRIPTION>
+     Angular Distance between the two sources
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="GAIA_ASTROMETRIC_PARAMS_GAIA" datatype="short" name="GAIA_ASTROMETRIC_PARAMS_GAIA" ucd="meta.code.status">
+    <DESCRIPTION>
+     Number of Gaia astrometric params used
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TMASS_OID_GAIA" datatype="long" name="TMASS_OID_GAIA" ucd="meta.id.cross">
+    <DESCRIPTION>
+     External Catalogue source identifier
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NUMBER_OF_NEIGHBOURS_GAIA" datatype="int" name="NUMBER_OF_NEIGHBOURS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of neighbours in External Catalogue
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="NUMBER_OF_MATES_GAIA" datatype="short" name="NUMBER_OF_MATES_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of mates in Gaia Catalogue
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BEST_NEIGHBOUR_MULTIPLICITY_GAIA" datatype="short" name="BEST_NEIGHBOUR_MULTIPLICITY_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of neighbours with same probability as best neighbour
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="SOLUTION_ID_GAIA" datatype="long" name="SOLUTION_ID_GAIA" ucd="meta.version">
+    <DESCRIPTION>
+     Solution Identifier
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DESIGNATION_GAIA" arraysize="28" datatype="unicodeChar" name="DESIGNATION_GAIA" ucd="meta.id;meta.main">
+    <DESCRIPTION>
+     Unique source designation (unique across all Data Releases)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RANDOM_INDEX_GAIA" datatype="long" name="RANDOM_INDEX_GAIA" ucd="meta.code">
+    <DESCRIPTION>
+     Random index used to select subsets
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="REF_EPOCH_GAIA" datatype="double" name="REF_EPOCH_GAIA" ucd="meta.ref;time.epoch" unit="yr">
+    <DESCRIPTION>
+     Reference epoch
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_GAIA" datatype="double" name="RA_GAIA" ucd="pos.eq.ra;meta.main" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C1">
+    <DESCRIPTION>
+     Right ascension
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_RA_GAIA" datatype="double" name="ERROR_RA_GAIA" ucd="stat.error;pos.eq.ra" unit="mas">
+    <DESCRIPTION>
+     Standard error of right ascension
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_GAIA" datatype="double" name="DEC_GAIA" ucd="pos.eq.dec;meta.main" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C2">
+    <DESCRIPTION>
+     Declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_DEC_GAIA" datatype="double" name="ERROR_DEC_GAIA" ucd="stat.error;pos.eq.dec" unit="mas">
+    <DESCRIPTION>
+     Standard error of declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PARALLAX_GAIA" datatype="double" name="PARALLAX_GAIA" ucd="pos.parallax" unit="mas">
+    <DESCRIPTION>
+     Parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PARALLAX_GAIA" datatype="double" name="ERROR_PARALLAX_GAIA" ucd="stat.error;pos.parallax" unit="mas">
+    <DESCRIPTION>
+     Standard error of parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PARALLAX_OVER_ERROR_GAIA" datatype="float" name="PARALLAX_OVER_ERROR_GAIA" ucd="arith.ratio">
+    <DESCRIPTION>
+     Parallax divided by its error
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMRA_GAIA" datatype="double" name="PMRA_GAIA" ucd="pos.pm;pos.eq.ra" unit="mas.yr**-1">
+    <DESCRIPTION>
+     Proper motion in right ascension direction
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMRA_GAIA" datatype="double" name="ERROR_PMRA_GAIA" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas.yr**-1">
+    <DESCRIPTION>
+     Standard error of proper motion in right ascension direction
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMDEC_GAIA" datatype="double" name="PMDEC_GAIA" ucd="pos.pm;pos.eq.dec" unit="mas.yr**-1">
+    <DESCRIPTION>
+     Proper motion in declination direction
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PMDEC_GAIA" datatype="double" name="ERROR_PMDEC_GAIA" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas.yr**-1">
+    <DESCRIPTION>
+     Standard error of proper motion in declination direction
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_DEC_CORR_GAIA" datatype="float" name="RA_DEC_CORR_GAIA" ucd="stat.correlation;pos.eq.ra;pos.eq.dec">
+    <DESCRIPTION>
+     Correlation between right ascension and declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_PARALLAX_CORR_GAIA" datatype="float" name="RA_PARALLAX_CORR_GAIA" ucd="stat.correlation;pos.eq.ra;pos.parallax">
+    <DESCRIPTION>
+     Correlation between right ascension and parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_PMRA_CORR_GAIA" datatype="float" name="RA_PMRA_CORR_GAIA" ucd="stat.correlation;pos.eq.ra;pos.pm;pos.eq.ra">
+    <DESCRIPTION>
+     Correlation between right ascension and proper motion in right
+     ascension
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_PMDEC_CORR_GAIA" datatype="float" name="RA_PMDEC_CORR_GAIA" ucd="stat.correlation;pos.eq.ra;pos.pm;pos.eq.dec">
+    <DESCRIPTION>
+     Correlation between right ascension and proper motion in
+     declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_PARALLAX_CORR_GAIA" datatype="float" name="DEC_PARALLAX_CORR_GAIA" ucd="stat.correlation;pos.eq.dec;pos.parallax">
+    <DESCRIPTION>
+     Correlation between declination and parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_PMRA_CORR_GAIA" datatype="float" name="DEC_PMRA_CORR_GAIA" ucd="stat.correlation;pos.eq.dec;pos.pm;pos.eq.ra">
+    <DESCRIPTION>
+     Correlation between declination and proper motion in right
+     ascension
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DEC_PMDEC_CORR_GAIA" datatype="float" name="DEC_PMDEC_CORR_GAIA" ucd="stat.correlation;pos.eq.dec;pos.pm;pos.eq.dec">
+    <DESCRIPTION>
+     Correlation between declination and proper motion in declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PARALLAX_PMRA_CORR_GAIA" datatype="float" name="PARALLAX_PMRA_CORR_GAIA" ucd="stat.correlation;pos.parallax;pos.pm;pos.eq.ra">
+    <DESCRIPTION>
+     Correlation between parallax and proper motion in right ascension
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PARALLAX_PMDEC_CORR_GAIA" datatype="float" name="PARALLAX_PMDEC_CORR_GAIA" ucd="stat.correlation;pos.parallax;pos.pm;pos.eq.dec">
+    <DESCRIPTION>
+     Correlation between parallax and proper motion in declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PMRA_PMDEC_CORR_GAIA" datatype="float" name="PMRA_PMDEC_CORR_GAIA" ucd="stat.correlation;pos.pm;pos.eq.ra;pos.pm;pos.eq.dec">
+    <DESCRIPTION>
+     Correlation between proper motion in right ascension and proper
+     motion in declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_N_OBS_AL_GAIA" datatype="int" name="ASTROMETRIC_N_OBS_AL_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Total number of observations AL
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_N_OBS_AC_GAIA" datatype="int" name="ASTROMETRIC_N_OBS_AC_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Total number of observations AC
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_N_GOOD_OBS_AL_GAIA" datatype="int" name="ASTROMETRIC_N_GOOD_OBS_AL_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of good observations AL
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_N_BAD_OBS_AL_GAIA" datatype="int" name="ASTROMETRIC_N_BAD_OBS_AL_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of bad observations AL
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_GOF_AL_GAIA" datatype="float" name="ASTROMETRIC_GOF_AL_GAIA" ucd="stat.fit.goodness">
+    <DESCRIPTION>
+     Goodness of fit statistic of model wrt along-scan observations
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_CHI2_AL_GAIA" datatype="float" name="ASTROMETRIC_CHI2_AL_GAIA" ucd="stat.fit.chi2">
+    <DESCRIPTION>
+     AL chi-square value
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_EXCESS_NOISE_GAIA" datatype="double" name="ASTROMETRIC_EXCESS_NOISE_GAIA" ucd="stat.value" unit="mas">
+    <DESCRIPTION>
+     Excess noise of the source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_EXCESS_NOISE_SIG_GAIA" datatype="double" name="ASTROMETRIC_EXCESS_NOISE_SIG_GAIA" ucd="stat.value">
+    <DESCRIPTION>
+     Significance of excess noise
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_PARAMS_SOLVED_GAIA" datatype="short" name="ASTROMETRIC_PARAMS_SOLVED_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Which parameters have been solved for?
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_PRIMARY_FLAG_GAIA" datatype="bit" name="ASTROMETRIC_PRIMARY_FLAG_GAIA" ucd="meta.code">
+    <DESCRIPTION>
+     Primary or seconday
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_WEIGHT_AL_GAIA" datatype="float" name="ASTROMETRIC_WEIGHT_AL_GAIA" ucd="stat.weight;stat.mean" unit="mas**-2">
+    <DESCRIPTION>
+     Mean astrometric weight of the source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_PSEUDO_COLOUR_GAIA" datatype="double" name="ASTROMETRIC_PSEUDO_COLOUR_GAIA" ucd="em.wavenumber" unit="um**-1">
+    <DESCRIPTION>
+     Astrometrically determined pseudocolour of the source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_PSEUDO_COLOUR_ERROR_GAIA" datatype="double" name="ASTROMETRIC_PSEUDO_COLOUR_ERROR_GAIA" ucd="em.wavenumber;stat.error" unit="um**-1">
+    <DESCRIPTION>
+     Standard error of the pseudocolour of the source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MEAN_VARPI_FACTOR_AL_GAIA" datatype="float" name="MEAN_VARPI_FACTOR_AL_GAIA" ucd="arith.factor;pos.parallax">
+    <DESCRIPTION>
+     Mean Parallax factor AL
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_MATCHED_OBSERVATIONS_GAIA" datatype="short" name="ASTROMETRIC_MATCHED_OBSERVATIONS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Matched FOV transits used in the AGIS solution
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="VISIBILITY_PERIODS_USED_GAIA" datatype="short" name="VISIBILITY_PERIODS_USED_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of visibility periods used in Astrometric solution
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ASTROMETRIC_SIGMA5D_MAX_GAIA" datatype="float" name="ASTROMETRIC_SIGMA5D_MAX_GAIA" ucd="pos.errorEllipse;stat.max" unit="mas">
+    <DESCRIPTION>
+     The longest semi-major axis of the 5-d error ellipsoid
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FRAME_ROTATOR_OBJECT_TYPE_GAIA" datatype="int" name="FRAME_ROTATOR_OBJECT_TYPE_GAIA" ucd="meta.code">
+    <DESCRIPTION>
+     The type of the source mainly used for frame rotation
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MATCHED_OBSERVATIONS_GAIA" datatype="short" name="MATCHED_OBSERVATIONS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Amount of observations matched to this source
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DUPLICATED_SOURCE_GAIA" datatype="bit" name="DUPLICATED_SOURCE_GAIA" ucd="meta.code.status">
+    <DESCRIPTION>
+     Source with duplicate sources
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_G_N_OBS_GAIA" datatype="int" name="PHOT_G_N_OBS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of observations contributing to G photometry
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_G_MEAN_FLUX_GAIA" datatype="double" name="PHOT_G_MEAN_FLUX_GAIA" ucd="phot.flux;stat.mean;em.opt" unit="&apos;electron&apos;.s**-1">
+    <DESCRIPTION>
+     G-band mean flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PHOT_G_MEAN_FLUX_GAIA" datatype="double" name="ERROR_PHOT_G_MEAN_FLUX_GAIA" ucd="stat.error;phot.flux;stat.mean;em.opt" unit="&apos;electron&apos;.s**-1">
+    <DESCRIPTION>
+     Error on G-band mean flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_G_MEAN_FLUX_OVER_ERROR_GAIA" datatype="float" name="PHOT_G_MEAN_FLUX_OVER_ERROR_GAIA" ucd="arith.ratio">
+    <DESCRIPTION>
+     G-band mean flux divided by its error
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_G_MEAN_MAG_GAIA" datatype="float" name="PHOT_G_MEAN_MAG_GAIA" ucd="phot.mag;stat.mean;em.opt" unit="mag">
+    <DESCRIPTION>
+     G-band mean magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_BP_N_OBS_GAIA" datatype="int" name="PHOT_BP_N_OBS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of observations contributing to BP photometry
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_BP_MEAN_FLUX_GAIA" datatype="double" name="PHOT_BP_MEAN_FLUX_GAIA" ucd="phot.flux;stat.mean" unit="&apos;electron&apos;.s**-1">
+    <DESCRIPTION>
+     Integrated BP mean flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PHOT_BP_MEAN_FLUX_GAIA" datatype="double" name="ERROR_PHOT_BP_MEAN_FLUX_GAIA" ucd="stat.error;phot.flux;stat.mean" unit="&apos;electron&apos;.s**-1">
+    <DESCRIPTION>
+     Error on the integrated BP mean flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_BP_MEAN_FLUX_OVER_ERROR_GAIA" datatype="float" name="PHOT_BP_MEAN_FLUX_OVER_ERROR_GAIA" ucd="arith.ratio">
+    <DESCRIPTION>
+     Integrated BP mean flux divided by its error
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_BP_MEAN_MAG_GAIA" datatype="float" name="PHOT_BP_MEAN_MAG_GAIA" ucd="phot.mag;stat.mean" unit="mag">
+    <DESCRIPTION>
+     Integrated BP mean magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_RP_N_OBS_GAIA" datatype="int" name="PHOT_RP_N_OBS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of observations contributing to RP photometry
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_RP_MEAN_FLUX_GAIA" datatype="double" name="PHOT_RP_MEAN_FLUX_GAIA" ucd="phot.flux;stat.mean" unit="&apos;electron&apos;.s**-1">
+    <DESCRIPTION>
+     Integrated RP mean flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_PHOT_RP_MEAN_FLUX_GAIA" datatype="double" name="ERROR_PHOT_RP_MEAN_FLUX_GAIA" ucd="stat.error;phot.flux" unit="&apos;electron&apos;.s**-1">
+    <DESCRIPTION>
+     Error on the integrated RP mean flux
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_RP_MEAN_FLUX_OVER_ERROR_GAIA" datatype="float" name="PHOT_RP_MEAN_FLUX_OVER_ERROR_GAIA" ucd="arith.ratio">
+    <DESCRIPTION>
+     Integrated RP mean flux divided by its error
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_RP_MEAN_MAG_GAIA" datatype="float" name="PHOT_RP_MEAN_MAG_GAIA" ucd="phot.mag;stat.mean" unit="mag">
+    <DESCRIPTION>
+     Integrated RP mean magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_BP_RP_EXCESS_FACTOR_GAIA" datatype="float" name="PHOT_BP_RP_EXCESS_FACTOR_GAIA">
+    <DESCRIPTION>
+     BP/RP excess factor
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_PROC_MODE_GAIA" datatype="short" name="PHOT_PROC_MODE_GAIA">
+    <DESCRIPTION>
+     Photometry processing mode
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BP_RP_GAIA" datatype="float" name="BP_RP_GAIA" ucd="phot.color" unit="mag">
+    <DESCRIPTION>
+     BP - RP colour
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="BP_G_GAIA" datatype="float" name="BP_G_GAIA" ucd="phot.color" unit="mag">
+    <DESCRIPTION>
+     BP - G colour
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="G_RP_GAIA" datatype="float" name="G_RP_GAIA" ucd="phot.color" unit="mag">
+    <DESCRIPTION>
+     G - RP colour
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RADIAL_VELOCITY_GAIA" datatype="double" name="RADIAL_VELOCITY_GAIA" ucd="spect.dopplerVeloc.opt" unit="km.s**-1">
+    <DESCRIPTION>
+     Radial velocity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_RADIAL_VELOCITY_GAIA" datatype="double" name="ERROR_RADIAL_VELOCITY_GAIA" ucd="stat.error;spect.dopplerVeloc.opt" unit="km.s**-1">
+    <DESCRIPTION>
+     Radial velocity error
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RV_NB_TRANSITS_GAIA" datatype="int" name="RV_NB_TRANSITS_GAIA" ucd="meta.number">
+    <DESCRIPTION>
+     Number of transits used to compute radial velocity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RV_TEMPLATE_TEFF_GAIA" datatype="float" name="RV_TEMPLATE_TEFF_GAIA" ucd="stat.fit.param" unit="K">
+    <DESCRIPTION>
+     Teff of the template used to compute radial velocity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RV_TEMPLATE_LOGG_GAIA" datatype="float" name="RV_TEMPLATE_LOGG_GAIA" ucd="stat.fit.param" unit="log(cm.s**-2)">
+    <DESCRIPTION>
+     logg of the template used to compute radial velocity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RV_TEMPLATE_FE_H_GAIA" datatype="float" name="RV_TEMPLATE_FE_H_GAIA" ucd="stat.fit.param" unit="&apos;dex&apos;">
+    <DESCRIPTION>
+     Fe/H of the template used to compute radial velocity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PHOT_VARIABLE_FLAG_GAIA" arraysize="13" datatype="unicodeChar" name="PHOT_VARIABLE_FLAG_GAIA" ucd="meta.code;src.var">
+    <DESCRIPTION>
+     Photometric variability flag
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="L_GAIA" datatype="double" name="L_GAIA" ucd="pos.galactic.lon" unit="deg">
+    <DESCRIPTION>
+     Galactic longitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="B_GAIA" datatype="double" name="B_GAIA" ucd="pos.galactic.lat" unit="deg">
+    <DESCRIPTION>
+     Galactic latitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ECL_LON_GAIA" datatype="double" name="ECL_LON_GAIA" ucd="pos.ecliptic.lon" unit="deg">
+    <DESCRIPTION>
+     Ecliptic longitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ECL_LAT_GAIA" datatype="double" name="ECL_LAT_GAIA" ucd="pos.ecliptic.lat" unit="deg">
+    <DESCRIPTION>
+     Ecliptic latitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="PRIAM_FLAGS_GAIA" datatype="long" name="PRIAM_FLAGS_GAIA" ucd="meta.code">
+    <DESCRIPTION>
+     flags for the Apsis-Priam results
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_VAL_GAIA" datatype="float" name="TEFF_VAL_GAIA" ucd="phys.temperature.effective" unit="K">
+    <DESCRIPTION>
+     stellar effective temperature
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_PERCENTILE_LOWER_GAIA" datatype="float" name="TEFF_PERCENTILE_LOWER_GAIA" ucd="phys.temperature.effective;stat.min" unit="K">
+    <DESCRIPTION>
+     teffVal lower uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="TEFF_PERCENTILE_UPPER_GAIA" datatype="float" name="TEFF_PERCENTILE_UPPER_GAIA" ucd="phys.temperature.effective;stat.max" unit="K">
+    <DESCRIPTION>
+     teffVal upper uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="A_G_VAL_GAIA" datatype="float" name="A_G_VAL_GAIA" ucd="phys.absorption.gal" unit="mag">
+    <DESCRIPTION>
+     line-of-sight extinction in the G band, A_G)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="A_G_PERCENTILE_LOWER_GAIA" datatype="float" name="A_G_PERCENTILE_LOWER_GAIA" ucd="phys.absorption.gal;stat.min" unit="mag">
+    <DESCRIPTION>
+     aGVal lower uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="A_G_PERCENTILE_UPPER_GAIA" datatype="float" name="A_G_PERCENTILE_UPPER_GAIA" ucd="phys.absorption.gal;stat.max" unit="mag">
+    <DESCRIPTION>
+     aGVal upper uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="E_BP_MIN_RP_VAL_GAIA" datatype="float" name="E_BP_MIN_RP_VAL_GAIA" unit="mag">
+    <DESCRIPTION>
+     line-of-sight reddening E(BP-RP)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_E_BP_MIN_RP_PERCENTILE_LOWER_GAIA" datatype="float" name="ERROR_E_BP_MIN_RP_PERCENTILE_LOWER_GAIA" unit="mag">
+    <DESCRIPTION>
+     eBPminRPVal lower uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_E_BP_MIN_RP_PERCENTILE_UPPER_GAIA" datatype="float" name="ERROR_E_BP_MIN_RP_PERCENTILE_UPPER_GAIA" unit="mag">
+    <DESCRIPTION>
+     eBPminRPVal upper uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="FLAME_FLAGS_GAIA" datatype="long" name="FLAME_FLAGS_GAIA" ucd="meta.code">
+    <DESCRIPTION>
+     Flags for the Apsis-FLAME results
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RADIUS_VAL_GAIA" datatype="float" name="RADIUS_VAL_GAIA" ucd="phys.size.radius" unit="Rsun">
+    <DESCRIPTION>
+     stellar radius
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_RADIUS_PERCENTILE_LOWER_GAIA" datatype="float" name="ERROR_RADIUS_PERCENTILE_LOWER_GAIA" ucd="phys.size.radius;stat.error" unit="Rsun">
+    <DESCRIPTION>
+     radiusVal lower uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_RADIUS_PERCENTILE_UPPER_GAIA" datatype="float" name="ERROR_RADIUS_PERCENTILE_UPPER_GAIA" ucd="phys.size.radius;stat.error" unit="Rsun">
+    <DESCRIPTION>
+     radiusVal upper uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="LUM_VAL_GAIA" datatype="float" name="LUM_VAL_GAIA" ucd="phys.luminosity" unit="Lsun">
+    <DESCRIPTION>
+     stellar luminosity
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_LUM_PERCENTILE_LOWER_GAIA" datatype="float" name="ERROR_LUM_PERCENTILE_LOWER_GAIA" ucd="phys.luminosity;stat.error" unit="Lsun">
+    <DESCRIPTION>
+     lumVal lower uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ERROR_LUM_PERCENTILE_UPPER_GAIA" datatype="float" name="ERROR_LUM_PERCENTILE_UPPER_GAIA" ucd="phys.luminosity;stat.error" unit="Lsun">
+    <DESCRIPTION>
+     lumVal upper uncertainty
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="DATALINK_URL_GAIA" arraysize="77" datatype="unicodeChar" name="DATALINK_URL_GAIA" ucd="meta.ref.url" utype="Acess.reference">
+    <DESCRIPTION>
+     datalink url
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="R_EST_BAILERJONES" datatype="double" name="R_EST_BAILERJONES" ucd="pos.distance" unit="pc">
+    <DESCRIPTION>
+     Estimated distance.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="R_LO_BAILERJONES" datatype="double" name="R_LO_BAILERJONES" ucd="stat.error;stat.min;pos.distance" unit="pc">
+    <DESCRIPTION>
+     Lower bound on the confidence interval of the estimated distance.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="R_HI_BAILERJONES" datatype="double" name="R_HI_BAILERJONES" ucd="stat.error;stat.max;pos.distance" unit="pc">
+    <DESCRIPTION>
+     Upper bound on the confidence interval of the estimated distance.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="R_LEN_BAILERJONES" datatype="double" name="R_LEN_BAILERJONES" ucd="stat.fit.param;pos.distance" unit="pc">
+    <DESCRIPTION>
+     Length scale used in the prior for the distance estimation.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RESULT_FLAG_BAILERJONES" datatype="short" name="RESULT_FLAG_BAILERJONES" ucd="meta.code.qual">
+    <DESCRIPTION>
+     Type of result. Three possible values: 0 = failed estimate
+     (r_est, r_lo, r_hi are all null) ; 1 = r_est is the mode (highest
+     if the posterior is bimodal); r_lo/r_hi define the lower/upper
+     limits of the highest density interval (HDI) containing 68% of
+     the posterior probability ; 2 = r_est is the median; r_lo/r_hi
+     define the lower/upper limits of the equal-tailed interval (ETI),
+     containing 68% of the posterior probability.
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="MODALITY_FLAG_BAILERJONES" datatype="short" name="MODALITY_FLAG_BAILERJONES" ucd="meta.code">
+    <DESCRIPTION>
+     Result regime flag: number of modes in the posterior (1 or 2).
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="OBSID_SANDERS" datatype="double" name="OBSID_SANDERS"/>
+   <FIELD ID="DM_SANDERS" datatype="double" name="DM_SANDERS" unit="mag"/>
+   <FIELD ID="ERROR_DM_SANDERS" datatype="double" name="ERROR_DM_SANDERS" unit="mag"/>
+   <FIELD ID="DIST_SANDERS" datatype="double" name="DIST_SANDERS" unit="kpc"/>
+   <FIELD ID="ERROR_DIST_SANDERS" datatype="double" name="ERROR_DIST_SANDERS" unit="kpc"/>
+   <FIELD ID="PAR_SANDERS" datatype="double" name="PAR_SANDERS" unit="mas"/>
+   <FIELD ID="ERROR_PAR_SANDERS" datatype="double" name="ERROR_PAR_SANDERS" unit="mas"/>
+   <FIELD ID="LOG10_AGE_SANDERS" datatype="double" name="LOG10_AGE_SANDERS" unit="dex(Gyr)"/>
+   <FIELD ID="ERROR_LOG10_AGE_SANDERS" datatype="double" name="ERROR_LOG10_AGE_SANDERS" unit="dex(Gyr)"/>
+   <FIELD ID="MASS_SANDERS" datatype="double" name="MASS_SANDERS" unit="Msun"/>
+   <FIELD ID="ERROR_MASS_SANDERS" datatype="double" name="ERROR_MASS_SANDERS" unit="Msun"/>
+   <FIELD ID="Z_SANDERS" datatype="double" name="Z_SANDERS" unit="dex"/>
+   <FIELD ID="ERROR_Z_SANDERS" datatype="double" name="ERROR_Z_SANDERS" unit="dex"/>
+   <FIELD ID="LOG10_AV_SANDERS" datatype="double" name="LOG10_AV_SANDERS"/>
+   <FIELD ID="ERROR_LOG10_AV_SANDERS" datatype="double" name="ERROR_LOG10_AV_SANDERS"/>
+   <FIELD ID="LOG10_TEFF_SANDERS" datatype="double" name="LOG10_TEFF_SANDERS" unit="dex(K)"/>
+   <FIELD ID="ERROR_LOG10_TEFF_SANDERS" datatype="double" name="ERROR_LOG10_TEFF_SANDERS" unit="dex(K)"/>
+   <FIELD ID="LOGG_SANDERS" datatype="double" name="LOGG_SANDERS" unit="dex(cm / s2)"/>
+   <FIELD ID="ERROR_LOGG_SANDERS" datatype="double" name="ERROR_LOGG_SANDERS" unit="dex(cm / s2)"/>
+   <FIELD ID="DM_LOG10AGE_CORR_SANDERS" datatype="double" name="DM_LOG10AGE_CORR_SANDERS"/>
+   <FIELD ID="LOG10AGE_Z_CORR_SANDERS" datatype="double" name="LOG10AGE_Z_CORR_SANDERS"/>
+   <FIELD ID="DM_Z_CORR_SANDERS" datatype="double" name="DM_Z_CORR_SANDERS"/>
+   <FIELD ID="L_SANDERS" datatype="double" name="L_SANDERS" unit="rad"/>
+   <FIELD ID="B_SANDERS" datatype="double" name="B_SANDERS" unit="rad"/>
+   <FIELD ID="S_SANDERS" datatype="double" name="S_SANDERS" unit="kpc"/>
+   <FIELD ID="VLOS_SANDERS" datatype="double" name="VLOS_SANDERS" unit="km / s"/>
+   <FIELD ID="MU_L_SANDERS" datatype="double" name="MU_L_SANDERS" unit="mas / yr"/>
+   <FIELD ID="MU_B_SANDERS" datatype="double" name="MU_B_SANDERS" unit="mas / yr"/>
+   <FIELD ID="R_SANDERS" datatype="double" name="R_SANDERS" unit="kpc"/>
+   <FIELD ID="PHI_SANDERS" datatype="double" name="PHI_SANDERS" unit="kpc"/>
+   <FIELD ID="SMALLZ_SANDERS" datatype="double" name="SMALLZ_SANDERS" unit="kpc"/>
+   <FIELD ID="VR_SANDERS" datatype="double" name="VR_SANDERS" unit="km / s"/>
+   <FIELD ID="VPHI_SANDERS" datatype="double" name="VPHI_SANDERS" unit="km / s"/>
+   <FIELD ID="VZ_SANDERS" datatype="double" name="VZ_SANDERS" unit="km / s"/>
+   <FIELD ID="JR_SANDERS" datatype="double" name="JR_SANDERS" unit="km kpc / s"/>
+   <FIELD ID="LZ_SANDERS" datatype="double" name="LZ_SANDERS" unit="km kpc / s"/>
+   <FIELD ID="JZ_SANDERS" datatype="double" name="JZ_SANDERS" unit="km kpc / s"/>
+   <FIELD ID="RC_SANDERS" datatype="double" name="RC_SANDERS" unit="kpc"/>
+   <FIELD ID="ERROR_S_SANDERS" datatype="double" name="ERROR_S_SANDERS" unit="kpc"/>
+   <FIELD ID="ERROR_VLOS_SANDERS" datatype="double" name="ERROR_VLOS_SANDERS" unit="km / s"/>
+   <FIELD ID="ERROR_MU_L_SANDERS" datatype="double" name="ERROR_MU_L_SANDERS" unit="mas / yr"/>
+   <FIELD ID="ERROR_MU_B_SANDERS" datatype="double" name="ERROR_MU_B_SANDERS" unit="mas / yr"/>
+   <FIELD ID="ERROR_R_SANDERS" datatype="double" name="ERROR_R_SANDERS" unit="kpc"/>
+   <FIELD ID="ERROR_PHI_SANDERS" datatype="double" name="ERROR_PHI_SANDERS" unit="kpc"/>
+   <FIELD ID="ERROR_SMALLZ_SANDERS" datatype="double" name="ERROR_SMALLZ_SANDERS" unit="kpc"/>
+   <FIELD ID="ERROR_VR_SANDERS" datatype="double" name="ERROR_VR_SANDERS" unit="km / s"/>
+   <FIELD ID="ERROR_VPHI_SANDERS" datatype="double" name="ERROR_VPHI_SANDERS" unit="km / s"/>
+   <FIELD ID="ERROR_VZ_SANDERS" datatype="double" name="ERROR_VZ_SANDERS" unit="km / s"/>
+   <FIELD ID="ERROR_JR_SANDERS" datatype="double" name="ERROR_JR_SANDERS" unit="km kpc / s"/>
+   <FIELD ID="ERROR_LZ_SANDERS" datatype="double" name="ERROR_LZ_SANDERS" unit="km kpc / s"/>
+   <FIELD ID="ERROR_JZ_SANDERS" datatype="double" name="ERROR_JZ_SANDERS" unit="km kpc / s"/>
+   <FIELD ID="ERROR_RC_SANDERS" datatype="double" name="ERROR_RC_SANDERS" unit="kpc"/>
+   <FIELD ID="FLAG_SANDERS" datatype="long" name="FLAG_SANDERS"/>
+   <FIELD ID="SURVEY_SANDERS" arraysize="7" datatype="unicodeChar" name="SURVEY_SANDERS"/>
+   <FIELD ID="SOBJECT_ID_SANDERS" datatype="long" name="SOBJECT_ID_SANDERS"/>
+   <FIELD ID="CNAME_SANDERS" arraysize="16" datatype="unicodeChar" name="CNAME_SANDERS"/>
+   <FIELD ID="SPECOBJID_SANDERS" datatype="long" name="SPECOBJID_SANDERS"/>
+   <FIELD ID="DUPLICATED_SANDERS" datatype="long" name="DUPLICATED_SANDERS"/>
+   <FIELD ID="BEST_SANDERS" datatype="long" name="BEST_SANDERS"/>
+   <FIELD ID="SOURCE_ID_SANDERS" datatype="long" name="SOURCE_ID_SANDERS"/>
+   <FIELD ID="RA_SANDERS" datatype="double" name="RA_SANDERS" unit="deg"/>
+   <FIELD ID="DEC_SANDERS" datatype="double" name="DEC_SANDERS" unit="deg"/>
+   <FIELD ID="ANGULAR_SEPARATION_SANDERS" datatype="double" name="ANGULAR_SEPARATION_SANDERS" unit="arcs"/>
+   <FIELD ID="MAG_USE_SANDERS" arraysize="10" datatype="unicodeChar" name="MAG_USE_SANDERS"/>
+   <FIELD ID="APOGEE_ID" arraysize="18" datatype="unicodeChar" name="APOGEE_ID"/>
+   <FIELD ID="RAVE_ID" arraysize="16" datatype="unicodeChar" name="RAVE_ID"/>
+   <FIELD ID="DISTANCE_MJ_2MASS_BASTA" datatype="double" name="DISTANCE_MJ_2MASS_BASTA"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_MJ_2MASS_BASTA" datatype="double" name="UPPER_ERROR_DISTANCE_MJ_2MASS_BASTA"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_MJ_2MASS_BASTA" datatype="double" name="LOWER_ERROR_DISTANCE_MJ_2MASS_BASTA"/>
+   <FIELD ID="A_MJ_2MASS_BASTA" datatype="double" name="A_MJ_2MASS_BASTA"/>
+   <FIELD ID="UPPER_ERROR_A_MJ_2MASS_BASTA" datatype="double" name="UPPER_ERROR_A_MJ_2MASS_BASTA"/>
+   <FIELD ID="LOWER_ERROR_A_MJ_2MASS_BASTA" datatype="double" name="LOWER_ERROR_A_MJ_2MASS_BASTA"/>
+   <FIELD ID="DISTANCE_MH_2MASS_BASTA" datatype="double" name="DISTANCE_MH_2MASS_BASTA"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_MH_2MASS_BASTA" datatype="double" name="UPPER_ERROR_DISTANCE_MH_2MASS_BASTA"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_MH_2MASS_BASTA" datatype="double" name="LOWER_ERROR_DISTANCE_MH_2MASS_BASTA"/>
+   <FIELD ID="A_MH_2MASS_BASTA" datatype="double" name="A_MH_2MASS_BASTA"/>
+   <FIELD ID="UPPER_ERROR_A_MH_2MASS_BASTA" datatype="double" name="UPPER_ERROR_A_MH_2MASS_BASTA"/>
+   <FIELD ID="LOWER_ERROR_A_MH_2MASS_BASTA" datatype="double" name="LOWER_ERROR_A_MH_2MASS_BASTA"/>
+   <FIELD ID="DISTANCE_MK_2MASS_BASTA" datatype="double" name="DISTANCE_MK_2MASS_BASTA"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_MK_2MASS_BASTA" datatype="double" name="UPPER_ERROR_DISTANCE_MK_2MASS_BASTA"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_MK_2MASS_BASTA" datatype="double" name="LOWER_ERROR_DISTANCE_MK_2MASS_BASTA"/>
+   <FIELD ID="A_MK_2MASS_BASTA" datatype="double" name="A_MK_2MASS_BASTA"/>
+   <FIELD ID="UPPER_ERROR_A_MK_2MASS_BASTA" datatype="double" name="UPPER_ERROR_A_MK_2MASS_BASTA"/>
+   <FIELD ID="LOWER_ERROR_A_MK_2MASS_BASTA" datatype="double" name="LOWER_ERROR_A_MK_2MASS_BASTA"/>
+   <FIELD ID="DISTANCE_BASTA" datatype="double" name="DISTANCE_BASTA"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_BASTA" datatype="double" name="UPPER_ERROR_DISTANCE_BASTA"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_BASTA" datatype="double" name="LOWER_ERROR_DISTANCE_BASTA"/>
+   <FIELD ID="EBV_BASTA" datatype="double" name="EBV_BASTA"/>
+   <FIELD ID="UPPER_ERROR_EBV_BASTA" datatype="double" name="UPPER_ERROR_EBV_BASTA"/>
+   <FIELD ID="LOWER_ERROR_EBV_BASTA" datatype="double" name="LOWER_ERROR_EBV_BASTA"/>
+   <FIELD ID="AGE_BASTA" datatype="double" name="AGE_BASTA"/>
+   <FIELD ID="UPPER_ERROR_AGE_BASTA" datatype="double" name="UPPER_ERROR_AGE_BASTA"/>
+   <FIELD ID="LOWER_ERROR_AGE_BASTA" datatype="double" name="LOWER_ERROR_AGE_BASTA"/>
+   <FIELD ID="LOGG_BASTA" datatype="double" name="LOGG_BASTA"/>
+   <FIELD ID="UPPER_ERROR_LOGG_BASTA" datatype="double" name="UPPER_ERROR_LOGG_BASTA"/>
+   <FIELD ID="LOWER_ERROR_LOGG_BASTA" datatype="double" name="LOWER_ERROR_LOGG_BASTA"/>
+   <FIELD ID="MASSFIN_BASTA" datatype="double" name="MASSFIN_BASTA"/>
+   <FIELD ID="UPPER_ERROR_MASSFIN_BASTA" datatype="double" name="UPPER_ERROR_MASSFIN_BASTA"/>
+   <FIELD ID="LOWER_ERROR_MASSFIN_BASTA" datatype="double" name="LOWER_ERROR_MASSFIN_BASTA"/>
+   <FIELD ID="RADPHOT_BASTA" datatype="double" name="RADPHOT_BASTA"/>
+   <FIELD ID="UPPER_ERROR_RADPHOT_BASTA" datatype="double" name="UPPER_ERROR_RADPHOT_BASTA"/>
+   <FIELD ID="LOWER_ERROR_RADPHOT_BASTA" datatype="double" name="LOWER_ERROR_RADPHOT_BASTA"/>
+   <FIELD ID="DISTANCE_MJ_2MASS_BASTAPLX" datatype="double" name="DISTANCE_MJ_2MASS_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_MJ_2MASS_BASTAPLX" datatype="double" name="UPPER_ERROR_DISTANCE_MJ_2MASS_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_MJ_2MASS_BASTAPLX" datatype="double" name="LOWER_ERROR_DISTANCE_MJ_2MASS_BASTAPLX"/>
+   <FIELD ID="A_MJ_2MASS_BASTAPLX" datatype="double" name="A_MJ_2MASS_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_A_MJ_2MASS_BASTAPLX" datatype="double" name="UPPER_ERROR_A_MJ_2MASS_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_A_MJ_2MASS_BASTAPLX" datatype="double" name="LOWER_ERROR_A_MJ_2MASS_BASTAPLX"/>
+   <FIELD ID="DISTANCE_MH_2MASS_BASTAPLX" datatype="double" name="DISTANCE_MH_2MASS_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_MH_2MASS_BASTAPLX" datatype="double" name="UPPER_ERROR_DISTANCE_MH_2MASS_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_MH_2MASS_BASTAPLX" datatype="double" name="LOWER_ERROR_DISTANCE_MH_2MASS_BASTAPLX"/>
+   <FIELD ID="A_MH_2MASS_BASTAPLX" datatype="double" name="A_MH_2MASS_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_A_MH_2MASS_BASTAPLX" datatype="double" name="UPPER_ERROR_A_MH_2MASS_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_A_MH_2MASS_BASTAPLX" datatype="double" name="LOWER_ERROR_A_MH_2MASS_BASTAPLX"/>
+   <FIELD ID="DISTANCE_MK_2MASS_BASTAPLX" datatype="double" name="DISTANCE_MK_2MASS_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_MK_2MASS_BASTAPLX" datatype="double" name="UPPER_ERROR_DISTANCE_MK_2MASS_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_MK_2MASS_BASTAPLX" datatype="double" name="LOWER_ERROR_DISTANCE_MK_2MASS_BASTAPLX"/>
+   <FIELD ID="A_MK_2MASS_BASTAPLX" datatype="double" name="A_MK_2MASS_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_A_MK_2MASS_BASTAPLX" datatype="double" name="UPPER_ERROR_A_MK_2MASS_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_A_MK_2MASS_BASTAPLX" datatype="double" name="LOWER_ERROR_A_MK_2MASS_BASTAPLX"/>
+   <FIELD ID="DISTANCE_BASTAPLX" datatype="double" name="DISTANCE_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_DISTANCE_BASTAPLX" datatype="double" name="UPPER_ERROR_DISTANCE_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_DISTANCE_BASTAPLX" datatype="double" name="LOWER_ERROR_DISTANCE_BASTAPLX"/>
+   <FIELD ID="EBV_BASTAPLX" datatype="double" name="EBV_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_EBV_BASTAPLX" datatype="double" name="UPPER_ERROR_EBV_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_EBV_BASTAPLX" datatype="double" name="LOWER_ERROR_EBV_BASTAPLX"/>
+   <FIELD ID="AGE_BASTAPLX" datatype="double" name="AGE_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_AGE_BASTAPLX" datatype="double" name="UPPER_ERROR_AGE_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_AGE_BASTAPLX" datatype="double" name="LOWER_ERROR_AGE_BASTAPLX"/>
+   <FIELD ID="LOGG_BASTAPLX" datatype="double" name="LOGG_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_LOGG_BASTAPLX" datatype="double" name="UPPER_ERROR_LOGG_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_LOGG_BASTAPLX" datatype="double" name="LOWER_ERROR_LOGG_BASTAPLX"/>
+   <FIELD ID="MASSFIN_BASTAPLX" datatype="double" name="MASSFIN_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_MASSFIN_BASTAPLX" datatype="double" name="UPPER_ERROR_MASSFIN_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_MASSFIN_BASTAPLX" datatype="double" name="LOWER_ERROR_MASSFIN_BASTAPLX"/>
+   <FIELD ID="RADPHOT_BASTAPLX" datatype="double" name="RADPHOT_BASTAPLX"/>
+   <FIELD ID="UPPER_ERROR_RADPHOT_BASTAPLX" datatype="double" name="UPPER_ERROR_RADPHOT_BASTAPLX"/>
+   <FIELD ID="LOWER_ERROR_RADPHOT_BASTAPLX" datatype="double" name="LOWER_ERROR_RADPHOT_BASTAPLX"/>
+   <FIELD ID="U" datatype="double" name="U"/>
+   <FIELD ID="V" datatype="double" name="V"/>
+   <FIELD ID="W" datatype="double" name="W"/>
+   <FIELD ID="ERROR_U" datatype="double" name="ERROR_U"/>
+   <FIELD ID="ERROR_V" datatype="double" name="ERROR_V"/>
+   <FIELD ID="ERROR_W" datatype="double" name="ERROR_W"/>
+   <FIELD ID="Z_GC" datatype="double" name="Z_GC" unit="pc"/>
+   <FIELD ID="ZMAX" datatype="double" name="ZMAX"/>
+   <FIELD ID="RHO_GC" datatype="double" name="RHO_GC" unit="pc"/>
+   <FIELD ID="LZ" datatype="double" name="LZ"/>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-999</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>03283007+1934086</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999.0</TD>
+      <TD/>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-99</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999.00</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999.00</TD>
+      <TD>-9999.00</TD>
+      <TD>-9999.00</TD>
+      <TD>-9999.00</TD>
+      <TD>241</TD>
+      <TD>241</TD>
+      <TD>241</TD>
+      <TD>-9999.000000</TD>
+      <TD>-9999.000000</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>52.125332</TD>
+      <TD>19.569066</TD>
+      <TD>548-006771</TD>
+      <TD/>
+      <TD>STAR</TD>
+      <TD>gri</TD>
+      <TD>rpm</TD>
+      <TD>11.2</TD>
+      <TD>2</TD>
+      <TD>9.1</TD>
+      <TD>2.1</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>12.834</TD>
+      <TD>0.507</TD>
+      <TD>11.038</TD>
+      <TD>0.12</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>11.663</TD>
+      <TD>0.01</TD>
+      <TD>10.715</TD>
+      <TD>0.01</TD>
+      <TD>10.204</TD>
+      <TD>0.02</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>8.883</TD>
+      <TD>0.032</TD>
+      <TD>8.299</TD>
+      <TD>0.031</TD>
+      <TD>8.154</TD>
+      <TD>0.019</TD>
+      <TD>10.642</TD>
+      <TD>4929</TD>
+      <TD>266</TD>
+      <TD>190</TD>
+      <TD>2.192</TD>
+      <TD>0.312</TD>
+      <TD>1.196</TD>
+      <TD>-1.172</TD>
+      <TD>0.35</TD>
+      <TD>1.05</TD>
+      <TD>11.747</TD>
+      <TD>31.219</TD>
+      <TD>3.499</TD>
+      <TD>0.874</TD>
+      <TD>0.073</TD>
+      <TD>0.073</TD>
+      <TD>0</TD>
+      <TD>0.001</TD>
+      <TD>0</TD>
+      <TD>916.4</TD>
+      <TD>2320</TD>
+      <TD>247.9</TD>
+      <TD>0.441</TD>
+      <TD>0.122</TD>
+      <TD>0.085</TD>
+      <TD/>
+      <TD/>
+      <TD>-9999</TD>
+      <TD>1</TD>
+      <TD>44.719</TD>
+      <TD>0.733</TD>
+      <TD>72.416</TD>
+      <TD>0.001</TD>
+      <TD>4.844</TD>
+      <TD>0.345575194533</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>52.12532</TD>
+      <TD>19.56908</TD>
+      <TD>0.07</TD>
+      <TD>0.07</TD>
+      <TD>90</TD>
+      <TD>8.883</TD>
+      <TD>0.027</TD>
+      <TD>0.032</TD>
+      <TD>10452.7</TD>
+      <TD>8.299</TD>
+      <TD>0.027</TD>
+      <TD>0.031</TD>
+      <TD>7401.3</TD>
+      <TD>8.154</TD>
+      <TD>0.017</TD>
+      <TD>0.019</TD>
+      <TD>4952.5</TD>
+      <TD>AAA</TD>
+      <TD>112</TD>
+      <TD>111</TD>
+      <TD>000</TD>
+      <TD>664666</TD>
+      <TD>21.9</TD>
+      <TD>101</TD>
+      <TD>116967209</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>116967212</TD>
+      <TD>n</TD>
+      <TD>1997-10-27</TD>
+      <TD>83</TD>
+      <TD>166.327</TD>
+      <TD>-29.77</TD>
+      <TD>-13.8</TD>
+      <TD>2450748.8313</TD>
+      <TD>1.11</TD>
+      <TD>1.57</TD>
+      <TD>1.1</TD>
+      <TD>8.888</TD>
+      <TD>0.005</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>8.149</TD>
+      <TD>0.005</TD>
+      <TD>6187</TD>
+      <TD>234</TD>
+      <TD>se</TD>
+      <TD>0</TD>
+      <TD>1</TD>
+      <TD>T</TD>
+      <TD>0.1</TD>
+      <TD>346</TD>
+      <TD>12.92</TD>
+      <TD>11.07</TD>
+      <TD>2</TD>
+      <TD>0</TD>
+      <TD>6438</TD>
+      <TD>148058</TD>
+      <TD>79</TD>
+      <TD>K2C4</TD>
+      <TD>-9999</TD>
+      <TD>20120525_1958p19_106</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>NO</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>n</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>1624-3414-1</TD>
+      <TD>-9999</TD>
+      <TD>A</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>548-113064</TD>
+      <TD>-9999</TD>
+      <TD>A</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>A</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD/>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>J195845.45+192932.0</TD>
+      <TD>-9999</TD>
+      <TD>A</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>hh00</TD>
+      <TD>-9999</TD>
+      <TD>nn11</TD>
+      <TD>UUBA</TD>
+      <TD>-9999</TD>
+      <TD/>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD/>
+      <TD>-9999</TD>
+      <TD/>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>1094-00473931</TD>
+      <TD>-9999</TD>
+      <TD>A</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>1958p19</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>apogee.apo25m.s.stars.5144.2M03283007+1934086</TD>
+      <TD>5144.2M03283007+1934086</TD>
+      <TD>apogee.apo25m.s.l31c.2.5144.2M03283007+1934086</TD>
+      <TD>apStar-r8-2M03283007+1934086.fits</TD>
+      <TD>apo25m</TD>
+      <TD>5144</TD>
+      <TD>165-30</TD>
+      <TD>8.883</TD>
+      <TD>0.032</TD>
+      <TD>8.299</TD>
+      <TD>0.031</TD>
+      <TD>8.154</TD>
+      <TD>0.019</TD>
+      <TD>52.12532</TD>
+      <TD>19.56908</TD>
+      <TD>166.327361062</TD>
+      <TD>-29.7696661471</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>APOGEE2_SFD_DERED,APOGEE2_SHORT,APOGEE2_NORMAL_SAMPLE,APOGEE2_ONEBIN_GT_0_3</TD>
+      <TD>apogee2-manga</TD>
+      <TD>0 0 1</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>500.312</TD>
+      <TD>0</TD>
+      <TD/>
+      <TD>0</TD>
+      <TD/>
+      <TD>59.1386</TD>
+      <TD>0</TD>
+      <TD>0.0050886</TD>
+      <TD>0.0050886</TD>
+      <TD>59.1386</TD>
+      <TD>0</TD>
+      <TD>0.0050886</TD>
+      <TD>0.0050886</TD>
+      <TD>59.1491</TD>
+      <TD>0</TD>
+      <TD>0.00512271</TD>
+      <TD>0.00512271</TD>
+      <TD>4750</TD>
+      <TD>3</TD>
+      <TD>-0.5</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>21.5966</TD>
+      <TD>21.9445</TD>
+      <TD>0</TD>
+      <TD>-1 -1</TD>
+      <TD>-1 -1</TD>
+      <TD>-1 -1</TD>
+      <TD>-1 -1</TD>
+      <TD>-2147399648</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>131</TD>
+      <TD>0</TD>
+      <TD>524.43243</TD>
+      <TD>stars</TD>
+      <TD>l31c</TD>
+      <TD>l31c.2</TD>
+      <TD>0</TD>
+      <TD>7</TD>
+      <TD>12.2</TD>
+      <TD>0.3</TD>
+      <TD>99999</TD>
+      <TD>4792.967 2.6491253 0.094465 -0.4118117 0.040545 0.062426 0.07991937 0.58083546 0</TD>
+      <TD>4716.1 2.748 0.094465 -0.43304 0.040545 0.062426 0.11236 0.58083546 0</TD>
+      <TD>5695.634 -9999 -9999 -9999 -9999 -9999 -9999 0 0 -9999 0.00397715 -9999 -9999 -9999 -9999 -9999 0 0 -9999 -9999 -9999 -9999 -9999 -9999 -9999 0 0 -9999 -9999 -9999 0.0014858391 -9999 -9999 -9999 0 0 -9999 -9999 -9999 -9999 -9999 -9999 -9999 0 0 -9999 -9999 -9999 -9999 -9999 -9999 -9999 0 0 -9999 -9999 -9999 -9999 -9999 -9999 0.00028503162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</TD>
+      <TD>19.96 0.022859 0.0029591 0.0055289 0.010546 -0.007674 0.0002628 0 0 0.022859 6.5124e-05 -1.0996e-05 8.7442e-06 1.7864e-05 -1.8603e-05 -3.7352e-06 0 0 0.0029591 -1.0996e-05 4.6369e-05 -1.2162e-05 6.6935e-06 1.4749e-06 4.1185e-06 0 0 0.0055289 8.7442e-06 -1.2162e-05 8.4088e-06 1.1227e-07 -4.6047e-06 -2.7571e-06 0 0 0.010546 1.7864e-05 6.6935e-06 1.1226e-07 4.2357e-05 -5.115e-05 2.589e-06 0 0 -0.007674 -1.8603e-05 1.4749e-06 -4.6047e-06 -5.115e-05 9.0107e-05 5.5219e-06 0 0 0.0002628 -3.7352e-06 4.1185e-06 -2.7571e-06 2.589e-06 5.5219e-06 9.8723e-06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</TD>
+      <TD>4792.967</TD>
+      <TD>75.46942</TD>
+      <TD>2.6491253</TD>
+      <TD>0.06306465</TD>
+      <TD>1.2429825</TD>
+      <TD>3.8092148</TD>
+      <TD>-9999</TD>
+      <TD>-0.4118117</TD>
+      <TD>0.038546585</TD>
+      <TD>0.07991937</TD>
+      <TD>0.01688288</TD>
+      <TD>3.1824384</TD>
+      <TD>GKg_b</TD>
+      <TD>0</TD>
+      <TD/>
+      <TD>0 0 0 0 0 0 0 65536 65536</TD>
+      <TD>0.023312 0.032625 0.092168 0.15209 -0.47775 0.12611 -0.088083 0.14706 -0.58773 0.073371 -0.4009 0.040886 0.011161 0.30126 -0.41237 -0.58328 -0.5601 -0.42062 -0.72323 -0.38661 -0.026949 0.54036 -9999 -0.4722 -0.60984 -0.57483</TD>
+      <TD>0.0030967242 0.010562197 0.003764306 0.0109252 0.0609467 0.0046238513 0.013023056 0.007014057 0.05705261 0.037298795 0.016716458 0.010882555 0.012633685 0.029810736 0.03535251 0.022945806 0.009088455 0.0020274122 0.061937064 0.008054812 0.04327124 0.062258333 -9999 0.14725488 0.06264104 0.08423835</TD>
+      <TD>-0.3884997 -0.37918672 -0.3196437 -0.28395125 -0.5704204 -0.29809022 -0.25974306 -0.385804 -0.5658674 -0.33673722 -0.32823145 -0.33928853 -0.3934269 -0.19603837 -0.5187806 -0.4543755 -0.5254998 -0.40719643 -0.59287107 -0.36742374 -9999 -9999 -9999 -9999 -9999 -9999</TD>
+      <TD>0.041569307 0.05209093 0.060383882 0.036702912 0.08079555 0.02257598 0.056412924 0.029323291 0.09437153 0.05774064 0.038213857 0.024399726 0.041893918 0.09504786 0.07716633 0.042902194 0.028420417 0.009210881 0.06714582 0.018267816 -9999 -9999 -9999 -9999 -9999 -9999</TD>
+      <TD>0.023312 0.032625 0.092168 0.12786046 -0.15860865 0.11372149 0.15206864 0.026007704 -0.15405568 0.07507449 0.083580256 0.07252316 0.018384803 0.21577334 -0.10696891 -0.042563796 -0.11368808 0.004615277 -0.18105939 0.044387966 -9999 -9999 -9999 -9999 -9999 -9999</TD>
+      <TD>0.041569307 0.05209093 0.060383882 0.036702912 0.08079555 0.02257598 0.056412924 0.029323291 0.09437153 0.05774064 0.038213857 0.024399726 0.041893918 0.09504786 0.07716633 0.042902194 0.028420417 0.009210881 0.06714582 0.018267816 -9999 -9999 -9999 -9999 -9999 -9999</TD>
+      <TD>0.018696725</TD>
+      <TD>0.028009713</TD>
+      <TD>0.087552726</TD>
+      <TD>0.12324518</TD>
+      <TD>-0.16322395</TD>
+      <TD>0.10910621</TD>
+      <TD>0.14745337</TD>
+      <TD>0.021392435</TD>
+      <TD>-0.15867099</TD>
+      <TD>0.07045922</TD>
+      <TD>0.07896498</TD>
+      <TD>0.0679079</TD>
+      <TD>0.013769537</TD>
+      <TD>0.21115807</TD>
+      <TD>-0.11158416</TD>
+      <TD>-0.047179073</TD>
+      <TD>-0.11830339</TD>
+      <TD>-0.40719643</TD>
+      <TD>-0.18567464</TD>
+      <TD>0.03977269</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>0.041569307</TD>
+      <TD>0.05209093</TD>
+      <TD>0.060383882</TD>
+      <TD>0.036702912</TD>
+      <TD>0.08079555</TD>
+      <TD>0.02257598</TD>
+      <TD>0.056412924</TD>
+      <TD>0.029323291</TD>
+      <TD>0.09437153</TD>
+      <TD>0.05774064</TD>
+      <TD>0.038213857</TD>
+      <TD>0.024399726</TD>
+      <TD>0.041893918</TD>
+      <TD>0.09504786</TD>
+      <TD>0.07716633</TD>
+      <TD>0.042902194</TD>
+      <TD>0.028420417</TD>
+      <TD>0.009210881</TD>
+      <TD>0.06714582</TD>
+      <TD>0.018267816</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>2</TD>
+      <TD>2</TD>
+      <TD>0</TD>
+      <TD>2</TD>
+      <TD>2</TD>
+      <TD>2.3233788 3.6734147 2.4832475 2.4435432 1.4016191 11.904196 12.333887 5.1299133 2.130247 0.4748648 2.1529303 1.6303843 0.65900695 0.504011 0.6860567 2.6718988 2.3349092 3.2676837 1.1135148 2.2657917 8.7641535 10.427977 0 0.120093636 0.48246968 0.4229704</TD>
+      <TD>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 267 0 2 2</TD>
+      <TD>2M03283007+1934086</TD>
+      <TD>2MASS</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>8.133</TD>
+      <TD>0.018</TD>
+      <TD>-9999.99</TD>
+      <TD>-9999.99</TD>
+      <TD>0.05613741</TD>
+      <TD>SFD</TD>
+      <TD>0.10648746</TD>
+      <TD>0.18588547</TD>
+      <TD>-1</TD>
+      <TD>1</TD>
+      <TD>12.3</TD>
+      <TD>7.9</TD>
+      <TD>UCAC4</TD>
+      <TD>r8-8685-57408-131</TD>
+      <TD>r8-8685-57408-131</TD>
+      <TD>91764 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1</TD>
+      <TD>91764 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1</TD>
+      <TD>4691.6 2.7357 2.9802e-08 -0.39766 0 0 0.071012 0.5718454 0 5502 3.7108 2.9802e-08 -0.042112 0 0 -0.037716 0.20649 0 3999.9 1.8911 2.9802e-08 -1.0114 0 0 -0.1039 0.72779673 0 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 4716.1 2.748 0.094465 -0.43304 0.040545 0.062426 0.11236 0.58083546 0 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999</TD>
+      <TD>3.3131416 7.063664 25.252245 -9999 3.1824384 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999 -9999</TD>
+      <TD>-0.5</TD>
+      <TD>-0.3608932</TD>
+      <TD>0.065249324</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999</TD>
+      <TD>-9999.0</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999</TD>
+      <TD>-9999.0</TD>
+      <TD>210780208</TD>
+      <TD>-9999</TD>
+      <TD>57845345394803456</TD>
+      <TD>0.09305398433411328</TD>
+      <TD>5</TD>
+      <TD>351399646</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>1</TD>
+      <TD>1635721458409799680</TD>
+      <TD>Gaia DR2 57845345394803456</TD>
+      <TD>983898906</TD>
+      <TD>2015.5</TD>
+      <TD>52.12542155169558</TD>
+      <TD>0.050311302666625604</TD>
+      <TD>19.569140228200137</TD>
+      <TD>0.031017838017182102</TD>
+      <TD>1.2051069255814297</TD>
+      <TD>0.049769902761554255</TD>
+      <TD>24.213568</TD>
+      <TD>14.246094412702835</TD>
+      <TD>0.10750016880315806</TD>
+      <TD>12.782346184389336</TD>
+      <TD>0.0687307243694993</TD>
+      <TD>-0.08930765</TD>
+      <TD>0.03087325</TD>
+      <TD>-0.4897714</TD>
+      <TD>0.3010554</TD>
+      <TD>0.09992254</TD>
+      <TD>0.32539245</TD>
+      <TD>-0.026507761</TD>
+      <TD>0.38141766</TD>
+      <TD>-0.12462476</TD>
+      <TD>-0.07530362</TD>
+      <TD>130</TD>
+      <TD>130</TD>
+      <TD>128</TD>
+      <TD>2</TD>
+      <TD>3.3899655</TD>
+      <TD>183.3275</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>31</TD>
+      <TD>1</TD>
+      <TD>276.74637</TD>
+      <TD>1.4754925056926842</TD>
+      <TD>0.0110146986754947</TD>
+      <TD>-0.044052865</TD>
+      <TD>15</TD>
+      <TD>9</TD>
+      <TD>0.06867247</TD>
+      <TD>0</TD>
+      <TD>26</TD>
+      <TD>0</TD>
+      <TD>193</TD>
+      <TD>986944.2781946311</TD>
+      <TD>241.58541361736508</TD>
+      <TD>4085.281</TD>
+      <TD>10.702634</TD>
+      <TD>23</TD>
+      <TD>393315.2875229388</TD>
+      <TD>337.56894323133776</TD>
+      <TD>1165.1406</TD>
+      <TD>11.364536</TD>
+      <TD>22</TD>
+      <TD>847785.011422616</TD>
+      <TD>393.08994650546623</TD>
+      <TD>2156.7202</TD>
+      <TD>9.941206</TD>
+      <TD>1.257518</TD>
+      <TD>0</TD>
+      <TD>1.4233303</TD>
+      <TD>0.6619024</TD>
+      <TD>0.7614279</TD>
+      <TD>59.118067970504654</TD>
+      <TD>0.30457373942684385</TD>
+      <TD>6</TD>
+      <TD>5500</TD>
+      <TD>3.5</TD>
+      <TD>0</TD>
+      <TD>NOT_AVAILABLE</TD>
+      <TD>166.32740192386157</TD>
+      <TD>-29.76962852273113</TD>
+      <TD>54.654141557896395</TD>
+      <TD>0.6562734066563494</TD>
+      <TD>100001</TD>
+      <TD>4627.357</TD>
+      <TD>4436.16</TD>
+      <TD>4785.02</TD>
+      <TD>0.5088</TD>
+      <TD>0.1979</TD>
+      <TD>0.667</TD>
+      <TD>0.258</TD>
+      <TD>0.096</TD>
+      <TD>0.3231</TD>
+      <TD>200111</TD>
+      <TD>8.918757</TD>
+      <TD>8.340706</TD>
+      <TD>9.704115</TD>
+      <TD>32.857567</TD>
+      <TD>30.990595</TD>
+      <TD>34.72454</TD>
+      <TD>http://geadata.esac.esa.int/data-server/datalink/links?ID=57845345394803456</TD>
+      <TD>810.2816747247</TD>
+      <TD>778.671228421669</TD>
+      <TD>844.509603045761</TD>
+      <TD>401.955782502964</TD>
+      <TD>1</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>9.551942579310058</TD>
+      <TD>0.07826436192772789</TD>
+      <TD>0.8140872349751324</TD>
+      <TD>0.029403643516423182</TD>
+      <TD>1.2299662703720255</TD>
+      <TD>0.04425681378108105</TD>
+      <TD>0.6844293711692203</TD>
+      <TD>0.05370802613715328</TD>
+      <TD>1.1691985517224663</TD>
+      <TD>0.0424893448230234</TD>
+      <TD>-0.38303908751467497</TD>
+      <TD>0.033268149624929445</TD>
+      <TD>-0.2664046191182735</TD>
+      <TD>0.014325438563452903</TD>
+      <TD>3.678072063267686</TD>
+      <TD>0.0019841882831653826</TD>
+      <TD>2.515348036919904</TD>
+      <TD>0.03277829379327765</TD>
+      <TD>-0.38280009223142925</TD>
+      <TD>-0.07311660535568644</TD>
+      <TD>-0.17927147435116608</TD>
+      <TD>2.902960087149177</TD>
+      <TD>-0.5195799191198578</TD>
+      <TD>0.817563357553301</TD>
+      <TD>59.13859939575195</TD>
+      <TD>2.5617463095935387</TD>
+      <TD>18.984435749238013</TD>
+      <TD>8.891882728516503</TD>
+      <TD>-0.018864678109492463</TD>
+      <TD>-0.38967084947531583</TD>
+      <TD>81.3703680082465</TD>
+      <TD>254.98392700421243</TD>
+      <TD>41.89439250698677</TD>
+      <TD>124.39524649550697</TD>
+      <TD>2267.2871279866604</TD>
+      <TD>24.883268273109415</TD>
+      <TD>9.758485949782862</TD>
+      <TD>0.028434285015505878</TD>
+      <TD>0</TD>
+      <TD>0.08969508416846021</TD>
+      <TD>0.08833595586218367</TD>
+      <TD>0.024113570885661954</TD>
+      <TD>0.0006053967029416247</TD>
+      <TD>0.01407417072345716</TD>
+      <TD>1.4468524906127065</TD>
+      <TD>0.32173512816198074</TD>
+      <TD>2.230159552351916</TD>
+      <TD>4.900453811322362</TD>
+      <TD>6.768612370153853</TD>
+      <TD>2.8336554246504733</TD>
+      <TD>0.030326802082901432</TD>
+      <TD>0</TD>
+      <TD>APOGEE</TD>
+      <TD>0</TD>
+      <TD/>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>1</TD>
+      <TD>57845345394803456</TD>
+      <TD>52.12532</TD>
+      <TD>19.56908</TD>
+      <TD>0.1347768471557293</TD>
+      <TD>J,H,K,G</TD>
+      <TD>2M03283007+1934086</TD>
+      <TD>-9999.0</TD>
+      <TD>750.858633817</TD>
+      <TD>88.5320947385</TD>
+      <TD>69.3459733573</TD>
+      <TD>0.164804762719</TD>
+      <TD>0.0121925103132</TD>
+      <TD>0.0123131372205</TD>
+      <TD>765.004781651</TD>
+      <TD>81.8660601586</TD>
+      <TD>63.8486872167</TD>
+      <TD>0.103601433139</TD>
+      <TD>0.00795918150916</TD>
+      <TD>0.00720839571658</TD>
+      <TD>752.27540227</TD>
+      <TD>80.2886229021</TD>
+      <TD>65.0467019349</TD>
+      <TD>0.0670917219707</TD>
+      <TD>0.00463204507322</TD>
+      <TD>0.00509310938071</TD>
+      <TD>742.941965928</TD>
+      <TD>50.0907028828</TD>
+      <TD>42.1468380653</TD>
+      <TD>0.183068656406</TD>
+      <TD>0.00831966351452</TD>
+      <TD>0.00795112643786</TD>
+      <TD>6300</TD>
+      <TD>5600</TD>
+      <TD>3100</TD>
+      <TD>2.55958422908</TD>
+      <TD>0.00756834355496</TD>
+      <TD>0.00789416337471</TD>
+      <TD>1.09901722789</TD>
+      <TD>0.241468972398</TD>
+      <TD>0.17618964144</TD>
+      <TD>9.11431152429</TD>
+      <TD>0.911635175984</TD>
+      <TD>0.744691836808</TD>
+      <TD>833.00767828</TD>
+      <TD>20.4086021491</TD>
+      <TD>22.9974370676</TD>
+      <TD>0.166995385716</TD>
+      <TD>0.0098033300534</TD>
+      <TD>0.013155324717</TD>
+      <TD>837.712089317</TD>
+      <TD>24.5688268666</TD>
+      <TD>18.8410361968</TD>
+      <TD>0.106074917861</TD>
+      <TD>0.00902147241887</TD>
+      <TD>0.00690522751921</TD>
+      <TD>825.30778656</TD>
+      <TD>22.6782175914</TD>
+      <TD>19.5890771555</TD>
+      <TD>0.0670145871702</TD>
+      <TD>0.00573888001702</TD>
+      <TD>0.00425108937275</TD>
+      <TD>831.282638054</TD>
+      <TD>11.9679885887</TD>
+      <TD>10.4038828012</TD>
+      <TD>0.185276658348</TD>
+      <TD>0.00880161128928</TD>
+      <TD>0.0085603737045</TD>
+      <TD>3400</TD>
+      <TD>600</TD>
+      <TD>500</TD>
+      <TD>2.55882246918</TD>
+      <TD>0.00661380594943</TD>
+      <TD>0.00751501953705</TD>
+      <TD>1.31534711536</TD>
+      <TD>0.0637492928975</TD>
+      <TD>0.0638991049133</TD>
+      <TD>9.96539202071</TD>
+      <TD>0.213463590024</TD>
+      <TD>0.21785369186</TD>
+      <TD>-73.12981068001663</TD>
+      <TD>23.508588254595693</TD>
+      <TD>35.880609869362985</TD>
+      <TD>509.4842501323068</TD>
+      <TD>12.839316711552707</TD>
+      <TD>860.1594123418315</TD>
+      <TD>-339.8510973960391</TD>
+      <TD>1.5482676233154467</TD>
+      <TD>8969.062237327536</TD>
+      <TD>2351.950289034255</TD>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
