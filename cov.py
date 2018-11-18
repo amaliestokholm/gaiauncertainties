@@ -210,6 +210,8 @@ axes[1, 0].set_xlabel('Lz');
 axes[1, 1].hist(Jr, bins='fd')
 axes[1, 1].set_xlabel(r'J_r');
 
+fig.xlabel('RUWE')
+fig.ylabel('Density')
 pp.savefig(bbox_inches='tight')
 pp.close()
 

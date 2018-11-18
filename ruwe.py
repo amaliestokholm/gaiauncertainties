@@ -66,7 +66,7 @@ def compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table):
         assert tdtable.shape == (m, n), (m, n)
 
         f = scipy.interpolate.interp2d(u0table['g_mag'].data, c, tdtable, kind='linear')
-        u0 = f(gmag, bprp)
+        u0 = f(gmag, bprp)[0]
         #print('using color and gmag u0=', u0)
     else:
         #print('bp-rp is outside the grid!')
@@ -90,6 +90,7 @@ def compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table):
 
 if os.path.exists(ruwefile):
     ruwe = np.loadtxt(ruwefile)
+    redgiantcat.add_column(data=[ruwe], name='RUWE_GAIA')
 else:
     mask = (bprp > -1.0) & (bprp < 10.0)
     ruwe = np.zeros(len(gmag[mask]))
@@ -97,6 +98,7 @@ else:
     for i, (gmag, bprp, chi2, ngoodobs) in enumerate(zip(gmag[mask], bprp[mask], chi2[mask], ngoodobs[mask])):
         ruwe[i] = compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table)
     print(len(redgiantcat), len(redgiantcat[mask]))
+    redgiantcat.add_column(data=[ruwe], name='RUWE_GAIA')
 
 pp = PdfPages('ruwehist.pdf')
 fig, axes = plt.subplots(1, 2, sharey=True)
@@ -106,3 +108,15 @@ axes[0].set_xlim([-0.1, 2])
 axes[1].hist(ruwe, bins='fd')
 pp.savefig(bbox_inches='tight')
 pp.close()
+
+pp = PdfPages('colormag.pdf')
+fig, axes = plt.subplots(1, 2)
+fig.tight_layout()
+ruwecut = (ruwe < 1.4)
+axes[0].scatter(bprp[ruwecut], gmag[ruwecut])
+axes[1].hist(ruwe, bins='fd')
+axes[1].axvline(x=1.4, linestyle='--', color=0.6)
+axes[1].set_xlim([-0.1, 2])
+pp.savefig(bbox_inches='tight')
+pp.close()
+
