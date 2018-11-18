@@ -47,20 +47,23 @@ print('bp-rp', bprp)
 print('chi2', chi2)
 print('ngoodobs', ngoodobs)
 
+def compute_tdtable(u0table):
+    # Compute u0 using With colors and gmag
+    for i, col in enumerate(u0table.columns[2:]):
+        if i == 0:
+            tdtable = u0table[col].data.reshape(len(u0table[col].data), 1)
+        else:
+            coldata = u0table[col].data.reshape(len(u0table[col].data), 1)
+            tdtable = np.concatenate((tdtable, coldata), axis=1)
+    tdtable = tdtable.T
+    return tdtable
 
-def compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table):
+
+def compute_ruwe(gmag, bprp, chi2, ngoodobs, tdtable, u0table):
     if (bprp > -1.0) & (bprp < 10.0):
         # Read table from DR2_RUWE_V1.zip
         c = np.arange(-1.0, 10+0.1, 0.1)
 
-        # Compute u0 using With colors and gmag
-        for i, col in enumerate(u0table.columns[2:]):
-            if i == 0:
-                tdtable = u0table[col].data.reshape(len(u0table[col].data), 1)
-            else:
-                coldata = u0table[col].data.reshape(len(u0table[col].data), 1)
-                tdtable = np.concatenate((tdtable, coldata), axis=1)
-        tdtable = tdtable.T
         m = c.size
         n = u0table['g_mag'].data.size
         assert tdtable.shape == (m, n), (m, n)
@@ -88,19 +91,23 @@ def compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table):
     return ruwe
 
 
-if os.path.exists(ruwefile):
+if os.path.isfile(ruwefile):
+    print('Load ruwefile')
     ruwe = np.loadtxt(ruwefile)
     ruwecol = Column(ruwe, name='RUWE_GAIA')
-    redgiantcat.add_column(data=[ruwe], name='RUWE_GAIA')
+    redgiantcat.add_column(ruwecol)
 else:
+    print('Compute new ruwefile')
     mask = (bprp > -1.0) & (bprp < 10.0)
     ruwe = np.zeros(len(gmag[mask]))
     u0table = Table.read('table_u0_2D.txt', format='ascii')
+    tdtable = compute_tdtable(u0table)
     for i, (gmag, bprp, chi2, ngoodobs) in enumerate(zip(gmag[mask], bprp[mask], chi2[mask], ngoodobs[mask])):
-        ruwe[i] = compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table)
+        ruwe[i] = compute_ruwe(gmag, bprp, chi2, ngoodobs, tdtable, u0table)
     print(len(redgiantcat), len(redgiantcat[mask]))
     ruwecol = Column(ruwe, name='RUWE_GAIA')
     redgiantcat.add_column(ruwecol)
+    np.savetxt(ruwefile, ruwe)
 
 pp = PdfPages('ruwehist.pdf')
 fig, axes = plt.subplots(1, 2, sharey=True)
@@ -108,23 +115,22 @@ fig.tight_layout()
 axes[0].hist(ruwe, bins='fd')
 axes[0].set_xlim([-0.1, 2])
 axes[1].hist(ruwe, bins='fd')
-fig.xlabel('RUWE')
-fig.ylabel('Density')
+axes[0].set_xlabel('RUWE')
+axes[1].set_xlabel('RUWE')
+axes[0].set_ylabel('Density')
 pp.savefig(bbox_inches='tight')
 pp.close()
 
 pp = PdfPages('colormag.pdf')
-fig, axes = plt.subplots(1, 2)
-fig.tight_layout()
+fig, axes = plt.subplots(2)
 ruwecut = (ruwe < 1.4)
 axes[0].scatter(bprp[ruwecut], gmag[ruwecut])
 axes[0].set_xlabel('bp-rp')
 axes[0].set_ylabel('G mag')
 axes[1].hist(ruwe, bins='fd')
-axes[1].axvline(x=1.4, linestyle='--', color=0.6)
+axes[1].axvline(x=1.4, linestyle='--', color='0.6')
 axes[1].set_xlim([-0.1, 2])
 axes[1].set_xlabel('RUWE')
 axes[1].set_ylabel('Density')
 pp.savefig(bbox_inches='tight')
 pp.close()
-

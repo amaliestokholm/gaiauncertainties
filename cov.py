@@ -196,6 +196,8 @@ cs.representation_type = 'cylindrical'
 rho = cs.rho  # pc
 phi = cs.phi  # pc
 z = cs.z  # pc
+Jr, lz, Jz = aAS(
+        rho, phi, z, 
 for i, c in enumerate(cs):
     o = Orbit(c) 
     Jr = o.jr()
