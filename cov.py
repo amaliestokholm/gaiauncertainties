@@ -10,11 +10,13 @@ import numpy as np
 from astropy.table import Table, Column, join, vstack
 import astropy.units as u
 import astropy.coordinates as coord
+
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import seaborn as sns
 from galpy.orbit import Orbit
+from galpy.util import bovy_coords
 from galpy.potential import MWPotential2014 as mw
 from galpy.actionAngle import actionAngleStaeckel
 
@@ -185,23 +187,38 @@ gc = coord.Galactocentric(galcen_distance=8.34*u.kpc,  # Reid et al 2014
         galcen_v_sun=v_sun,  # 240 is from Reid etal 2014
         z_sun=27*u.pc)  # Default, Chen et al 2001
 
-aAS = actionAngleStaeckel(
-        pot=pot,
-        delta=0.45,
-        c=False
-        )
-
 cs = cs.transform_to(gc)
+"""
+vr = cs.v_x
+vp = cs.v_y
+vz = cs.v_z
+"""
 cs.representation_type = 'cylindrical'
 rho = cs.rho  # pc
 phi = cs.phi  # pc
 z = cs.z  # pc
+vr = cs.d_rho
+vp = cs.d_phi.to(u.mas/u.yr).value*4.74047*cs.rho.to(u.kpc).value*u.km/u.s
+vz = cs.d_z
+
+"""
+rho = cs.x  # pc
+phi = cs.y  # pc
+z = cs.z  # pc
+"""
+
+aAS = actionAngleStaeckel(
+        pot=mw,
+        delta=0.45,
+        c=False,
+        ro=8.34,
+        vo=240
+        )
+
+R0 = 8.34 * u.kpc
+V0 = 220 * u.km/u.s
 Jr, lz, Jz = aAS(
-        rho, phi, z, 
-for i, c in enumerate(cs):
-    o = Orbit(c) 
-    Jr = o.jr()
-    Lz = o.jp()
+        rho, vr, vp, z, vz)
 
 # Plot sample
 pp = PdfPages('velocityhist.pdf')
@@ -214,14 +231,12 @@ axes[0, 0].set_xlabel('rho (pc)')
 axes[0, 1].hist(z, bins='fd')
 axes[0, 1].set_xlabel('z (pc)')
 
-axes[1, 0].hist(Lz, bins='fd')
+axes[1, 0].hist(lz, bins='fd')
 axes[1, 0].set_xlabel('Lz');
 
 axes[1, 1].hist(Jr, bins='fd')
 axes[1, 1].set_xlabel(r'J_r');
 
-fig.xlabel('RUWE')
-fig.ylabel('Density')
 pp.savefig(bbox_inches='tight')
 pp.close()
 
