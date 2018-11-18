@@ -179,21 +179,6 @@ cs = coord.SkyCoord(ra=sample[:, 0] * u.deg,
         galcen_v_sun=v_sun,  # 240 is from Reid et al 2014
         z_sun=27*u.pc)  # Default, Chen et al 2001
 
-# How many instances should be saved? 
-intsteps = 10 
-Lz = np.zeros(len(cs)) 
-Jr = np.zeros(len(cs)) 
-zmax = np.zeros(len(cs)) 
-for i, c in enumerate(cs): 
-    if (i % 10) == 0: 
-        print(i) 
-    ts = np.linspace(0, -redgiantcat['AGE_BASTA'].data.astype(float) * u.Myr, intsteps) 
-    o = Orbit(c) 
-    o.integrate(ts, mw) 
-    Lz[i] = o.jp() 
-    Jr[i] = o.jr() 
-    zmax[i] = o.zmax() 
-
 # Define Galactocentric frame
 gc = coord.Galactocentric(galcen_distance=8.34*u.kpc,  # Reid et al 2014
         galcen_v_sun=v_sun,  # 240 is from Reid etal 2014
@@ -203,29 +188,27 @@ cs.representation_type = 'cylindrical'
 rho = cs.rho  # pc
 phi = cs.phi  # pc
 z = cs.z  # pc
+for i, c in enumerate(cs):
+    o = Orbit(c) 
+    Jr = cs.jr()
+    Lz = cd.jp()
 
 # Plot sample
 pp = PdfPages('velocityhist.pdf')
-fig, axes = plt.subplots(2, 3, sharey=True)
+fig, axes = plt.subplots(2, 2, sharey=True)
 fig.tight_layout()
 
 axes[0, 0].hist(rho, bins='fd')
 axes[0, 0].set_xlabel('rho (pc)')
 
-axes[0, 1].hist(phi, bins='fd')
-axes[0, 1].set_xlabel('phi (pc)')
+axes[0, 1].hist(z, bins='fd')
+axes[0, 1].set_xlabel('z (pc)')
 
-axes[0, 2].hist(z, bins='fd')
-axes[0, 2].set_xlabel('z (pc)')
+axes[1, 0].hist(Lz, bins='fd')
+axes[1, 0].set_xlabel('Lz');
 
-axes[1, 2].hist(Lz, bins='fd')
-axes[1, 2].set_xlabel('Lz');
-
-axes[1, 0].hist(Jr, bins='fd')
-axes[1, 0].set_xlabel(r'J_r');
-
-axes[1, 1].hist(zmax, bins='fd')
-axes[1, 1].set_xlabel('zmax');
+axes[1, 1].hist(Jr, bins='fd')
+axes[1, 1].set_xlabel(r'J_r');
 
 pp.savefig(bbox_inches='tight')
 pp.close()
