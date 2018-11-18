@@ -184,7 +184,7 @@ intsteps = 10
 Lz = np.zeros(len(cs)) 
 Jr = np.zeros(len(cs)) 
 zmax = np.zeros(len(cs)) 
-for i, c in enumerate(cs[0:100]): 
+for i, c in enumerate(cs): 
     if (i % 10) == 0: 
         print(i) 
     ts = np.linspace(0, -redgiantcat['AGE_BASTA'].data.astype(float) * u.Myr, intsteps) 
@@ -229,3 +229,4 @@ axes[1, 1].set_xlabel('zmax');
 
 pp.savefig(bbox_inches='tight')
 pp.close()
+
