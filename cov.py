@@ -16,6 +16,7 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 import seaborn as sns
 from galpy.orbit import Orbit
 from galpy.potential import MWPotential2014 as mw
+from galpy.actionAngle import actionAngleStaeckel
 
 
 # Don't print Astropy warnings
@@ -183,6 +184,13 @@ cs = coord.SkyCoord(ra=sample[:, 0] * u.deg,
 gc = coord.Galactocentric(galcen_distance=8.34*u.kpc,  # Reid et al 2014
         galcen_v_sun=v_sun,  # 240 is from Reid etal 2014
         z_sun=27*u.pc)  # Default, Chen et al 2001
+
+aAS = actionAngleStaeckel(
+        pot=pot,
+        delta=0.45,
+        c=False
+        )
+
 cs = cs.transform_to(gc)
 cs.representation_type = 'cylindrical'
 rho = cs.rho  # pc
@@ -190,8 +198,8 @@ phi = cs.phi  # pc
 z = cs.z  # pc
 for i, c in enumerate(cs):
     o = Orbit(c) 
-    Jr = cs.jr()
-    Lz = cd.jp()
+    Jr = o.jr()
+    Lz = o.jp()
 
 # Plot sample
 pp = PdfPages('velocityhist.pdf')

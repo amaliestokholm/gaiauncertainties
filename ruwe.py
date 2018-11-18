@@ -90,6 +90,7 @@ def compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table):
 
 if os.path.exists(ruwefile):
     ruwe = np.loadtxt(ruwefile)
+    ruwecol = Column(ruwe, name='RUWE_GAIA')
     redgiantcat.add_column(data=[ruwe], name='RUWE_GAIA')
 else:
     mask = (bprp > -1.0) & (bprp < 10.0)
@@ -98,7 +99,8 @@ else:
     for i, (gmag, bprp, chi2, ngoodobs) in enumerate(zip(gmag[mask], bprp[mask], chi2[mask], ngoodobs[mask])):
         ruwe[i] = compute_ruwe(gmag, bprp, chi2, ngoodobs, u0table)
     print(len(redgiantcat), len(redgiantcat[mask]))
-    redgiantcat.add_column(data=[ruwe], name='RUWE_GAIA')
+    ruwecol = Column(ruwe, name='RUWE_GAIA')
+    redgiantcat.add_column(ruwecol)
 
 pp = PdfPages('ruwehist.pdf')
 fig, axes = plt.subplots(1, 2, sharey=True)
