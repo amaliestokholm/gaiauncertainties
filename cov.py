@@ -237,7 +237,7 @@ fig, axes = plt.subplots(3, 3, sharey=True)
 fig.tight_layout()
 plt.subplots_adjust(wspace=0.1, hspace=0.6)
 
-def make_propshist(ax, xs, med, stdm, stdp, idstr, xlabel):
+def make_propshist(ax, xs, med, stdm, stdp, xlabel):
     ax.hist(xs, bins='fd')
     ax.axvline(x=med, linestyle='-', color='0.7')
     ax.axvline(x=med - stdm, linestyle='--', color='0.6')
@@ -245,15 +245,15 @@ def make_propshist(ax, xs, med, stdm, stdp, idstr, xlabel):
     ax.set_title(r'${%f}^{%f}_{%f}$' % (med, stdp, stdm), size='small')
     ax.set_xlabel(xlabel)
 
-make_propshist(axes[0,0], rho, medrho, stdm_rho, stdp_rho, r'\rho', r'$\rho$ (kpc)')
-make_propshist(axes[0,1], phi, medphi, stdm_phi, stdp_phi, r'\phi', r'$\phi$ (rad)')
-make_propshist(axes[0,2], z, medz, stdm_z, stdp_z, r'z', r'$z$ (kpc)')
-make_propshist(axes[1,0], vr, medvr, stdm_vr, stdp_vr, r'v_{\rho}', r'$v_{\rho}$ (km/s)')
-make_propshist(axes[1,1], vp, medvp, stdm_vp, stdp_vp, r'v_{\phi}', r'$v_{\phi}$ (km/s)')
-make_propshist(axes[1,2], vz, medvz, stdm_vz, stdp_vz, r'v_{z}', r'$v_{z}$ (km/s)')
-make_propshist(axes[2,0], jr, medjr, stdm_jr, stdp_jr, r'J_{\rho}', r'$J_{\rho}$ (kpc km/s)')
-make_propshist(axes[2,1], lz, medlz, stdm_lz, stdp_lz, r'L_{z}', r'$L_{z}$ (kpc km/s)')
-make_propshist(axes[2,2], jz, medjz, stdm_jz, stdp_jz, r'J_{z}', r'$J_{z}$ (kpc km/s)')
+make_propshist(axes[0,0], rho, medrho, stdm_rho, stdp_rho, r'$\rho$ (kpc)')
+make_propshist(axes[0,1], phi, medphi, stdm_phi, stdp_phi, r'$\phi$ (rad)')
+make_propshist(axes[0,2], z, medz, stdm_z, stdp_z, r'$z$ (kpc)')
+make_propshist(axes[1,0], vr, medvr, stdm_vr, stdp_vr, r'$v_{\rho}$ (km/s)')
+make_propshist(axes[1,1], vp, medvp, stdm_vp, stdp_vp, r'$v_{\phi}$ (km/s)')
+make_propshist(axes[1,2], vz, medvz, stdm_vz, stdp_vz, r'$v_{z}$ (km/s)')
+make_propshist(axes[2,0], jr, medjr, stdm_jr, stdp_jr, r'$J_{\rho}$ (kpc km/s)')
+make_propshist(axes[2,1], lz, medlz, stdm_lz, stdp_lz, r'$L_{z}$ (kpc km/s)')
+make_propshist(axes[2,2], jz, medjz, stdm_jz, stdp_jz, r'$J_{z}$ (kpc km/s)')
 
 pp.savefig(bbox_inches='tight')
 pp.close()
