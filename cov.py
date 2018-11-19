@@ -199,9 +199,9 @@ cs = cs.transform_to(gc)
 cs.representation_type = 'cylindrical'
 cs.differential_type = 'cylindrical'
 
-rho = cs.rho.to(u.kpc)
+rho = cs.rho# .to(u.kpc)
 phi = cs.phi.to(u.rad)
-z = cs.z.to(u.kpc)
+z = cs.z #.to(u.kpc)
 vr = cs.d_rho.to(u.km/u.s)
 # v_phi is in mas/yr so we compute it in km/s
 vp = cs.d_phi.to(u.mas/u.yr).value*4.74047*cs.rho.to(u.kpc).value*u.km/u.s
@@ -228,26 +228,6 @@ medvz, stdm_vz, stdp_vz = compute_quantiles(vz)
 medjr, stdm_jr, stdp_jr = compute_quantiles(jr)
 medlz, stdm_lz, stdp_lz = compute_quantiles(lz)
 medjz, stdm_jz, stdp_jz = compute_quantiles(jz)
-
-# Save everything in catalog
-def add_to_cat(idstr, med, stdm, stdp):
-    print(med, stdm, stdp)
-    medcol = Column(med, name=idstr)
-    mcol = Column(stdm, name='LOWER_ERROR_' + idstr)
-    pcol = Column(stdp, name='UPPER_ERROR_' + idstr)
-    redgiantcat.add_column(medcol)
-    redgiantcat.add_column(mcol)
-    redgiantcat.add_column(pcol)
-
-add_to_cat('RHO', medrho, stdm_rho, stdp_rho)
-add_to_cat('PHI', medphi, stdm_phi, stdp_phi)
-add_to_cat('Z', medz, stdm_z, stdp_z)
-add_to_cat('VRHO', medvr, stdm_vr, stdp_vr)
-add_to_cat('VPHI', medvp, stdm_vp, stdp_vp)
-add_to_cat('VZ', medvz, stdm_vz, stdp_vz)
-add_to_cat('JR', medjr, stdm_jr, stdp_jr)
-add_to_cat('LZ', medlz, stdm_lz, stdp_lz)
-add_to_cat('JZ', medjz, stdm_jz, stdp_jz)
 
 # Plot sample
 if make_plot:
