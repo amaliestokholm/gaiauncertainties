@@ -40,8 +40,6 @@ gmag = redgiantcat['PHOT_G_MEAN_MAG_GAIA'].data
 bprp = redgiantcat['BP_RP_GAIA'].data
 chi2 = redgiantcat['ASTROMETRIC_CHI2_AL_GAIA'].data 
 ngoodobs = redgiantcat['ASTROMETRIC_N_GOOD_OBS_AL_GAIA'].data 
-#gmag = 10.7
-#bprp = 1.4
 print('gmag', gmag)
 print('bp-rp', bprp)
 print('chi2', chi2)

@@ -15,8 +15,6 @@ from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import seaborn as sns
-from galpy.orbit import Orbit
-from galpy.util import bovy_coords
 from galpy.potential import MWPotential2014 as mw
 from galpy.actionAngle import actionAngleStaeckel
 
@@ -103,6 +101,15 @@ def sample_gaiaphase(mu, ra_e, dec_e, plx_e, pmra_e, pmdec_e, rv_e,
     return sample
 
 
+def compute_quantiles(xs, qs=[0.5, 0.158655, 0.841345]):
+    median, m, p = np.quantile(xs, qs)
+    return median, median - m, p - median
+
+
+###############################################################################
+# EXAMPLE
+###############################################################################
+
 # Read data
 kittenfilename = 'testsmallredgiantcat.vot'
 fillvalue = -9999.0
@@ -142,7 +149,7 @@ sample = sample_gaiaphase(mu, ra_e, dec_e, plx_e, pmra_e, pmdec_e, rv_e,
 sample = sample[sample[:, 2] > 0]
 
 # Plot sample
-pp = PdfPages('hist.pdf')
+pp = PdfPages('gaiaobservables_hist.pdf')
 fig, axes = plt.subplots(2, 3, sharey=True)
 fig.tight_layout()
 
@@ -166,11 +173,11 @@ pp.close()
 
 assert np.all(sample[:, 2] > 0)
 # Calculate dynamics
-# This follows the tutorial at:
-# http://dfm.io/astropy/coordinates/apply_space_motion.html
-# v_sun from Schonrich et al 2010
 print('Get dynamics')
-v_sun = coord.CartesianDifferential([11.1, 240+12.24, 7.25] * u.km/u.s)
+R0 = 8.34 * u.kpc  # Reid et al 2014
+V0 = 240 * u.km/u.s  # Reid et al 2014
+z_sun = 27 * u.pc  # Chen et al 2001
+v_sun = coord.CartesianDifferential([11.1, -(240+12.24), 7.25] * u.km/u.s)  # Schonrich et al 2010
 # NB: Here I just use the inverse parallax as dist
 cs = coord.SkyCoord(ra=sample[:, 0] * u.deg,
         dec=sample[:, 1] * u.deg,
@@ -178,65 +185,75 @@ cs = coord.SkyCoord(ra=sample[:, 0] * u.deg,
         pm_ra_cosdec=sample[:, 3] * u.mas / u.yr,
         pm_dec=sample[:, 4] * u.mas / u.yr,
         radial_velocity=sample[:, 5] * u.km / u.s,
-        galcen_distance=8.34*u.kpc,  # Reid et al 2014
-        galcen_v_sun=v_sun,  # 240 is from Reid et al 2014
-        z_sun=27*u.pc)  # Default, Chen et al 2001
+        galcen_distance=R0,
+        galcen_v_sun=v_sun,  
+        z_sun=z_sun)
 
 # Define Galactocentric frame
-gc = coord.Galactocentric(galcen_distance=8.34*u.kpc,  # Reid et al 2014
+gc = coord.Galactocentric(galcen_distance=R0,
         galcen_v_sun=v_sun,  # 240 is from Reid etal 2014
-        z_sun=27*u.pc)  # Default, Chen et al 2001
+        z_sun=z_sun)  # Default, Chen et al 2001
 
 cs = cs.transform_to(gc)
-"""
-vr = cs.v_x
-vp = cs.v_y
-vz = cs.v_z
-"""
 cs.representation_type = 'cylindrical'
-rho = cs.rho  # pc
-phi = cs.phi  # pc
-z = cs.z  # pc
-vr = cs.d_rho
+cs.differential_type = 'cylindrical'
+
+rho = cs.rho.to(u.kpc)
+phi = cs.phi.to(u.rad)
+z = cs.z.to(u.kpc)
+vr = cs.d_rho.to(u.km/u.s)
+# v_phi is in mas/yr so we compute it in km/s
 vp = cs.d_phi.to(u.mas/u.yr).value*4.74047*cs.rho.to(u.kpc).value*u.km/u.s
-vz = cs.d_z
+vz = cs.d_z.to(u.km/u.s)
 
-"""
-rho = cs.x  # pc
-phi = cs.y  # pc
-z = cs.z  # pc
-"""
-
+# Initialise
 aAS = actionAngleStaeckel(
         pot=mw,
         delta=0.45,
         c=False,
-        ro=8.34,
-        vo=240
+        ro=R0.value,
+        vo=V0.value
         )
 
-R0 = 8.34 * u.kpc
-V0 = 220 * u.km/u.s
-Jr, lz, Jz = aAS(
-        rho, vr, vp, z, vz)
+jr, lz, jz = aAS(rho, vr, vp, z, vz)
+
+# Compute quantiles
+medrho, stdm_rho, stdp_rho = compute_quantiles(rho)
+medphi, stdm_phi, stdp_phi = compute_quantiles(phi)
+medz, stdm_z, stdp_z = compute_quantiles(z)
+medvr, stdm_vr, stdp_vr = compute_quantiles(vr)
+medvp, stdm_vp, stdp_vp = compute_quantiles(vp)
+medvz, stdm_vz, stdp_vz = compute_quantiles(vz)
+medjr, stdm_jr, stdp_jr = compute_quantiles(jr)
+medlz, stdm_lz, stdp_lz = compute_quantiles(lz)
+medjz, stdm_jz, stdp_jz = compute_quantiles(jz)
+
+# Save everything in catalog
+# rhocol = Column(
 
 # Plot sample
-pp = PdfPages('velocityhist.pdf')
-fig, axes = plt.subplots(2, 2, sharey=True)
+pp = PdfPages('galpyproperties_hist.pdf')
+fig, axes = plt.subplots(3, 3, sharey=True)
 fig.tight_layout()
+plt.subplots_adjust(wspace=0.1, hspace=0.6)
 
-axes[0, 0].hist(rho, bins='fd')
-axes[0, 0].set_xlabel('rho (pc)')
+def make_propshist(ax, xs, med, stdm, stdp, idstr, xlabel):
+    ax.hist(xs, bins='fd')
+    ax.axvline(x=med, linestyle='-', color='0.7')
+    ax.axvline(x=med - stdm, linestyle='--', color='0.6')
+    ax.axvline(x=med + stdp, linestyle='--', color='0.6')
+    ax.set_title(r'${%f}^{%f}_{%f}$' % (med, stdp, stdm), size='small')
+    ax.set_xlabel(xlabel)
 
-axes[0, 1].hist(z, bins='fd')
-axes[0, 1].set_xlabel('z (pc)')
-
-axes[1, 0].hist(lz, bins='fd')
-axes[1, 0].set_xlabel('Lz');
-
-axes[1, 1].hist(Jr, bins='fd')
-axes[1, 1].set_xlabel(r'J_r');
+make_propshist(axes[0,0], rho, medrho, stdm_rho, stdp_rho, r'\rho', r'$\rho$ (kpc)')
+make_propshist(axes[0,1], phi, medphi, stdm_phi, stdp_phi, r'\phi', r'$\phi$ (rad)')
+make_propshist(axes[0,2], z, medz, stdm_z, stdp_z, r'z', r'$z$ (kpc)')
+make_propshist(axes[1,0], vr, medvr, stdm_vr, stdp_vr, r'v_{\rho}', r'$v_{\rho}$ (km/s)')
+make_propshist(axes[1,1], vp, medvp, stdm_vp, stdp_vp, r'v_{\phi}', r'$v_{\phi}$ (km/s)')
+make_propshist(axes[1,2], vz, medvz, stdm_vz, stdp_vz, r'v_{z}', r'$v_{z}$ (km/s)')
+make_propshist(axes[2,0], jr, medjr, stdm_jr, stdp_jr, r'J_{\rho}', r'$J_{\rho}$ (kpc km/s)')
+make_propshist(axes[2,1], lz, medlz, stdm_lz, stdp_lz, r'L_{z}', r'$L_{z}$ (kpc km/s)')
+make_propshist(axes[2,2], jz, medjz, stdm_jz, stdp_jz, r'J_{z}', r'$J_{z}$ (kpc km/s)')
 
 pp.savefig(bbox_inches='tight')
 pp.close()
-
