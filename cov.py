@@ -1,5 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # amalie
+# This scripts computes covariances and uncertainties for Gaia data
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ###############################################################################
@@ -118,7 +119,7 @@ fillvalue = -9999.0
 n_samples = 10000
 redgiantcat = Table.read(kittenfilename, format='votable')
 
-# Unpack data for this example
+# Unpack data for this example (this is no pretty, but it works)
 ra = float(redgiantcat['RA_GAIA'].data.flatten())
 dec = float(redgiantcat['DEC_GAIA'].data.flatten())
 ra_e = float(redgiantcat['ERROR_RA_GAIA'].data.flatten())
@@ -142,6 +143,7 @@ pmra_pmdec_cor = float(redgiantcat['PMRA_PMDEC_CORR_GAIA'].data.flatten())
 rv = float(redgiantcat['RADIAL_VELOCITY_GAIA'].data.flatten())
 rv_e = float(redgiantcat['ERROR_RADIAL_VELOCITY_GAIA'].data.flatten())
 
+# Set up and sample
 mu = np.array([ra, dec, plx, pmra, pmdec, rv]).flatten()
 
 sample = sample_gaiaphase(mu, ra_e, dec_e, plx_e, pmra_e, pmdec_e, rv_e,
@@ -199,9 +201,9 @@ cs = cs.transform_to(gc)
 cs.representation_type = 'cylindrical'
 cs.differential_type = 'cylindrical'
 
-rho = cs.rho# .to(u.kpc)
+rho = cs.rho.to(u.kpc)
 phi = cs.phi.to(u.rad)
-z = cs.z #.to(u.kpc)
+z = cs.z.to(u.kpc)
 vr = cs.d_rho.to(u.km/u.s)
 # v_phi is in mas/yr so we compute it in km/s
 vp = cs.d_phi.to(u.mas/u.yr).value*4.74047*cs.rho.to(u.kpc).value*u.km/u.s
@@ -211,12 +213,15 @@ vz = cs.d_z.to(u.km/u.s)
 aAS = actionAngleStaeckel(
         pot=mw,
         delta=0.45,
-        c=False,
-        ro=R0.value,
-        vo=V0.value
+        c=True,
+        r0=R0.value,
+        v0=V0.value
         )
 
 jr, lz, jz = aAS(rho, vr, vp, z, vz)
+jr *= R0.value * V0.value
+lz *= R0.value * V0.value
+jz *= R0.value * V0.value
 
 # Compute quantiles
 medrho, stdm_rho, stdp_rho = compute_quantiles(rho)
@@ -256,3 +261,5 @@ if make_plot:
 
     pp.savefig(bbox_inches='tight')
     pp.close()
+
+# Save the data and run this for many stars.
