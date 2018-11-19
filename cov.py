@@ -111,7 +111,9 @@ def compute_quantiles(xs, qs=[0.5, 0.158655, 0.841345]):
 ###############################################################################
 
 # Read data
+# testsmallredgiantcat only contain one star and thus we can make plots.
 kittenfilename = 'testsmallredgiantcat.vot'
+make_plot = True
 fillvalue = -9999.0
 n_samples = 10000
 redgiantcat = Table.read(kittenfilename, format='votable')
@@ -149,29 +151,28 @@ sample = sample_gaiaphase(mu, ra_e, dec_e, plx_e, pmra_e, pmdec_e, rv_e,
 sample = sample[sample[:, 2] > 0]
 
 # Plot sample
-pp = PdfPages('gaiaobservables_hist.pdf')
-fig, axes = plt.subplots(2, 3, sharey=True)
-fig.tight_layout()
+if make_plot:
+    pp = PdfPages('gaiaobservables_hist.pdf')
+    fig, axes = plt.subplots(2, 3, sharey=True)
+    fig.tight_layout()
 
-axes[0, 0].hist(sample[:, 0], bins='fd')
-axes[0, 0].set_xlabel('Ra')
-
-axes[0, 1].hist(sample[:, 1], bins='fd')
-axes[0, 1].set_xlabel('Dec')
-
-axes[0, 2].hist(sample[:, 2], bins='fd')
-axes[0, 2].set_xlabel('Parallax');
-
-axes[1, 0].hist(sample[:, 3], bins='fd')
-axes[1, 0].set_xlabel('Pmra');
-axes[1, 1].hist(sample[:, 4], bins='fd')
-axes[1, 1].set_xlabel('Pmdec');
-axes[1, 2].hist(sample[:, 5], bins='fd')
-axes[1, 2].set_xlabel('RV');
-pp.savefig(bbox_inches='tight')
-pp.close()
+    axes[0, 0].hist(sample[:, 0], bins='fd')
+    axes[0, 0].set_xlabel('Ra')
+    axes[0, 1].hist(sample[:, 1], bins='fd')
+    axes[0, 1].set_xlabel('Dec')
+    axes[0, 2].hist(sample[:, 2], bins='fd')
+    axes[0, 2].set_xlabel('Parallax');
+    axes[1, 0].hist(sample[:, 3], bins='fd')
+    axes[1, 0].set_xlabel('Pmra');
+    axes[1, 1].hist(sample[:, 4], bins='fd')
+    axes[1, 1].set_xlabel('Pmdec');
+    axes[1, 2].hist(sample[:, 5], bins='fd')
+    axes[1, 2].set_xlabel('RV');
+    pp.savefig(bbox_inches='tight')
+    pp.close()
 
 assert np.all(sample[:, 2] > 0)
+
 # Calculate dynamics
 print('Get dynamics')
 R0 = 8.34 * u.kpc  # Reid et al 2014
@@ -229,31 +230,49 @@ medlz, stdm_lz, stdp_lz = compute_quantiles(lz)
 medjz, stdm_jz, stdp_jz = compute_quantiles(jz)
 
 # Save everything in catalog
-# rhocol = Column(
+def add_to_cat(idstr, med, stdm, stdp):
+    print(med, stdm, stdp)
+    medcol = Column(med, name=idstr)
+    mcol = Column(stdm, name='LOWER_ERROR_' + idstr)
+    pcol = Column(stdp, name='UPPER_ERROR_' + idstr)
+    redgiantcat.add_column(medcol)
+    redgiantcat.add_column(mcol)
+    redgiantcat.add_column(pcol)
+
+add_to_cat('RHO', medrho, stdm_rho, stdp_rho)
+add_to_cat('PHI', medphi, stdm_phi, stdp_phi)
+add_to_cat('Z', medz, stdm_z, stdp_z)
+add_to_cat('VRHO', medvr, stdm_vr, stdp_vr)
+add_to_cat('VPHI', medvp, stdm_vp, stdp_vp)
+add_to_cat('VZ', medvz, stdm_vz, stdp_vz)
+add_to_cat('JR', medjr, stdm_jr, stdp_jr)
+add_to_cat('LZ', medlz, stdm_lz, stdp_lz)
+add_to_cat('JZ', medjz, stdm_jz, stdp_jz)
 
 # Plot sample
-pp = PdfPages('galpyproperties_hist.pdf')
-fig, axes = plt.subplots(3, 3, sharey=True)
-fig.tight_layout()
-plt.subplots_adjust(wspace=0.1, hspace=0.6)
+if make_plot:
+    pp = PdfPages('galpyproperties_hist.pdf')
+    fig, axes = plt.subplots(3, 3, sharey=True)
+    fig.tight_layout()
+    plt.subplots_adjust(wspace=0.1, hspace=0.6)
 
-def make_propshist(ax, xs, med, stdm, stdp, xlabel):
-    ax.hist(xs, bins='fd')
-    ax.axvline(x=med, linestyle='-', color='0.7')
-    ax.axvline(x=med - stdm, linestyle='--', color='0.6')
-    ax.axvline(x=med + stdp, linestyle='--', color='0.6')
-    ax.set_title(r'${%f}^{%f}_{%f}$' % (med, stdp, stdm), size='small')
-    ax.set_xlabel(xlabel)
+    def make_propshist(ax, xs, med, stdm, stdp, xlabel):
+        ax.hist(xs, bins='fd')
+        ax.axvline(x=med, linestyle='-', color='0.7')
+        ax.axvline(x=med - stdm, linestyle='--', color='0.6')
+        ax.axvline(x=med + stdp, linestyle='--', color='0.6')
+        ax.set_title(r'${%f}^{+%f}_{-%f}$' % (med, stdp, stdm), size='small')
+        ax.set_xlabel(xlabel)
 
-make_propshist(axes[0,0], rho, medrho, stdm_rho, stdp_rho, r'$\rho$ (kpc)')
-make_propshist(axes[0,1], phi, medphi, stdm_phi, stdp_phi, r'$\phi$ (rad)')
-make_propshist(axes[0,2], z, medz, stdm_z, stdp_z, r'$z$ (kpc)')
-make_propshist(axes[1,0], vr, medvr, stdm_vr, stdp_vr, r'$v_{\rho}$ (km/s)')
-make_propshist(axes[1,1], vp, medvp, stdm_vp, stdp_vp, r'$v_{\phi}$ (km/s)')
-make_propshist(axes[1,2], vz, medvz, stdm_vz, stdp_vz, r'$v_{z}$ (km/s)')
-make_propshist(axes[2,0], jr, medjr, stdm_jr, stdp_jr, r'$J_{\rho}$ (kpc km/s)')
-make_propshist(axes[2,1], lz, medlz, stdm_lz, stdp_lz, r'$L_{z}$ (kpc km/s)')
-make_propshist(axes[2,2], jz, medjz, stdm_jz, stdp_jz, r'$J_{z}$ (kpc km/s)')
+    make_propshist(axes[0,0], rho, medrho, stdm_rho, stdp_rho, r'$\rho$ (kpc)')
+    make_propshist(axes[0,1], phi, medphi, stdm_phi, stdp_phi, r'$\phi$ (rad)')
+    make_propshist(axes[0,2], z, medz, stdm_z, stdp_z, r'$z$ (kpc)')
+    make_propshist(axes[1,0], vr, medvr, stdm_vr, stdp_vr, r'$v_{\rho}$ (km/s)')
+    make_propshist(axes[1,1], vp, medvp, stdm_vp, stdp_vp, r'$v_{\phi}$ (km/s)')
+    make_propshist(axes[1,2], vz, medvz, stdm_vz, stdp_vz, r'$v_{z}$ (km/s)')
+    make_propshist(axes[2,0], jr, medjr, stdm_jr, stdp_jr, r'$J_{\rho}$ (kpc km/s)')
+    make_propshist(axes[2,1], lz, medlz, stdm_lz, stdp_lz, r'$L_{z}$ (kpc km/s)')
+    make_propshist(axes[2,2], jz, medjz, stdm_jz, stdp_jz, r'$J_{z}$ (kpc km/s)')
 
-pp.savefig(bbox_inches='tight')
-pp.close()
+    pp.savefig(bbox_inches='tight')
+    pp.close()
